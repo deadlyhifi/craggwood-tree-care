@@ -1,0 +1,357 @@
+// Texture
+
+// ALERT ====================================================
+
+.alert {
+	margin-bottom: @baselineheight;
+	padding: 8px 35px 8px 14px;
+	background-color: @alertcolor;
+	border: @alertborderwidth @alertborderstyle @alertbordercolor;
+	.rounded(2px);
+	font-family: @basefont;
+	.font-size(14);
+	color: @alerttext;
+
+	.alert-heading {
+		color: inherit;
+	}
+
+	.close {
+		position: relative;
+		top: -2px;
+		right: -21px;
+		float: right;
+		.font-size(21);
+		font-weight: bold;
+		line-height: 18px;
+		color: inherit;
+	}
+}
+
+.alert-success {
+	background-color: @alertsuccesscolor;
+	border-color: @alertsuccessborder;
+	color: @alertsuccesstext;
+}
+
+.alert-warning {
+	background-color: @alertwarningcolor;
+	border-color: @alertwarningborder;
+	color: @alertwarningtext;
+}
+
+.alert-error {
+	background-color: @alerterrorcolor;
+	border-color: @alerterrorborder;
+	color: @alerterrortext;
+}
+
+.alert-inverse {
+	background-color: @alertinversecolor;
+	border-color: @alertinverseborder;
+	color: @alertinversetext;
+}
+
+// alert block
+
+.alert-block {
+	padding-top: 14px;
+	padding-bottom: 14px;
+
+	.alert-heading {
+		margin-bottom: @baselineheight / 8;
+		font-size: inherit;
+		font-weight: bold;
+	}
+
+	> p,
+	> ul {
+		margin-bottom: 0;
+	}
+
+	p + p {
+		margin-top: 5px;
+	}
+}
+
+// BADGES ====================================================
+
+.label { .rounded(2px); }
+.badge { .rounded(9px); }
+
+.label,
+.badge {
+	padding: 1px 9px 2px;
+	.font-size(12);
+	font-weight: bold;
+	white-space: nowrap;
+	color: @badgecolor;
+	background-color: @badgebackground;
+	.transition(background-color .2s 0 linear);
+
+	&:hover {
+		color: @badgecolor;
+		text-decoration: none;
+		cursor: pointer; }
+	}
+
+	&.error {
+		background-color: @errorcolor;
+		color: @white;
+
+		&:hover {
+			background-color: darken(@errorcolor, 20%);
+			color: @white;
+		}
+	}
+
+	&.warning {
+		background-color: @warningcolor;
+		color: @white;
+
+		&:hover {
+			background-color: darken(@warningcolor, 20%);
+			color: @white;
+		}
+	}
+
+	&.success {
+		background-color: @successcolor;
+		color: @white;
+
+		&:hover {
+			background-color: darken(@successcolor, 20%);
+			color: @white;
+		}
+	}
+
+	&.info {
+		background-color: @infocolor;
+		color: darken(@infocolor, 50%);
+
+		&:hover {
+			background-color: darken(@infocolor, 20%);
+		}
+	}
+
+	*.inverse {
+		background-color: @inverscolor;
+		color: @white;
+
+		&:hover {
+			background-color: darken(@inverscolor, 20%);
+			color: @white;
+		}
+	}
+
+.btn .badge,
+.btn .label {
+	.font-size(8);
+	margin-left: 6px;
+	vertical-align: top;
+}
+
+// GRADIENTS ====================================================
+
+.basegrad {
+	.vertical(@basecolor, darken(@basecolor, 10%)); }
+
+.errorgrad {
+	.vertical(@basecolor, darken(@errorcolor, 10%)); }
+
+.greygrad {
+	.vertical(@white, darken(@lightergrey, 5%)); }
+
+.infograd {
+	.vertical(@infocolor, darken(@infocolor, 10%)); }
+
+.inversegrad {
+	.vertical(@inverscolor, darken(@inverscolor, 10%)); }
+
+.successgrad {
+	.vertical(@successcolor, darken(@successcolor, 10%)); }
+
+.warninggrad {
+	.vertical(@warningcolor, darken(@warningcolor, 10%)); }
+
+/* Buttons =================================================== */
+
+a.btn { text-decoration: none; }
+
+.btn {
+	display: inline-block;
+	*display: inline;
+	/* IE7 inline-block hack */
+	*zoom: 1;
+	padding: 6px 11px 6px;
+	margin-bottom: 0;
+	font-family: @basefont;
+	.font-size(12);
+	font-weight: bold;
+	line-height: @baselineheight;
+	color: @buttoncolor;
+	text-align: center;
+	vertical-align: middle;
+	background-color: @buttonbackground;
+	.greygrad();
+	border: @buttonborderwidth @buttonborderstyle @buttonbordercolor;
+	border-bottom-color: @buttonbottombordercolor;
+	.rounded(4px);
+	cursor: pointer;
+	*margin-left: .3em;
+
+	&:visited,
+	&:hover {
+		color: @buttoncolor;
+		text-decoration: none;
+	}
+}
+
+input[type="submit"].btn:hover {
+	border-color: @buttonbordercolor; }
+
+.btn:first-child {
+	*margin-left: 0; }
+
+// disabled
+.btn-disabled {
+	.opacity(.5);
+	cursor: default;
+}
+
+// error
+.btn-error {
+.errorgrad;
+	border-color: darken(@errorcolor, 15%);
+	border-bottom-color: darken(@errorcolor, 20%);
+	color: @white;
+
+	&:visited,
+	&:hover {
+		color: @white; }
+}
+
+// info
+.btn-info {
+.infograd;
+	border-color: darken(@infocolor, 15%);
+	border-bottom-color: darken(@infocolor, 20%);
+	color: darken(@infocolor, 50%);
+
+	&:visited,
+	&:hover {
+		color: darken(@infocolor, 50%); }
+}
+
+// inverse
+.btn-inverse {
+.inversegrad;
+	border-color: darken(@inverscolor, 15%);
+	border-bottom-color: darken(@inverscolor, 20%);
+	color: @white;
+
+	&:visited,
+	&:hover {
+		color: @white; }
+}
+
+// primary
+.btn-primary {
+.basegrad;
+	border-color: darken(@basecolor, 15%);
+	border-bottom-color: darken(@basecolor, 20%);
+	color: @white;
+
+	&:visited,
+	&:hover {
+		color: @white; }
+}
+
+// success
+.btn-success {
+	.successgrad();
+	border-color: darken(@successcolor, 15%);
+	border-bottom-color: darken(@successcolor, 20%);
+}
+
+// warning
+.btn-warning {
+	.warninggrad();
+	border-color: darken(@warningcolor, 15%);
+	border-bottom-color: darken(@warningcolor, 20%);
+}
+
+// sizes
+.btn-extlarge {
+	padding: 11px 22px;
+	.font-size(21);
+	.rounded(4px);
+}
+
+.btn.btn-large {
+	*padding-top: 7px;
+	*padding-bottom: 7px;
+}
+
+.btn-large {
+	padding: 11px 22px;
+	.font-size(14);
+	line-height: normal;
+	.rounded(4px);
+}
+
+.btn-small {
+	padding: 6px 10px;
+	.font-size(11);
+	line-height: 16px;
+}
+
+.btn-mini {
+	padding: 3px 5px;
+	.font-size(11);
+	line-height: 14px;
+}
+
+.btn-group {
+	position: relative;
+	*zoom: 1;
+	*margin-left: .3em;
+	margin-bottom: @baseline;
+}
+
+.btn-group .btn {
+	position: relative;
+	float: left;
+	margin-left: -1px;
+	.rounded(0);
+}
+
+.btn-group .btn:first-child {
+	margin-left: 0;
+	.border-radius(2px, 0, 2px, 0);
+}
+
+.btn-group .btn:last-child {
+	.border-radius(0, 2px, 0, 2px);
+}
+
+.btn-group .btn.large:first-child {
+	margin-left: 0;
+	.border-radius(4px, 0, 4px, 0);
+}
+
+.btn-group .btn.large:last-child {
+	.border-radius(0, 4px, 0, 4px);
+}
+
+.btn-toolbar {
+	clear: both;
+	margin-top: @baselineheight / 2;
+	margin-bottom: @baselineheight / 2;
+}
+
+.btn-toolbar .btn-group {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
