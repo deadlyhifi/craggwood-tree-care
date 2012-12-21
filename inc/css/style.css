@@ -2099,9 +2099,10 @@ figure figcaption {
   padding-bottom: 0;
   border-bottom-width: 0;
 }
-header,
+[role="banner"],
+.content,
 article,
-footer {
+[role="contentinfo"] {
   width: 960px;
   margin: auto;
 }
