@@ -17,23 +17,6 @@ Tom de Bruin
   margin-bottom: 0;
   border-bottom-width: 0;
 }
-.furniture-letter {
-  overflow: hidden;
-}
-.furniture-letter span {
-  display: block;
-  float: left;
-  margin: 0 12px 0 0;
-  height: 44px;
-  width: 44px;
-  background-color: #2d353e;
-  color: #ffffff;
-  font-size: 32px;
-  font-size: 3.2rem;
-  font-weight: bold;
-  line-height: 44px;
-  text-align: center;
-}
 @media only screen and (min-width: 480px) {
   /* Styles */
 }
@@ -102,11 +85,6 @@ Tom de Bruin
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
 }
-/* 320 and Up */
-/* Panels Upstart */
-/* Version: 1.0 */
-/* Author: Andy Clarke */
-/* URL: http://stuffandnonsense.co.uk/projects/320andup */
 .full {
   margin-bottom: 1.5em;
   padding: 1.5em;
@@ -143,7 +121,6 @@ Tom de Bruin
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
 }
-/* Reset =================================================== */
 html,
 body,
 body div,
@@ -227,8 +204,6 @@ nav,
 section {
   display: block;
 }
-/* Variables =================================================== */
-/* Mixins =================================================== */
 .clearfix {
   *zoom: 1;
 }
@@ -946,7 +921,6 @@ input[type="submit"].btn:hover {
   *display: inline;
   *zoom: 1;
 }
-/* Forms =================================================== */
 form {
   margin: 0 0 1.5em 0;
 }
@@ -1233,7 +1207,6 @@ input:-moz-placeholder {
   margin-left: 0;
   margin-right: 3px;
 }
-/* Tables =================================================== */
 table {
   width: 100%;
   max-width: 100%;
@@ -2024,7 +1997,6 @@ ul.icons li .icon-large:before {
 .icon-user-md:before {
   content: "\f200";
 }
-/* Elements =================================================== */
 a {
   color: #013568;
 }
@@ -2136,7 +2108,6 @@ article {
   border-radius: 2px;
 }
 @media print {
-  /* Print =================================================== */
   * {
     background: transparent !important;
     color: black !important;
@@ -2189,30 +2160,30 @@ article {
   }
 }
 @media only screen and (min-width: 480px) {
-  /* 480 =================================================== */
+  
 }
 @media only screen and (min-width: 600px) {
-  /* 600 =================================================== */
+  
 }
 @media only screen and (min-width: 768px) {
-  /* 768 =================================================== */
+  
 }
 @media only screen and (min-width: 992px) {
-  /* 992 =================================================== */
+  
 }
 @media only screen and (min-width: 1382px) {
-  /* 1382 =================================================== */
   body {
     max-width: 1440px;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* 2x =================================================== */
+  
 }
 /* Modernizr =================================================== */
 /* audio */
 /* applicationcache */
-/* backgroundsize *//* borderimage */
+/* backgroundsize */
+/* borderimage */
 /* borderradius */
 /* boxshadow */
 /* canvas */
