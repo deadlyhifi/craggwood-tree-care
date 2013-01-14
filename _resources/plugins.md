@@ -1,3 +1,4 @@
-#WordPress Plugins
+# WordPress Plugins
 
-Simple Page Ordering
+* Simple Page Ordering
+* [Advanced Custom Feilds](http://wordpress.org/extend/plugins/advanced-custom-fields/)
