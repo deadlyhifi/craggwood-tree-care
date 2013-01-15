@@ -2367,6 +2367,12 @@ article {
   border: solid #CCC;
   border-width: 1px 0 0;
 }
+[class*=icon] {
+  color: #bfbfbf;
+}
+i.icon-facebook-sign {
+  color: #34609e;
+}
 .well {
   min-height: 21px;
   padding: 11px;
