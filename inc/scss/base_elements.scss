@@ -63,7 +63,7 @@ figure {
 	figcaption {
 		display: block;
 		font-weight: normal;
-		.font-size(14);
+		@include font-size(14);
 		color: $grey;
 	}
 }

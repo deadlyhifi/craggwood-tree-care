@@ -203,6 +203,7 @@
 		clear : both;
 	}
 }
+.clearfix { @include clearfix; }
 
 // For image replacement
 @mixin hide-text() {

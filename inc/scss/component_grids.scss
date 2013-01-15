@@ -10,8 +10,8 @@
 // ==========================================================
 
 .grid {
-	margin-bottom : @baseline;
-	border-bottom : 1px dashed lighten(@basecolor, 60%);
+	margin-bottom : $baseline;
+	border-bottom : 1px dashed lighten($basecolor, 60%);
 }
 
 .grid:last-child {
@@ -83,7 +83,7 @@
 		float : none;
 		width : 100%;
 		margin-right : 0;
-		margin-bottom : @baseline / 2;
+		margin-bottom : $baseline / 2;
 	}
 
 	// grids-four
