@@ -1,6 +1,8 @@
 // Elements
 
 a {
+	@include transition(color .3s ease-in-out);
+
 	color: $linkcolor;
 
 	&:visited {

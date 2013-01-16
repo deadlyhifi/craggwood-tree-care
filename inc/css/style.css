@@ -2041,15 +2041,20 @@ ul.icons {
   content: "\f115"; }
 
 a {
-  color: #013568; }
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  color: #288cbd; }
   a:visited {
-    color: #000203; }
+    color: #0d2e3f; }
   a:hover {
     text-decoration: underline;
-    color: #011b35; }
+    color: #164e69; }
   a:focus {
     outline: thin dotted;
-    color: black; }
+    color: #040f15; }
   a:hover, a:active {
     outline: 0; }
 
