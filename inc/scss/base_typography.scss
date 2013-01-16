@@ -173,6 +173,11 @@ samp {
 	font-family: $codefont;
 	@include font-size(14);
 	line-height: $baselineheight;
+	background-color: $darkgrey;
+	color: $white;
+	padding: 0.2em 0.5em;
+	@include rounded;
+	border: 1px solid $lightgrey;
 }
 
 pre {
