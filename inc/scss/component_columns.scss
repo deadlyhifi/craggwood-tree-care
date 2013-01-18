@@ -8,7 +8,7 @@ $grid-gutter: 20px;
 }
 
 
-.grid {
+.columns {
   display: block;
   padding: 0;
   margin: 0 -0.5 * em($grid-gutter);
@@ -21,8 +21,7 @@ $grid-gutter: 20px;
 /* Note - this class uses Compass includes */
 .grid-cell {
   width: 100%;
-//  @include inline-block; // compass
-display: inline-block;
+  @include inline-block;
   @include box-sizing(border-box);
   margin: 0;
   padding: 0 0.5 * em($grid-gutter);
@@ -43,19 +42,19 @@ display: inline-block;
   @media (min-width: fixed($min) + em($grid-gutter)) {
 
     /* create a fixed width centered layout */
-/*
-    .wrapper {
+
+    .content {
       width: fixed($min) - em($grid-gutter);
       margin-left: auto; margin-right: auto;
     }
-*/
+
     /* css gradient overlay to help visualize columns */
     /* Note - this class uses Compass includes */
     body::after {
       content: ''; position: fixed; top: 0; bottom: 0; pointer-events: none; left: 50%;
       width: fixed($min) + em($grid-gutter); margin-left: fixed($min) / -2 - (em($grid-gutter)/2);
-//compass      @include background(linear-gradient(left, transparent $grid-gutter, transparentize(red, .8) $grid-gutter, transparentize(red, .8) $grid-gutter + $grid-column));
-//      @include background-size($grid-gutter + $grid-column);
+      @include background(linear-gradient(left, transparent $grid-gutter, transparentize(red, .8) $grid-gutter, transparentize(red, .8) $grid-gutter + $grid-column));
+      @include background-size($grid-gutter + $grid-column);
     }
 
     /* sass content block variable */
