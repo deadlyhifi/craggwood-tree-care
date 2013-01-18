@@ -2111,7 +2111,6 @@ figure {
     border-bottom-width: 0; }
 
 [role="banner"], .content, article, [role="contentinfo"] {
-  width: 960px;
   margin: auto; }
 
 article {
