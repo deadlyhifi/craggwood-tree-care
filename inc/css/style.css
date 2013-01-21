@@ -280,7 +280,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
 html {
   background: white;
   font-size: 62.5%;
-  -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: #f3f5f6;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
