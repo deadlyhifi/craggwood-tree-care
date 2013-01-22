@@ -9,6 +9,12 @@
 	margin: 20px auto;
 }
 
+.gridbutton {
+	position: fixed;
+	top: $gutterwidth;
+	left: $gutterwidth;
+}
+
 // swatches
 .swatch {
 	margin: 0 0 $baselineheight 0;

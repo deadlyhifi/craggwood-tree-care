@@ -28,6 +28,8 @@
 </head>
 <body class="stylesheet">
 
+	<div class="gridbutton btn">Show Grid</div>
+
 	<header role="banner" class="clearfix">
 		<h1><i class="icon-coffee"></i> startgate styles</h1>
 	</header>
@@ -643,8 +645,8 @@
 
 					<tr>
 						<td>In Button</td>
-						<td><button class="btn">Default<span class="badge success">1</span></button></td>
-						<td><button class="btn">Default<span class="label warning">New</span></button></td>
+						<td><button class="btn"><i class="icon-bolt"></i> <span class="badge success">1</span></button></td>
+						<td><button class="btn"><i class="icon-comment"></i> <span class="label warning">New</span></button></td>
 					</tr>
 
 				</tbody>
@@ -830,5 +832,16 @@
 
 	<script src="inc/js/plugins.js"></script>
 	<script src="inc/js/script.js"></script>
+
+	<script>
+		jQuery(document).ready(function($) {
+
+			$('.gridbutton').click(function() {
+				$('body').toggleClass('showgrid')
+				var txt = $('body').hasClass('showgrid') ? 'Hide Grid' : 'Show Grid';
+				$(this).text(txt);
+			});
+		});
+	</script>
 </body>
 </html>

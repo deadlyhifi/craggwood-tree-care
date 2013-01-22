@@ -3,6 +3,7 @@
 
 // Icon customisation ======================================
 
+.btn [class*=icon] { color: $darkgrey; }
 [class*=icon] { color: $lightgrey; }
 i.icon-facebook-sign { color: $facebookblue; }
 

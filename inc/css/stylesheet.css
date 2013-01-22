@@ -1,108 +1,147 @@
+/* line 206, ../scss/component_mixins.scss */
 .clearfix {
   *zoom: 1; }
+  /* line 198, ../scss/component_mixins.scss */
   .clearfix:before, .clearfix:after {
     display: table;
     content: ""; }
+  /* line 202, ../scss/component_mixins.scss */
   .clearfix:after {
     clear: both; }
 
 /*
  * Items that can be not linked in the final CSS file.
  */
+/* line 7, ../scss/stylesheet.scss */
 .stylesheet {
   max-width: 960px;
   margin: 20px auto; }
 
+/* line 12, ../scss/stylesheet.scss */
+.gridbutton {
+  position: fixed;
+  top: 24px;
+  left: 24px; }
+
+/* line 19, ../scss/stylesheet.scss */
 .swatch {
   margin: 0 0 1.5em 0;
   padding: 0; }
 
+/* line 23, ../scss/stylesheet.scss */
 .swatch-row {
   display: block;
   margin: 0;
   padding: 0;
   width: 200px; }
 
+/* line 29, ../scss/stylesheet.scss */
 .swatch-row-one {
   background-color: black; }
 
+/* line 32, ../scss/stylesheet.scss */
 .swatch-row-two {
   background-color: white; }
 
+/* line 35, ../scss/stylesheet.scss */
 .swatch-row span {
   display: block;
   float: left;
   width: 50px;
   height: 50px; }
 
+/* line 42, ../scss/stylesheet.scss */
 .swatch-base span:nth-child(1) {
   background-color: rgba(45, 53, 62, 0.9); }
 
+/* line 45, ../scss/stylesheet.scss */
 .swatch-base span:nth-child(2) {
   background-color: rgba(45, 53, 62, 0.8); }
 
+/* line 48, ../scss/stylesheet.scss */
 .swatch-base span:nth-child(3) {
   background-color: rgba(45, 53, 62, 0.7); }
 
+/* line 51, ../scss/stylesheet.scss */
 .swatch-base span:nth-child(4) {
   background-color: rgba(45, 53, 62, 0.6); }
 
+/* line 55, ../scss/stylesheet.scss */
 .swatch-alert span:nth-child(1) {
   background-color: rgba(252, 248, 227, 0.9); }
 
+/* line 58, ../scss/stylesheet.scss */
 .swatch-alert span:nth-child(2) {
   background-color: rgba(252, 248, 227, 0.8); }
 
+/* line 61, ../scss/stylesheet.scss */
 .swatch-alert span:nth-child(3) {
   background-color: rgba(252, 248, 227, 0.7); }
 
+/* line 64, ../scss/stylesheet.scss */
 .swatch-alert span:nth-child(4) {
   background-color: rgba(252, 248, 227, 0.6); }
 
+/* line 68, ../scss/stylesheet.scss */
 .swatch-error span:nth-child(1) {
   background-color: rgba(218, 79, 73, 0.9); }
 
+/* line 71, ../scss/stylesheet.scss */
 .swatch-error span:nth-child(2) {
   background-color: rgba(218, 79, 73, 0.8); }
 
+/* line 74, ../scss/stylesheet.scss */
 .swatch-error span:nth-child(3) {
   background-color: rgba(218, 79, 73, 0.7); }
 
+/* line 77, ../scss/stylesheet.scss */
 .swatch-error span:nth-child(4) {
   background-color: rgba(218, 79, 73, 0.6); }
 
+/* line 81, ../scss/stylesheet.scss */
 .swatch-info span:nth-child(1) {
   background-color: rgba(217, 237, 247, 0.9); }
 
+/* line 84, ../scss/stylesheet.scss */
 .swatch-info span:nth-child(2) {
   background-color: rgba(217, 237, 247, 0.8); }
 
+/* line 87, ../scss/stylesheet.scss */
 .swatch-info span:nth-child(3) {
   background-color: rgba(217, 237, 247, 0.7); }
 
+/* line 90, ../scss/stylesheet.scss */
 .swatch-info span:nth-child(4) {
   background-color: rgba(217, 237, 247, 0.6); }
 
+/* line 94, ../scss/stylesheet.scss */
 .swatch-success span:nth-child(1) {
   background-color: rgba(91, 183, 91, 0.9); }
 
+/* line 97, ../scss/stylesheet.scss */
 .swatch-success span:nth-child(2) {
   background-color: rgba(91, 183, 91, 0.8); }
 
+/* line 100, ../scss/stylesheet.scss */
 .swatch-success span:nth-child(3) {
   background-color: rgba(91, 183, 91, 0.7); }
 
+/* line 103, ../scss/stylesheet.scss */
 .swatch-success span:nth-child(4) {
   background-color: rgba(91, 183, 91, 0.6); }
 
+/* line 107, ../scss/stylesheet.scss */
 .swatch-warning span:nth-child(1) {
   background-color: rgba(250, 167, 50, 0.9); }
 
+/* line 110, ../scss/stylesheet.scss */
 .swatch-warning span:nth-child(2) {
   background-color: rgba(250, 167, 50, 0.8); }
 
+/* line 113, ../scss/stylesheet.scss */
 .swatch-warning span:nth-child(3) {
   background-color: rgba(250, 167, 50, 0.7); }
 
+/* line 116, ../scss/stylesheet.scss */
 .swatch-warning span:nth-child(4) {
   background-color: rgba(250, 167, 50, 0.6); }

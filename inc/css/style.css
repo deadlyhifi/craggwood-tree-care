@@ -138,115 +138,185 @@ Tom de Bruin
 /* find width of columns */
 /* create mq to fit columns */
 /* create 5 column fixed layout */
-@media (min-width: 26.25em) {
+@media (min-width: 18.75em) {
   /* create a fixed width centered layout */
   /* line 46, ../scss/component_columns.scss */
-  .content {
-    width: 23.75em;
+  [role="banner"], .content, article, [role="contentinfo"] {
+    width: 16.25em;
     margin-left: auto;
     margin-right: auto; }
 
   /* css gradient overlay to help visualize columns */
   /* Note - this class uses Compass includes */
   /* line 53, ../scss/component_columns.scss */
-  body::after {
+  body.showgrid::after {
     content: '';
     position: fixed;
     top: 0;
     bottom: 0;
     pointer-events: none;
     left: 50%;
-    width: 26.25em;
-    margin-left: -13.125em;
-    background: -webkit-gradient(linear, 0% 50%, 80 50%, color-stop(25%, transparent), color-stop(25%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
-    -webkit-background-size: 80px;
-    -moz-background-size: 80px;
-    -o-background-size: 80px;
-    background-size: 80px; }
+    width: 18.75em;
+    margin-left: -9.375em;
+    background: -webkit-gradient(linear, 0% 50%, 70 50%, color-stop(28.57143%, transparent), color-stop(28.57143%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
+    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    -webkit-background-size: 70px;
+    -moz-background-size: 70px;
+    -o-background-size: 70px;
+    background-size: 70px; }
+
+  /* sass content block variable */ }
+@media (min-width: 27.5em) {
+  /* create a fixed width centered layout */
+  /* line 46, ../scss/component_columns.scss */
+  [role="banner"], .content, article, [role="contentinfo"] {
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto; }
+
+  /* css gradient overlay to help visualize columns */
+  /* Note - this class uses Compass includes */
+  /* line 53, ../scss/component_columns.scss */
+  body.showgrid::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    left: 50%;
+    width: 27.5em;
+    margin-left: -13.75em;
+    background: -webkit-gradient(linear, 0% 50%, 70 50%, color-stop(28.57143%, transparent), color-stop(28.57143%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
+    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    -webkit-background-size: 70px;
+    -moz-background-size: 70px;
+    -o-background-size: 70px;
+    background-size: 70px; }
 
   /* sass content block variable */ }
 /* create 8 column layout with sidebar */
-@media (min-width: 41.25em) {
+@media (min-width: 36.25em) {
   /* create a fixed width centered layout */
   /* line 46, ../scss/component_columns.scss */
-  .content {
-    width: 38.75em;
+  [role="banner"], .content, article, [role="contentinfo"] {
+    width: 33.75em;
     margin-left: auto;
     margin-right: auto; }
 
   /* css gradient overlay to help visualize columns */
   /* Note - this class uses Compass includes */
   /* line 53, ../scss/component_columns.scss */
-  body::after {
+  body.showgrid::after {
     content: '';
     position: fixed;
     top: 0;
     bottom: 0;
     pointer-events: none;
     left: 50%;
-    width: 41.25em;
-    margin-left: -20.625em;
-    background: -webkit-gradient(linear, 0% 50%, 80 50%, color-stop(25%, transparent), color-stop(25%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
-    -webkit-background-size: 80px;
-    -moz-background-size: 80px;
-    -o-background-size: 80px;
-    background-size: 80px; }
+    width: 36.25em;
+    margin-left: -18.125em;
+    background: -webkit-gradient(linear, 0% 50%, 70 50%, color-stop(28.57143%, transparent), color-stop(28.57143%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
+    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    -webkit-background-size: 70px;
+    -moz-background-size: 70px;
+    -o-background-size: 70px;
+    background-size: 70px; }
 
   /* sass content block variable */
-  /* line 71, ../scss/component_columns.scss */
-  .main {
-    width: 25em; }
-
   /* line 72, ../scss/component_columns.scss */
+  .main {
+    width: 21.875em; }
+
+  /* line 73, ../scss/component_columns.scss */
   .sidebar {
-    width: 15em; } }
+    width: 13.125em; } }
 /* create 12 column layout with sidebar */
-@media (min-width: 61.25em) {
+@media (min-width: 45em) {
   /* create a fixed width centered layout */
   /* line 46, ../scss/component_columns.scss */
-  .content {
-    width: 58.75em;
+  [role="banner"], .content, article, [role="contentinfo"] {
+    width: 42.5em;
     margin-left: auto;
     margin-right: auto; }
 
   /* css gradient overlay to help visualize columns */
   /* Note - this class uses Compass includes */
   /* line 53, ../scss/component_columns.scss */
-  body::after {
+  body.showgrid::after {
     content: '';
     position: fixed;
     top: 0;
     bottom: 0;
     pointer-events: none;
     left: 50%;
-    width: 61.25em;
-    margin-left: -30.625em;
-    background: -webkit-gradient(linear, 0% 50%, 80 50%, color-stop(25%, transparent), color-stop(25%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
-    -webkit-background-size: 80px;
-    -moz-background-size: 80px;
-    -o-background-size: 80px;
-    background-size: 80px; }
+    width: 45em;
+    margin-left: -22.5em;
+    background: -webkit-gradient(linear, 0% 50%, 70 50%, color-stop(28.57143%, transparent), color-stop(28.57143%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
+    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    -webkit-background-size: 70px;
+    -moz-background-size: 70px;
+    -o-background-size: 70px;
+    background-size: 70px; }
 
   /* sass content block variable */
-  /* line 77, ../scss/component_columns.scss */
-  .main {
-    width: 40em; }
-
   /* line 78, ../scss/component_columns.scss */
+  .main {
+    width: 30.625em; }
+
+  /* line 79, ../scss/component_columns.scss */
   .sidebar {
-    width: 20em; } }
+    width: 13.125em; } }
+/* create 12 column layout with sidebar */
+@media (min-width: 62.5em) {
+  /* create a fixed width centered layout */
+  /* line 46, ../scss/component_columns.scss */
+  [role="banner"], .content, article, [role="contentinfo"] {
+    width: 60em;
+    margin-left: auto;
+    margin-right: auto; }
+
+  /* css gradient overlay to help visualize columns */
+  /* Note - this class uses Compass includes */
+  /* line 53, ../scss/component_columns.scss */
+  body.showgrid::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    left: 50%;
+    width: 62.5em;
+    margin-left: -31.25em;
+    background: -webkit-gradient(linear, 0% 50%, 70 50%, color-stop(28.57143%, transparent), color-stop(28.57143%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
+    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
+    -webkit-background-size: 70px;
+    -moz-background-size: 70px;
+    -o-background-size: 70px;
+    background-size: 70px; }
+
+  /* sass content block variable */
+  /* line 83, ../scss/component_columns.scss */
+  .main {
+    width: 39.375em; }
+
+  /* line 84, ../scss/component_columns.scss */
+  .sidebar {
+    width: 21.875em; } }
 /* line 3, ../scss/base_reset.scss */
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
   margin: 0;
@@ -2733,14 +2803,18 @@ article {
   border-width: 1px 0 0; }
 
 /* line 6, ../scss/smaccs_module.scss */
+.btn [class*=icon] {
+  color: #404040; }
+
+/* line 7, ../scss/smaccs_module.scss */
 [class*=icon] {
   color: #bfbfbf; }
 
-/* line 7, ../scss/smaccs_module.scss */
+/* line 8, ../scss/smaccs_module.scss */
 i.icon-facebook-sign {
   color: #34609e; }
 
-/* line 11, ../scss/smaccs_module.scss */
+/* line 12, ../scss/smaccs_module.scss */
 .well {
   min-height: 21px;
   padding: 11px;
@@ -2753,15 +2827,15 @@ i.icon-facebook-sign {
   -webkit-box-shadow: inset 0 1px 10px #d6dbe1;
   -moz-box-shadow: inset 0 1px 10px #d6dbe1;
   box-shadow: inset 0 1px 10px #d6dbe1; }
-  /* line 20, ../scss/smaccs_module.scss */
+  /* line 21, ../scss/smaccs_module.scss */
   .well p:last-child {
     margin-bottom: 0; }
 
-/* line 25, ../scss/smaccs_module.scss */
+/* line 26, ../scss/smaccs_module.scss */
 .well-large {
   padding: 22px; }
 
-/* line 29, ../scss/smaccs_module.scss */
+/* line 30, ../scss/smaccs_module.scss */
 .well-small {
   padding: 6px;
   -webkit-border-radius: 2px;
