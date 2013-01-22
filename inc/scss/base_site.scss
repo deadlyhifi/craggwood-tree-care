@@ -16,14 +16,14 @@
 html {
 	background: $bodycolor;
 	font-size: 62.5%;
-//	-webkit-overflow-scrolling: touch;
+//	-webkit-overflow-scrolling: touch; // disables scroll to top on ios devices.
 	-webkit-tap-highlight-color: lighten($basecolor, 75%);
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
 
 body {
-	@include clearfix;
+//	@include clearfix;
 	margin: 0;
 	padding: 0;
 	width: 100%;

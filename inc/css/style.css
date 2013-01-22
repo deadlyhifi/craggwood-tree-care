@@ -286,7 +286,6 @@ html {
 
 /* line 25, ../scss/base_site.scss */
 body {
-  *zoom: 1;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -296,13 +295,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.5em;
   color: black; }
-  /* line 198, ../scss/component_mixins.scss */
-  body:before, body:after {
-    display: table;
-    content: ""; }
-  /* line 202, ../scss/component_mixins.scss */
-  body:after {
-    clear: both; }
 
 /* line 9, ../scss/base_typography.scss */
 h1,
