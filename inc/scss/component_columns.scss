@@ -1,5 +1,5 @@
 /* grid column size variables */
-$grid-column: 60px;
+$grid-column: 80px;
 $grid-gutter: 20px;
 
 /* convert pixels to ems - defaults to 16px base */
@@ -65,9 +65,15 @@ $grid-gutter: 20px;
 
 /* create 5 column fixed layout */
 @include breakpoint(3) {}
-@include breakpoint(5) {}
+@include breakpoint(4) {}
 
 /* create 8 column layout with sidebar */
+@include breakpoint(7) {
+  .main { width: fixed(4); }
+  .sidebar { width: fixed(3); }
+}
+
+/* create 12 column layout with sidebar */
 @include breakpoint(8) {
   .main { width: fixed(5); }
   .sidebar { width: fixed(3); }
@@ -75,18 +81,12 @@ $grid-gutter: 20px;
 
 /* create 12 column layout with sidebar */
 @include breakpoint(10) {
-  .main { width: fixed(7); }
-  .sidebar { width: fixed(3); }
-}
-
-/* create 12 column layout with sidebar */
-@include breakpoint(12) {
-  .main { width: fixed(8); }
+  .main { width: fixed(6); }
   .sidebar { width: fixed(4); }
 }
 
 /* create 12 column layout with sidebar */
-@include breakpoint(16) {
-  .main { width: fixed(10); }
+@include breakpoint(14) {
+  .main { width: fixed(8); }
   .sidebar { width: fixed(6); }
 }
