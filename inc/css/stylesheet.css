@@ -12,11 +12,6 @@
 /*
  * Items that can be not linked in the final CSS file.
  */
-/* line 7, ../scss/stylesheet.scss */
-.stylesheet {
-  max-width: 960px;
-  margin: 20px auto; }
-
 /* line 12, ../scss/stylesheet.scss */
 .gridbutton {
   position: fixed;

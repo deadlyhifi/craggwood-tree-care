@@ -15,92 +15,6 @@ Tom de Bruin
   .clearfix:after {
     clear: both; }
 
-/* 320 and Up */
-/* Modules upstart */
-/* Version: 1.0 */
-/* Author: Andy Clarke */
-/* URL: http://stuffandnonsense.co.uk/projects/320andup */
-/* line 12, ../scss/component_grids.scss */
-.grid {
-  margin-bottom: 1.5em;
-  border-bottom: 1px dashed #c7ced6; }
-
-/* line 17, ../scss/component_grids.scss */
-.grid:last-child {
-  margin-bottom: 0;
-  border-bottom-width: 0; }
-
-@media only screen and (min-width: 480px) {
-  /* Styles */ }
-@media only screen and (min-width: 600px) {
-  /* Styles */ }
-@media only screen and (min-width: 768px) {
-  /* line 36, ../scss/component_grids.scss */
-  .grids-two .grid {
-    width: 43.03%;
-    margin-bottom: 0;
-    border-bottom-width: 0; }
-
-  /* line 42, ../scss/component_grids.scss */
-  .grids-two .grid-1 {
-    float: left; }
-
-  /* line 46, ../scss/component_grids.scss */
-  .grids-two .grid-2 {
-    float: right; }
-
-  /* line 51, ../scss/component_grids.scss */
-  .grids-three .grid-a {
-    float: left;
-    width: 31.64%;
-    margin-right: 2.53%; }
-
-  /* line 58, ../scss/component_grids.scss */
-  .grids-four .grid-a {
-    float: left;
-    width: 31.64%;
-    margin-right: 2.53%; } }
-@media only screen and (min-width: 992px) {
-  /* line 70, ../scss/component_grids.scss */
-  .grids-three .grid {
-    float: left;
-    width: 31.64%;
-    margin: 0 2.53% 0 0;
-    border-bottom-width: 0; }
-
-  /* line 77, ../scss/component_grids.scss */
-  .grids-three .grid-3 {
-    float: right;
-    margin-right: 0; }
-
-  /* line 82, ../scss/component_grids.scss */
-  .grids-three .grid .grid-a {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 0.75em; }
-
-  /* line 90, ../scss/component_grids.scss */
-  .grids-four .grid {
-    float: left;
-    width: 20.25%;
-    margin: 0 6.32% 0 0;
-    border-bottom-width: 0; }
-
-  /* line 97, ../scss/component_grids.scss */
-  .grids-four .grid-4 {
-    float: right;
-    margin-right: 0; }
-
-  /* line 102, ../scss/component_grids.scss */
-  .grids-four .grid .grid-a {
-    float: none;
-    width: 100%;
-    margin-right: 0; } }
-@media only screen and (min-width: 1382px) {
-  /* Styles */ }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* Styles */ }
 /* grid column size variables */
 /* convert pixels to ems - defaults to 16px base */
 /* line 11, ../scss/component_columns.scss */
@@ -138,11 +52,11 @@ Tom de Bruin
 /* find width of columns */
 /* create mq to fit columns */
 /* create 5 column fixed layout */
-@media (min-width: 18.75em) {
+@media (min-width: 16.25em) {
   /* create a fixed width centered layout */
   /* line 46, ../scss/component_columns.scss */
   [role="banner"], .content, article, [role="contentinfo"] {
-    width: 16.25em;
+    width: 13.75em;
     margin-left: auto;
     margin-right: auto; }
 
@@ -156,24 +70,24 @@ Tom de Bruin
     bottom: 0;
     pointer-events: none;
     left: 50%;
-    width: 18.75em;
-    margin-left: -9.375em;
-    background: -webkit-gradient(linear, 0% 50%, 70 50%, color-stop(28.57143%, transparent), color-stop(28.57143%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    -webkit-background-size: 70px;
-    -moz-background-size: 70px;
-    -o-background-size: 70px;
-    background-size: 70px; }
+    width: 16.25em;
+    margin-left: -8.125em;
+    background: -webkit-gradient(linear, 0% 50%, 80 50%, color-stop(25%, transparent), color-stop(25%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
+    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    -webkit-background-size: 80px;
+    -moz-background-size: 80px;
+    -o-background-size: 80px;
+    background-size: 80px; }
 
   /* sass content block variable */ }
-@media (min-width: 27.5em) {
+@media (min-width: 26.25em) {
   /* create a fixed width centered layout */
   /* line 46, ../scss/component_columns.scss */
   [role="banner"], .content, article, [role="contentinfo"] {
-    width: 25em;
+    width: 23.75em;
     margin-left: auto;
     margin-right: auto; }
 
@@ -187,25 +101,25 @@ Tom de Bruin
     bottom: 0;
     pointer-events: none;
     left: 50%;
-    width: 27.5em;
-    margin-left: -13.75em;
-    background: -webkit-gradient(linear, 0% 50%, 70 50%, color-stop(28.57143%, transparent), color-stop(28.57143%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    -webkit-background-size: 70px;
-    -moz-background-size: 70px;
-    -o-background-size: 70px;
-    background-size: 70px; }
+    width: 26.25em;
+    margin-left: -13.125em;
+    background: -webkit-gradient(linear, 0% 50%, 80 50%, color-stop(25%, transparent), color-stop(25%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
+    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    -webkit-background-size: 80px;
+    -moz-background-size: 80px;
+    -o-background-size: 80px;
+    background-size: 80px; }
 
   /* sass content block variable */ }
 /* create 8 column layout with sidebar */
-@media (min-width: 36.25em) {
+@media (min-width: 41.25em) {
   /* create a fixed width centered layout */
   /* line 46, ../scss/component_columns.scss */
   [role="banner"], .content, article, [role="contentinfo"] {
-    width: 33.75em;
+    width: 38.75em;
     margin-left: auto;
     margin-right: auto; }
 
@@ -219,32 +133,32 @@ Tom de Bruin
     bottom: 0;
     pointer-events: none;
     left: 50%;
-    width: 36.25em;
-    margin-left: -18.125em;
-    background: -webkit-gradient(linear, 0% 50%, 70 50%, color-stop(28.57143%, transparent), color-stop(28.57143%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    -webkit-background-size: 70px;
-    -moz-background-size: 70px;
-    -o-background-size: 70px;
-    background-size: 70px; }
+    width: 41.25em;
+    margin-left: -20.625em;
+    background: -webkit-gradient(linear, 0% 50%, 80 50%, color-stop(25%, transparent), color-stop(25%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
+    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    -webkit-background-size: 80px;
+    -moz-background-size: 80px;
+    -o-background-size: 80px;
+    background-size: 80px; }
 
   /* sass content block variable */
   /* line 72, ../scss/component_columns.scss */
   .main {
-    width: 21.875em; }
+    width: 25em; }
 
   /* line 73, ../scss/component_columns.scss */
   .sidebar {
-    width: 13.125em; } }
+    width: 15em; } }
 /* create 12 column layout with sidebar */
-@media (min-width: 45em) {
+@media (min-width: 51.25em) {
   /* create a fixed width centered layout */
   /* line 46, ../scss/component_columns.scss */
   [role="banner"], .content, article, [role="contentinfo"] {
-    width: 42.5em;
+    width: 48.75em;
     margin-left: auto;
     margin-right: auto; }
 
@@ -258,32 +172,32 @@ Tom de Bruin
     bottom: 0;
     pointer-events: none;
     left: 50%;
-    width: 45em;
-    margin-left: -22.5em;
-    background: -webkit-gradient(linear, 0% 50%, 70 50%, color-stop(28.57143%, transparent), color-stop(28.57143%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    -webkit-background-size: 70px;
-    -moz-background-size: 70px;
-    -o-background-size: 70px;
-    background-size: 70px; }
+    width: 51.25em;
+    margin-left: -25.625em;
+    background: -webkit-gradient(linear, 0% 50%, 80 50%, color-stop(25%, transparent), color-stop(25%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
+    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    -webkit-background-size: 80px;
+    -moz-background-size: 80px;
+    -o-background-size: 80px;
+    background-size: 80px; }
 
   /* sass content block variable */
   /* line 78, ../scss/component_columns.scss */
   .main {
-    width: 30.625em; }
+    width: 35em; }
 
   /* line 79, ../scss/component_columns.scss */
   .sidebar {
-    width: 13.125em; } }
+    width: 15em; } }
 /* create 12 column layout with sidebar */
-@media (min-width: 62.5em) {
+@media (min-width: 61.25em) {
   /* create a fixed width centered layout */
   /* line 46, ../scss/component_columns.scss */
   [role="banner"], .content, article, [role="contentinfo"] {
-    width: 60em;
+    width: 58.75em;
     margin-left: auto;
     margin-right: auto; }
 
@@ -297,26 +211,65 @@ Tom de Bruin
     bottom: 0;
     pointer-events: none;
     left: 50%;
-    width: 62.5em;
-    margin-left: -31.25em;
-    background: -webkit-gradient(linear, 0% 50%, 70 50%, color-stop(28.57143%, transparent), color-stop(28.57143%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 70px);
-    -webkit-background-size: 70px;
-    -moz-background-size: 70px;
-    -o-background-size: 70px;
-    background-size: 70px; }
+    width: 61.25em;
+    margin-left: -30.625em;
+    background: -webkit-gradient(linear, 0% 50%, 80 50%, color-stop(25%, transparent), color-stop(25%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
+    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    -webkit-background-size: 80px;
+    -moz-background-size: 80px;
+    -o-background-size: 80px;
+    background-size: 80px; }
 
   /* sass content block variable */
-  /* line 83, ../scss/component_columns.scss */
-  .main {
-    width: 39.375em; }
-
   /* line 84, ../scss/component_columns.scss */
+  .main {
+    width: 40em; }
+
+  /* line 85, ../scss/component_columns.scss */
   .sidebar {
-    width: 21.875em; } }
+    width: 20em; } }
+/* create 12 column layout with sidebar */
+@media (min-width: 81.25em) {
+  /* create a fixed width centered layout */
+  /* line 46, ../scss/component_columns.scss */
+  [role="banner"], .content, article, [role="contentinfo"] {
+    width: 78.75em;
+    margin-left: auto;
+    margin-right: auto; }
+
+  /* css gradient overlay to help visualize columns */
+  /* Note - this class uses Compass includes */
+  /* line 53, ../scss/component_columns.scss */
+  body.showgrid::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    left: 50%;
+    width: 81.25em;
+    margin-left: -40.625em;
+    background: -webkit-gradient(linear, 0% 50%, 80 50%, color-stop(25%, transparent), color-stop(25%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
+    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 80px);
+    -webkit-background-size: 80px;
+    -moz-background-size: 80px;
+    -o-background-size: 80px;
+    background-size: 80px; }
+
+  /* sass content block variable */
+  /* line 90, ../scss/component_columns.scss */
+  .main {
+    width: 50em; }
+
+  /* line 91, ../scss/component_columns.scss */
+  .sidebar {
+    width: 30em; } }
 /* line 3, ../scss/base_reset.scss */
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
   margin: 0;
@@ -2900,10 +2853,6 @@ i.icon-facebook-sign {
   /* line 52, ../scss/mq_print.scss */
   tr {
     page-break-inside: avoid; } }
-@media only screen and (min-width: 1382px) {
-  /* line 3, ../scss/mq_1382.scss */
-  body {
-    max-width: 1440px; } }
 /* Modernizr =================================================== */
 /* audio */
 /* applicationcache */
