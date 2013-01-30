@@ -1,0 +1,111 @@
+//  Taiga Grid 1.0
+//  Copyright 2012 by Studio Wolf
+//  Licensed under the MIT license
+//  http://taigaboilerplate.com/
+
+// =========== Settings/Variables
+
+
+// Choose the amount of columns, 48 is standard
+$grid-columns: 48;
+
+// Choose your maximum website width in pixels
+$max-width: 1280px; //auto;
+
+// Set up mobile-first or desktop-first
+$media-type: $max-width;
+$media-desktop: 960px;
+$media-tablet: 767px;
+$media-phone: 520px;
+
+// Use '@include grid(12, 2)' to make a column.
+// The first unit (12) is the column width.
+// The second unit (2) is the margin on both sides.
+// The margin will be auto substracted from the column width.
+// So don't recalculate the column width if you change your margin.
+
+// To set different margins on both sides use '@include grid(12, 2, 3)'.
+// You can also use negative margins.
+
+//$max-width: ($max-width / $font-size) + em;
+$grid-column: 100% / $grid-columns;
+
+@mixin col($n: 1) { float: left; width: ($n * $grid-column); }
+@mixin prepend($n: 1) { margin-left: $grid-column * $n }
+@mixin append($n: 1) { margin-right: $grid-column * $n }
+
+
+@mixin grid($cols: 1, $grid-margin-left: 0, $grid-margin-right: $grid-margin-left) {
+    @include col($cols - ($grid-margin-left + $grid-margin-right));
+    @include prepend($grid-margin-left);
+    @include append($grid-margin-right);
+}
+
+@mixin gridnest($cols: 1, $grid-margin: 0) {
+    @include col(($cols - $grid-margin) + ($grid-margin / $cols));
+    @include append($grid-margin);
+ //   &:nth-child($col*n+$col) {margin-right: 0; } // need to get last one to drop the margin.
+   &.last { margin-right: 0; }
+}
+@mixin gridlast {
+	margin-right: 0;
+}
+
+/* Use this mixin to reset your grid by example for your mobile grid */
+@mixin grid-reset {
+    clear: both;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+}
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+// =========== Layout
+
+.l-full {
+    @include grid(48, 1);
+    @media only screen and ($media-type: $media-phone) { @include grid-reset; }
+}
+.l-two-third {
+    @include grid(32, 1);
+    @media only screen and ($media-type: $media-phone) { @include grid-reset; }
+}
+.l-half {
+    @include grid(24, 1);
+    @media only screen and ($media-type: $media-phone) { @include grid-reset; }
+}
+.l-one-third {
+    @include grid(16, 1);
+    @media only screen and ($media-type: $media-phone) { @include grid-reset; }
+}
+
+
+.l-one-third-nested {
+    @include gridnest(16, 1);
+    @media only screen and ($media-type: $media-phone) { @include grid-reset; }
+}
+
+
+// 2/3, 1/3
+.main {
+    @include gridnest(32, 1);
+    @media only screen and ($media-type: $media-tablet) { @include grid-reset; }
+}
+.sidebar {
+    @include gridnest(16, 1);
+    @include gridlast;
+    @media only screen and ($media-type: $media-tablet) { @include grid-reset; }
+}
+
+
+
+.l-first { clear: left; }

@@ -15,261 +15,129 @@ Tom de Bruin
   .clearfix:after {
     clear: both; }
 
-/* grid column size variables */
-/* convert pixels to ems - defaults to 16px base */
-/* line 11, ../scss/component_columns.scss */
-.columns {
-  display: block;
-  padding: 0;
-  margin: 0 -0.625em;
-  text-align: left;
-  letter-spacing: -0.31em;
-  word-spacing: -0.43em;
-  text-rendering: optimizespeed; }
-
-/* Note - this class uses Compass includes */
-/* line 22, ../scss/component_columns.scss */
-.grid-cell {
-  width: 100%;
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
+/* Use this mixin to reset your grid by example for your mobile grid */
+/* line 65, ../scss/component_taigagrid.scss */
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0 0.625em;
-  vertical-align: top;
-  text-align: left;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-rendering: auto; }
+  box-sizing: border-box; }
 
-/* find width of columns */
-/* create mq to fit columns */
-/* create 5 column fixed layout */
-@media (min-width: 20em) {
-  /* create a fixed width centered layout */
-  /* line 46, ../scss/component_columns.scss */
-  [role="banner"], .content, article, [role="contentinfo"] {
-    width: 17.5em;
-    margin-left: auto;
-    margin-right: auto; }
+/* line 74, ../scss/component_taigagrid.scss */
+.l-full {
+  float: left;
+  width: 95.83333%;
+  margin-left: 2.08333%;
+  margin-right: 2.08333%; }
+  @media only screen and (1280px: 520px) {
+    /* line 74, ../scss/component_taigagrid.scss */
+    .l-full {
+      clear: both;
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
+      width: auto; } }
 
-  /* css gradient overlay to help visualize columns */
-  /* Note - this class uses Compass includes */
-  /* line 53, ../scss/component_columns.scss */
-  body.showgrid::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    pointer-events: none;
-    left: 50%;
-    width: 20em;
-    margin-left: -10em;
-    background: -webkit-gradient(linear, 0% 50%, 100 50%, color-stop(20%, transparent), color-stop(20%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    -webkit-background-size: 100px;
-    -moz-background-size: 100px;
-    -o-background-size: 100px;
-    background-size: 100px; }
+/* line 78, ../scss/component_taigagrid.scss */
+.l-two-third {
+  float: left;
+  width: 62.5%;
+  margin-left: 2.08333%;
+  margin-right: 2.08333%; }
+  @media only screen and (1280px: 520px) {
+    /* line 78, ../scss/component_taigagrid.scss */
+    .l-two-third {
+      clear: both;
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
+      width: auto; } }
 
-  /* sass content block variable */ }
-@media (min-width: 26.25em) {
-  /* create a fixed width centered layout */
-  /* line 46, ../scss/component_columns.scss */
-  [role="banner"], .content, article, [role="contentinfo"] {
-    width: 23.75em;
-    margin-left: auto;
-    margin-right: auto; }
+/* line 82, ../scss/component_taigagrid.scss */
+.l-half {
+  float: left;
+  width: 45.83333%;
+  margin-left: 2.08333%;
+  margin-right: 2.08333%; }
+  @media only screen and (1280px: 520px) {
+    /* line 82, ../scss/component_taigagrid.scss */
+    .l-half {
+      clear: both;
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
+      width: auto; } }
 
-  /* css gradient overlay to help visualize columns */
-  /* Note - this class uses Compass includes */
-  /* line 53, ../scss/component_columns.scss */
-  body.showgrid::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    pointer-events: none;
-    left: 50%;
-    width: 26.25em;
-    margin-left: -13.125em;
-    background: -webkit-gradient(linear, 0% 50%, 100 50%, color-stop(20%, transparent), color-stop(20%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    -webkit-background-size: 100px;
-    -moz-background-size: 100px;
-    -o-background-size: 100px;
-    background-size: 100px; }
+/* line 86, ../scss/component_taigagrid.scss */
+.l-one-third {
+  float: left;
+  width: 29.16667%;
+  margin-left: 2.08333%;
+  margin-right: 2.08333%; }
+  @media only screen and (1280px: 520px) {
+    /* line 86, ../scss/component_taigagrid.scss */
+    .l-one-third {
+      clear: both;
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
+      width: auto; } }
 
-  /* sass content block variable */ }
-/* create 8 column layout with sidebar */
-@media (min-width: 45em) {
-  /* create a fixed width centered layout */
-  /* line 46, ../scss/component_columns.scss */
-  [role="banner"], .content, article, [role="contentinfo"] {
-    width: 42.5em;
-    margin-left: auto;
-    margin-right: auto; }
+/* line 92, ../scss/component_taigagrid.scss */
+.l-one-third-nested {
+  float: left;
+  width: 31.38021%;
+  margin-right: 2.08333%; }
+  /* line 48, ../scss/component_taigagrid.scss */
+  .l-one-third-nested.last {
+    margin-right: 0; }
+  @media only screen and (1280px: 520px) {
+    /* line 92, ../scss/component_taigagrid.scss */
+    .l-one-third-nested {
+      clear: both;
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
+      width: auto; } }
 
-  /* css gradient overlay to help visualize columns */
-  /* Note - this class uses Compass includes */
-  /* line 53, ../scss/component_columns.scss */
-  body.showgrid::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    pointer-events: none;
-    left: 50%;
-    width: 45em;
-    margin-left: -22.5em;
-    background: -webkit-gradient(linear, 0% 50%, 100 50%, color-stop(20%, transparent), color-stop(20%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    -webkit-background-size: 100px;
-    -moz-background-size: 100px;
-    -o-background-size: 100px;
-    background-size: 100px; }
+/* line 99, ../scss/component_taigagrid.scss */
+.main {
+  float: left;
+  width: 64.64844%;
+  margin-right: 2.08333%; }
+  /* line 48, ../scss/component_taigagrid.scss */
+  .main.last {
+    margin-right: 0; }
+  @media only screen and (1280px: 767px) {
+    /* line 99, ../scss/component_taigagrid.scss */
+    .main {
+      clear: both;
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
+      width: auto; } }
 
-  /* sass content block variable */
-  /* line 72, ../scss/component_columns.scss */
-  .main {
-    width: 25em; }
+/* line 103, ../scss/component_taigagrid.scss */
+.sidebar {
+  float: left;
+  width: 31.38021%;
+  margin-right: 2.08333%;
+  margin-right: 0; }
+  /* line 48, ../scss/component_taigagrid.scss */
+  .sidebar.last {
+    margin-right: 0; }
+  @media only screen and (1280px: 767px) {
+    /* line 103, ../scss/component_taigagrid.scss */
+    .sidebar {
+      clear: both;
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
+      width: auto; } }
 
-  /* line 73, ../scss/component_columns.scss */
-  .sidebar {
-    width: 18.75em; } }
-/* create 12 column layout with sidebar */
-@media (min-width: 51.25em) {
-  /* create a fixed width centered layout */
-  /* line 46, ../scss/component_columns.scss */
-  [role="banner"], .content, article, [role="contentinfo"] {
-    width: 48.75em;
-    margin-left: auto;
-    margin-right: auto; }
+/* line 111, ../scss/component_taigagrid.scss */
+.l-first {
+  clear: left; }
 
-  /* css gradient overlay to help visualize columns */
-  /* Note - this class uses Compass includes */
-  /* line 53, ../scss/component_columns.scss */
-  body.showgrid::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    pointer-events: none;
-    left: 50%;
-    width: 51.25em;
-    margin-left: -25.625em;
-    background: -webkit-gradient(linear, 0% 50%, 100 50%, color-stop(20%, transparent), color-stop(20%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    -webkit-background-size: 100px;
-    -moz-background-size: 100px;
-    -o-background-size: 100px;
-    background-size: 100px; }
-
-  /* sass content block variable */
-  /* line 78, ../scss/component_columns.scss */
-  .main {
-    width: 31.25em; }
-
-  /* line 79, ../scss/component_columns.scss */
-  .sidebar {
-    width: 18.75em; } }
-/* create 12 column layout with sidebar */
-@media (min-width: 63.75em) {
-  /* create a fixed width centered layout */
-  /* line 46, ../scss/component_columns.scss */
-  [role="banner"], .content, article, [role="contentinfo"] {
-    width: 61.25em;
-    margin-left: auto;
-    margin-right: auto; }
-
-  /* css gradient overlay to help visualize columns */
-  /* Note - this class uses Compass includes */
-  /* line 53, ../scss/component_columns.scss */
-  body.showgrid::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    pointer-events: none;
-    left: 50%;
-    width: 63.75em;
-    margin-left: -31.875em;
-    background: -webkit-gradient(linear, 0% 50%, 100 50%, color-stop(20%, transparent), color-stop(20%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    -webkit-background-size: 100px;
-    -moz-background-size: 100px;
-    -o-background-size: 100px;
-    background-size: 100px; }
-
-  /* sass content block variable */
-  /* line 84, ../scss/component_columns.scss */
-  .main {
-    width: 37.5em; }
-
-  /* line 85, ../scss/component_columns.scss */
-  .sidebar {
-    width: 25em; } }
-/* create 12 column layout with sidebar */
-@media (min-width: 88.75em) {
-  /* create a fixed width centered layout */
-  /* line 46, ../scss/component_columns.scss */
-  [role="banner"], .content, article, [role="contentinfo"] {
-    width: 86.25em;
-    margin-left: auto;
-    margin-right: auto; }
-
-  /* css gradient overlay to help visualize columns */
-  /* Note - this class uses Compass includes */
-  /* line 53, ../scss/component_columns.scss */
-  body.showgrid::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    pointer-events: none;
-    left: 50%;
-    width: 88.75em;
-    margin-left: -44.375em;
-    background: -webkit-gradient(linear, 0% 50%, 100 50%, color-stop(20%, transparent), color-stop(20%, rgba(255, 0, 0, 0.2)), color-stop(100%, rgba(255, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: -moz-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: -o-linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    background: linear-gradient(left, transparent 20px, rgba(255, 0, 0, 0.2) 20px, rgba(255, 0, 0, 0.2) 100px);
-    -webkit-background-size: 100px;
-    -moz-background-size: 100px;
-    -o-background-size: 100px;
-    background-size: 100px; }
-
-  /* sass content block variable */
-  /* line 90, ../scss/component_columns.scss */
-  .main {
-    width: 50em; }
-
-  /* line 91, ../scss/component_columns.scss */
-  .sidebar {
-    width: 37.5em; } }
 /* line 3, ../scss/base_reset.scss */
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
   margin: 0;
@@ -2750,7 +2618,36 @@ figure {
     padding-bottom: 0;
     border-bottom-width: 0; }
 
-/* line 7, ../scss/smaccs_layout.scss */
+/* line 4, ../scss/smaccs_layout.scss */
+[role="banner"], [role="contentinfo"] {
+  background-color: #e6e6e6; }
+
+/* line 8, ../scss/smaccs_layout.scss */
+section {
+  *zoom: 1; }
+  /* line 198, ../scss/component_mixins.scss */
+  section:before, section:after {
+    display: table;
+    content: ""; }
+  /* line 202, ../scss/component_mixins.scss */
+  section:after {
+    clear: both; }
+
+/* line 10, ../scss/smaccs_layout.scss */
+.inner, .content {
+  *zoom: 1;
+  max-width: 1280px;
+  margin: auto;
+  padding: .5em; }
+  /* line 198, ../scss/component_mixins.scss */
+  .inner:before, .inner:after, .content:before, .content:after {
+    display: table;
+    content: ""; }
+  /* line 202, ../scss/component_mixins.scss */
+  .inner:after, .content:after {
+    clear: both; }
+
+/* line 17, ../scss/smaccs_layout.scss */
 article {
   border: solid #cccccc;
   border-width: 1px 0 0; }

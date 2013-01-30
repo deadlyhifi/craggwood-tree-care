@@ -1,5 +1,5 @@
 /* grid column size variables */
-$grid-column: 80px;
+$grid-column: 40px;
 $grid-gutter: 20px;
 
 /* convert pixels to ems - defaults to 16px base */
@@ -64,29 +64,29 @@ $grid-gutter: 20px;
 }
 
 /* create 5 column fixed layout */
-@include breakpoint(3) {}
-@include breakpoint(4) {}
+@include breakpoint(6) {}
+@include breakpoint(8) {}
 
 /* create 8 column layout with sidebar */
-@include breakpoint(7) {
-  .main { width: fixed(4); }
-  .sidebar { width: fixed(3); }
-}
-
-/* create 12 column layout with sidebar */
-@include breakpoint(8) {
-  .main { width: fixed(5); }
-  .sidebar { width: fixed(3); }
-}
-
-/* create 12 column layout with sidebar */
-@include breakpoint(10) {
-  .main { width: fixed(6); }
-  .sidebar { width: fixed(4); }
-}
-
-/* create 12 column layout with sidebar */
 @include breakpoint(14) {
   .main { width: fixed(8); }
   .sidebar { width: fixed(6); }
+}
+
+/* create 12 column layout with sidebar */
+@include breakpoint(16) {
+  .main { width: fixed(10); }
+  .sidebar { width: fixed(6); }
+}
+
+/* create 12 column layout with sidebar */
+@include breakpoint(20) {
+  .main { width: fixed(12); }
+  .sidebar { width: fixed(8); }
+}
+
+/* create 12 column layout with sidebar */
+@include breakpoint(28) {
+  .main { width: fixed(18); }
+  .sidebar { width: fixed(10); }
 }

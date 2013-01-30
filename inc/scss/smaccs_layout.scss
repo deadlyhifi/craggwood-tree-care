@@ -1,7 +1,17 @@
 // Layout Rules
 // http://smacss.com/book/type-layout
 
-[role="banner"], .content, article, [role="contentinfo"] {
+[role="banner"], [role="contentinfo"] {
+	background-color: $lightergrey;
+}
+
+section { @include clearfix; }
+
+.inner, .content {
+    @include clearfix;
+    max-width: $max-width;
+    margin: auto;
+    padding: .5em;
 }
 
 article {
