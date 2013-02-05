@@ -1,0 +1,230 @@
+<!doctype html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>startgate</title>
+
+	<meta name="description" content="">
+	<meta name="author" content="Tom de Bruin">
+
+	<meta name="viewport" content="width=device-width">
+
+	<!-- For all browsers -->
+	<link rel="stylesheet" href="../inc/css/style.css">
+	<link rel="stylesheet" href="../inc/css/styleguide.css">
+
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="inc/js/selectivizr-min.js"></script>
+	<![endif]-->
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<meta http-equiv="cleartype" content="on">
+</head>
+<body class="stylesheet">
+
+	<header role="banner" class="clearfix">
+	<div class="inner">
+		<h1><i class="icon-coffee"></i> startgate styleguide</h1>
+	</div>
+</header>
+
+<nav>
+	<div class="inner">
+	<ul>
+		<li><a class="btn" href="/styleguide/">Index</a></li>
+		<li><a class="btn" href="texture.html">Texture</a></li>
+		<li><a class="btn" href="tables.html">Tables</a></li>
+		<li><a class="btn" href="typography.html">Typography</a></li>
+		<li><a class="btn" href="forms.html">Forms</a></li>
+	</ul>
+	</div>
+</nav>
+
+	<div class="content clearfix">
+
+			<h1>Forms</h1>
+
+			<p>For more form styles: <a href="http://twitter.github.com/bootstrap/base-css.html#forms">Bootstrap forms</a>,
+			<a href="https://github.com/twitter/bootstrap/blob/master/less/forms.less">Bootstrap forms LESS on Github</a></p>
+
+			<h2>Standard form</h2>
+
+			<form class="well">
+				<span class="help-block">Example block-level help text here.</span>
+				<p><label>Label</label>
+				<input type="text" placeholder="Placeholder">
+				<span class="help-inline">Associated help text!</span></p>
+				<p><label class="checkbox"><input type="checkbox"> Checkbox option</label></p>
+				<p><button class="btn">Button</button></p>
+			</form>
+
+			<h2>Search form</h2>
+
+			<form class="well">
+				<p><label>Label</label>
+				<input type="search" class="search-query"></p>
+				<p><button class="btn">Button</button></p>
+			</form>
+
+			<h3 class="h4">Inline form</h3>
+
+			<form class="well form-inline">
+				<input type="text" class="input-small">
+				<input type="password" class="input-small">
+				<label class="checkbox"> <input type="checkbox">Checkbox option</label>
+				<button class="btn">Button</button>
+			</form>
+
+			<h2>Form elements</h2>
+
+			<form>
+				<p><label for="text">type="text"</label>
+				<input type="text" id="text" placeholder="Placeholder"></p>
+
+				<p><label for="email">type="email"</label><br>
+				<input type="email" id="email"></p>
+
+				<p><label for="url">type="url</label><br>
+				<input type="url" id="url"></p>
+
+				<p><label for="number">type="number"</label><br>
+				<input type="number" id="number"></p>
+
+				<p><label for="tel">type="tel"</label><br>
+				<input type="tel" id="tel"></p>
+
+				<p><label for="select-1">Select group</label><br>
+					<select id="select-1">
+						<option>1</option>
+						<option>2</option>
+					</select>
+
+					<select id="">
+						<option>January</option>
+						<option>February</option>
+					</select>
+
+					<select id="">
+						<option>2012</option>
+						<option>2013</option>
+					</select>
+				</p>
+
+				<ul>
+					<li><label class="checkbox"><input type="checkbox"> Checkbox option</label></li>
+					<li><label class="checkbox"><input type="checkbox"> Checkbox option</label></li>
+				</ul>
+
+				<ul>
+					<li><label class="radio"><input type="radio" name="radio" value="1"> Radio option 1</label></li>
+					<li><label class="radio"><input type="radio" name="radio" value="2"> Radio option 2</label></li>
+				</ul>
+
+				<p><label for="textarea">Textarea</label><br>
+				<textarea id="textarea"> </textarea></p>
+
+			</form>
+
+			<h2>Form buttons</h2>
+
+			<table class="table table-bordered">
+				<tbody>
+					<tr>
+						<td><button class="btn">Default</button></td>
+<!--						<td><a href="#" class="btn">Default</a></td>-->
+						<td><input type="submit" value="Default" class="btn"></td>
+<!----						<td>Standard button</td>-->
+					</tr>
+
+					<tr>
+						<td><button class="btn btn-disabled">Disabled</button></td>
+<!--						<td><a href="#" class="btn btn-disabled">Disabled</a></td>-->
+						<td><input type="submit" value="Disabled" class="btn btn-disabled"></td>
+<!--						<td>Disabled standard button</td>-->
+					</tr>
+
+					<tr>
+						<td><button class="btn btn-large">Default</button></td>
+<!--						<td><a href="#" class="btn btn-large">Default</a></td>-->
+						<td><input type="submit" value="Default" class="btn btn-large"></td>
+<!--						<td>Standard button (large)</td>-->
+					</tr>
+
+					<tr>
+						<td><button class="btn btn-small">Default</button></td>
+<!--						<td><a href="#" class="btn btn-small">Default</a></td>-->
+						<td><input type="submit" value="Default" class="btn btn-small"></td>
+<!--						<td>Standard button (small)</td>-->
+					</tr>
+
+					<tr>
+						<td><button class="btn btn-mini">Default</button></td>
+<!--						<td><a href="#" class="btn btn-mini">Default</a></td>-->
+						<td><input type="submit" value="Default" class="btn btn-mini"></td>
+<!--						<td>Standard button (mini)</td>-->
+					</tr>
+
+					<tr>
+						<td><button class="btn btn-primary">Primary</button></td>
+<!--						<td><a href="#" class="btn btn-primary">Primary</a></td>-->
+						<td><input type="submit" value="Primary" class="btn btn-primary"></td>
+<!--						<td>Extra visual weight and identifies a primary action</td>-->
+					</tr>
+
+					<tr>
+						<td><button class="btn btn-info">Info</button></td>
+<!--						<td><a href="#" class="btn btn-info">Info</a></td>-->
+						<td><input type="submit" value="Info" class="btn btn-info"></td>
+<!--						<td>An alternate to default styles</td>-->
+					</tr>
+
+					<tr>
+						<td><button class="btn btn-success">Success</button></td>
+<!--						<td><a href="#" class="btn btn-success">Success</a></td>-->
+						<td><input type="submit" value="Success" class="btn btn-success"></td>
+<!--						<td>A positive action</td>-->
+					</tr>
+
+					<tr>
+						<td><button class="btn btn-warning">Warning</button></td>
+<!--						<td><a href="#" class="btn btn-warning">Warning</a></td>-->
+						<td><input type="submit" value="Warning" class="btn btn-warning"></td>
+<!--						<td>Caution should be taken</td>-->
+					</tr>
+
+					<tr>
+						<td><button class="btn btn-inverse">Inverse</button></td>
+<!--						<td><a href="#" class="btn btn-inverse">Inverse</a></td>-->
+						<td><input type="submit" value="Inverse" class="btn btn-inverse"></td>
+<!--						<td>Dark grey button</td>-->
+					</tr>
+
+				</tbody>
+			</table>
+
+	</div><!-- / content -->
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="inc/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<script src="../inc/js/plugins.js"></script>
+	<script src="../inc/js/script.js"></script>
+
+	<script>
+		jQuery(document).ready(function($) {
+
+			$('.gridbutton').click(function() {
+				$('body').toggleClass('showgrid');
+				var txt = $('body').hasClass('showgrid') ? 'Hide Grid' : 'Show Grid';
+				$(this).text(txt);
+			});
+		});
+	</script>
+</body>
+</html>
