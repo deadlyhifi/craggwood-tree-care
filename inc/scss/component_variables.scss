@@ -101,7 +101,6 @@ $wellshadow			: darken($wellbackground, 10%);
 $wellshadowblur		: 10px;
 
 // tables
-
 $tablebackground 	: transparent;
 $tablestripe 		: lighten($basecolor, 75%);
 $tablehover 		: lighten($basecolor, 60%);
@@ -120,7 +119,7 @@ $placeholdercolor 	: $lightgrey;
 
 // margins
 $baseline			: $baselineheight;
-$gutterwidth		: 24px;
+$gutterwidth		: 20px;
 
 // extras
 $facebookblue		: rgb(52, 96, 158);

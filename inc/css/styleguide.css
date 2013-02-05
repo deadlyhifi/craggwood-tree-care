@@ -13,139 +13,130 @@
  * Items that can be not linked in the final CSS file.
  */
 /* line 13, ../scss/styleguide.scss */
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  /* line 18, ../scss/styleguide.scss */
-  nav ul li {
-    display: inline-block; }
-
-/* line 25, ../scss/styleguide.scss */
 .gridbutton {
   position: fixed;
-  top: 24px;
-  left: 24px; }
+  top: 20px;
+  left: 20px; }
 
-/* line 32, ../scss/styleguide.scss */
+/* line 20, ../scss/styleguide.scss */
 .swatch {
   margin: 0 0 1.5em 0;
   padding: 0; }
 
-/* line 36, ../scss/styleguide.scss */
+/* line 24, ../scss/styleguide.scss */
 .swatch-row {
   display: block;
   margin: 0;
   padding: 0;
   width: 100%; }
 
-/* line 42, ../scss/styleguide.scss */
+/* line 30, ../scss/styleguide.scss */
 .swatch-row-one {
   background-color: black; }
 
-/* line 45, ../scss/styleguide.scss */
+/* line 33, ../scss/styleguide.scss */
 .swatch-row-two {
   background-color: white; }
 
-/* line 48, ../scss/styleguide.scss */
+/* line 36, ../scss/styleguide.scss */
 .swatch-row span {
   display: block;
   float: left;
   width: 25%;
   height: 40px; }
 
-/* line 55, ../scss/styleguide.scss */
+/* line 43, ../scss/styleguide.scss */
 .swatch-base span:nth-child(1) {
   background-color: rgba(45, 53, 62, 0.9); }
 
-/* line 58, ../scss/styleguide.scss */
+/* line 46, ../scss/styleguide.scss */
 .swatch-base span:nth-child(2) {
   background-color: rgba(45, 53, 62, 0.8); }
 
-/* line 61, ../scss/styleguide.scss */
+/* line 49, ../scss/styleguide.scss */
 .swatch-base span:nth-child(3) {
   background-color: rgba(45, 53, 62, 0.7); }
 
-/* line 64, ../scss/styleguide.scss */
+/* line 52, ../scss/styleguide.scss */
 .swatch-base span:nth-child(4) {
   background-color: rgba(45, 53, 62, 0.6); }
 
-/* line 68, ../scss/styleguide.scss */
+/* line 56, ../scss/styleguide.scss */
 .swatch-alert span:nth-child(1) {
   background-color: rgba(252, 248, 227, 0.9); }
 
-/* line 71, ../scss/styleguide.scss */
+/* line 59, ../scss/styleguide.scss */
 .swatch-alert span:nth-child(2) {
   background-color: rgba(252, 248, 227, 0.8); }
 
-/* line 74, ../scss/styleguide.scss */
+/* line 62, ../scss/styleguide.scss */
 .swatch-alert span:nth-child(3) {
   background-color: rgba(252, 248, 227, 0.7); }
 
-/* line 77, ../scss/styleguide.scss */
+/* line 65, ../scss/styleguide.scss */
 .swatch-alert span:nth-child(4) {
   background-color: rgba(252, 248, 227, 0.6); }
 
-/* line 81, ../scss/styleguide.scss */
+/* line 69, ../scss/styleguide.scss */
 .swatch-error span:nth-child(1) {
   background-color: rgba(218, 79, 73, 0.9); }
 
-/* line 84, ../scss/styleguide.scss */
+/* line 72, ../scss/styleguide.scss */
 .swatch-error span:nth-child(2) {
   background-color: rgba(218, 79, 73, 0.8); }
 
-/* line 87, ../scss/styleguide.scss */
+/* line 75, ../scss/styleguide.scss */
 .swatch-error span:nth-child(3) {
   background-color: rgba(218, 79, 73, 0.7); }
 
-/* line 90, ../scss/styleguide.scss */
+/* line 78, ../scss/styleguide.scss */
 .swatch-error span:nth-child(4) {
   background-color: rgba(218, 79, 73, 0.6); }
 
-/* line 94, ../scss/styleguide.scss */
+/* line 82, ../scss/styleguide.scss */
 .swatch-info span:nth-child(1) {
   background-color: rgba(217, 237, 247, 0.9); }
 
-/* line 97, ../scss/styleguide.scss */
+/* line 85, ../scss/styleguide.scss */
 .swatch-info span:nth-child(2) {
   background-color: rgba(217, 237, 247, 0.8); }
 
-/* line 100, ../scss/styleguide.scss */
+/* line 88, ../scss/styleguide.scss */
 .swatch-info span:nth-child(3) {
   background-color: rgba(217, 237, 247, 0.7); }
 
-/* line 103, ../scss/styleguide.scss */
+/* line 91, ../scss/styleguide.scss */
 .swatch-info span:nth-child(4) {
   background-color: rgba(217, 237, 247, 0.6); }
 
-/* line 107, ../scss/styleguide.scss */
+/* line 95, ../scss/styleguide.scss */
 .swatch-success span:nth-child(1) {
   background-color: rgba(91, 183, 91, 0.9); }
 
-/* line 110, ../scss/styleguide.scss */
+/* line 98, ../scss/styleguide.scss */
 .swatch-success span:nth-child(2) {
   background-color: rgba(91, 183, 91, 0.8); }
 
-/* line 113, ../scss/styleguide.scss */
+/* line 101, ../scss/styleguide.scss */
 .swatch-success span:nth-child(3) {
   background-color: rgba(91, 183, 91, 0.7); }
 
-/* line 116, ../scss/styleguide.scss */
+/* line 104, ../scss/styleguide.scss */
 .swatch-success span:nth-child(4) {
   background-color: rgba(91, 183, 91, 0.6); }
 
-/* line 120, ../scss/styleguide.scss */
+/* line 108, ../scss/styleguide.scss */
 .swatch-warning span:nth-child(1) {
   background-color: rgba(250, 167, 50, 0.9); }
 
-/* line 123, ../scss/styleguide.scss */
+/* line 111, ../scss/styleguide.scss */
 .swatch-warning span:nth-child(2) {
   background-color: rgba(250, 167, 50, 0.8); }
 
-/* line 126, ../scss/styleguide.scss */
+/* line 114, ../scss/styleguide.scss */
 .swatch-warning span:nth-child(3) {
   background-color: rgba(250, 167, 50, 0.7); }
 
-/* line 129, ../scss/styleguide.scss */
+/* line 117, ../scss/styleguide.scss */
 .swatch-warning span:nth-child(4) {
   background-color: rgba(250, 167, 50, 0.6); }
