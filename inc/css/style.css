@@ -2718,7 +2718,7 @@ nav ul.navbar {
     .l-one-third-nested.last {
       margin-right: 0; }
 
-  /* line 24, ../scss/mq_600.scss */
+  /* line 23, ../scss/mq_600.scss */
   .main {
     float: left;
     width: 65.625%;
@@ -2727,7 +2727,7 @@ nav ul.navbar {
     .main.last {
       margin-right: 0; }
 
-  /* line 27, ../scss/mq_600.scss */
+  /* line 26, ../scss/mq_600.scss */
   .sidebar {
     float: left;
     width: 32.29167%;
@@ -2735,11 +2735,7 @@ nav ul.navbar {
     margin-right: 0; }
     /* line 39, ../scss/component_grids.scss */
     .sidebar.last {
-      margin-right: 0; }
-
-  /* line 34, ../scss/mq_600.scss */
-  .l-first {
-    clear: left; } }
+      margin-right: 0; } }
 /* Modernizr =================================================== */
 /* audio */
 /* applicationcache */
