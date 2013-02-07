@@ -27,6 +27,12 @@ $altlineheight: 1.35em;
 
 $codefont: Monaco, Courier New, monospace;
 
+// WIDTH/ MARGINS 	 ==============================
+
+$max-width			: 960px; //1440px;
+$baseline			: $baselineheight;
+$gutterwidth		: 20px;
+
 // COLOUR 				==============================
 
 $basecolor 			: rgb(45,53,62);
@@ -117,9 +123,6 @@ $inputhover 		: lighten($basecolor, 20%);
 $inputfocus 		: $basecolor, 40%;
 $placeholdercolor 	: $lightgrey;
 
-// margins
-$baseline			: $baselineheight;
-$gutterwidth		: 20px;
-
 // extras
-$facebookblue		: rgb(52, 96, 158);
+$facebook			: rgb(52, 96, 158);
+$twitter			: rgb(78, 145, 206);

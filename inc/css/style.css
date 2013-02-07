@@ -15,129 +15,6 @@ Tom de Bruin
   .clearfix:after {
     clear: both; }
 
-/* Use this mixin to reset your grid by example for your mobile grid */
-/* line 66, ../scss/component_taigagrid.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* line 75, ../scss/component_taigagrid.scss */
-.l-full {
-  float: left;
-  width: 95.83333%;
-  margin-left: 2.08333%;
-  margin-right: 2.08333%; }
-  @media only screen and (1280px: 520px) {
-    /* line 75, ../scss/component_taigagrid.scss */
-    .l-full {
-      clear: both;
-      float: none;
-      margin-left: 0;
-      margin-right: 0;
-      width: auto; } }
-
-/* line 79, ../scss/component_taigagrid.scss */
-.l-two-third {
-  float: left;
-  width: 62.5%;
-  margin-left: 2.08333%;
-  margin-right: 2.08333%; }
-  @media only screen and (1280px: 520px) {
-    /* line 79, ../scss/component_taigagrid.scss */
-    .l-two-third {
-      clear: both;
-      float: none;
-      margin-left: 0;
-      margin-right: 0;
-      width: auto; } }
-
-/* line 83, ../scss/component_taigagrid.scss */
-.l-half {
-  float: left;
-  width: 45.83333%;
-  margin-left: 2.08333%;
-  margin-right: 2.08333%; }
-  @media only screen and (1280px: 520px) {
-    /* line 83, ../scss/component_taigagrid.scss */
-    .l-half {
-      clear: both;
-      float: none;
-      margin-left: 0;
-      margin-right: 0;
-      width: auto; } }
-
-/* line 87, ../scss/component_taigagrid.scss */
-.l-one-third {
-  float: left;
-  width: 29.16667%;
-  margin-left: 2.08333%;
-  margin-right: 2.08333%; }
-  @media only screen and (1280px: 520px) {
-    /* line 87, ../scss/component_taigagrid.scss */
-    .l-one-third {
-      clear: both;
-      float: none;
-      margin-left: 0;
-      margin-right: 0;
-      width: auto; } }
-
-/* line 93, ../scss/component_taigagrid.scss */
-.l-one-third-nested {
-  float: left;
-  width: 31.94444%;
-  margin-right: 2.08333%; }
-  /* line 49, ../scss/component_taigagrid.scss */
-  .l-one-third-nested.last {
-    margin-right: 0; }
-  @media only screen and (1280px: 520px) {
-    /* line 93, ../scss/component_taigagrid.scss */
-    .l-one-third-nested {
-      clear: both;
-      float: none;
-      margin-left: 0;
-      margin-right: 0;
-      width: auto; } }
-
-/* line 100, ../scss/component_taigagrid.scss */
-.main {
-  float: left;
-  width: 65.625%;
-  margin-right: 2.08333%; }
-  /* line 49, ../scss/component_taigagrid.scss */
-  .main.last {
-    margin-right: 0; }
-  @media only screen and (1280px: 767px) {
-    /* line 100, ../scss/component_taigagrid.scss */
-    .main {
-      clear: both;
-      float: none;
-      margin-left: 0;
-      margin-right: 0;
-      width: auto; } }
-
-/* line 104, ../scss/component_taigagrid.scss */
-.sidebar {
-  float: left;
-  width: 32.29167%;
-  margin-right: 2.08333%;
-  margin-right: 0; }
-  /* line 49, ../scss/component_taigagrid.scss */
-  .sidebar.last {
-    margin-right: 0; }
-  @media only screen and (1280px: 767px) {
-    /* line 104, ../scss/component_taigagrid.scss */
-    .sidebar {
-      clear: both;
-      float: none;
-      margin-left: 0;
-      margin-right: 0;
-      width: auto; } }
-
-/* line 112, ../scss/component_taigagrid.scss */
-.l-first {
-  clear: left; }
-
 /* line 3, ../scss/base_reset.scss */
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
   margin: 0;
@@ -168,6 +45,13 @@ article, aside, figure, footer, header, hgroup, nav, section {
   width: device-width; }
 
 /* line 16, ../scss/base_site.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 20, ../scss/base_site.scss */
 html {
   background: white;
   font-size: 62.5%;
@@ -175,7 +59,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-/* line 25, ../scss/base_site.scss */
+/* line 29, ../scss/base_site.scss */
 body {
   margin: 0;
   padding: 0;
@@ -2636,7 +2520,7 @@ section {
 /* line 10, ../scss/smaccs_layout.scss */
 .inner, .content {
   *zoom: 1;
-  max-width: 1280px;
+  max-width: 960px;
   margin: auto;
   padding: .5em; }
   /* line 198, ../scss/component_mixins.scss */
@@ -2661,10 +2545,14 @@ article {
   color: #bfbfbf; }
 
 /* line 8, ../scss/smaccs_module.scss */
-i.icon-facebook-sign {
+i.icon-facebook, i.icon-facebook-sign {
   color: #34609e; }
 
-/* line 12, ../scss/smaccs_module.scss */
+/* line 9, ../scss/smaccs_module.scss */
+i.icon-twitter, i.icon-twitter-sign {
+  color: #4e91ce; }
+
+/* line 13, ../scss/smaccs_module.scss */
 .well {
   min-height: 21px;
   padding: 11px;
@@ -2677,22 +2565,22 @@ i.icon-facebook-sign {
   -webkit-box-shadow: inset 0 1px 10px #d6dbe1;
   -moz-box-shadow: inset 0 1px 10px #d6dbe1;
   box-shadow: inset 0 1px 10px #d6dbe1; }
-  /* line 21, ../scss/smaccs_module.scss */
+  /* line 22, ../scss/smaccs_module.scss */
   .well p:last-child {
     margin-bottom: 0; }
 
-/* line 26, ../scss/smaccs_module.scss */
+/* line 27, ../scss/smaccs_module.scss */
 .well-large {
   padding: 22px; }
 
-/* line 30, ../scss/smaccs_module.scss */
+/* line 31, ../scss/smaccs_module.scss */
 .well-small {
   padding: 6px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px; }
 
-/* line 37, ../scss/smaccs_module.scss */
+/* line 38, ../scss/smaccs_module.scss */
 nav ul.navbar {
   border: 1px solid #bfbfbf;
   -webkit-border-radius: 4px;
@@ -2710,20 +2598,20 @@ nav ul.navbar {
   /* line 202, ../scss/component_mixins.scss */
   nav ul.navbar:after {
     clear: both; }
-  /* line 46, ../scss/smaccs_module.scss */
+  /* line 47, ../scss/smaccs_module.scss */
   nav ul.navbar li {
     float: left;
     line-height: 18px; }
-    /* line 50, ../scss/smaccs_module.scss */
+    /* line 51, ../scss/smaccs_module.scss */
     nav ul.navbar li:first-child a {
       -webkit-border-radius: 4px 0 0 4px;
       -moz-border-radius: 4px 0 0 4px;
       border-radius: 4px 0 0 4px; }
-    /* line 54, ../scss/smaccs_module.scss */
+    /* line 55, ../scss/smaccs_module.scss */
     nav ul.navbar li a {
       text-decoration: none;
       padding: 10px 15px; }
-      /* line 59, ../scss/smaccs_module.scss */
+      /* line 60, ../scss/smaccs_module.scss */
       nav ul.navbar li a.selected, nav ul.navbar li a:hover {
         background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
         background-image: -webkit-linear-gradient(top, white, #e6e6e6);
@@ -2792,6 +2680,69 @@ nav ul.navbar {
   /* line 52, ../scss/mq_print.scss */
   tr {
     page-break-inside: avoid; } }
+@media only screen and (min-width: 600px) {
+  /* line 4, ../scss/mq_600.scss */
+  .l-full {
+    float: left;
+    width: 95.83333%;
+    margin-left: 2.08333%;
+    margin-right: 2.08333%; }
+
+  /* line 7, ../scss/mq_600.scss */
+  .l-two-third {
+    float: left;
+    width: 62.5%;
+    margin-left: 2.08333%;
+    margin-right: 2.08333%; }
+
+  /* line 10, ../scss/mq_600.scss */
+  .l-half {
+    float: left;
+    width: 45.83333%;
+    margin-left: 2.08333%;
+    margin-right: 2.08333%; }
+
+  /* line 13, ../scss/mq_600.scss */
+  .l-one-third {
+    float: left;
+    width: 29.16667%;
+    margin-left: 2.08333%;
+    margin-right: 2.08333%; }
+
+  /* line 18, ../scss/mq_600.scss */
+  .l-one-third-nested {
+    float: left;
+    width: 31.94444%;
+    margin-right: 2.08333%;
+    background-color: red; }
+    /* line 40, ../scss/component_taigagrid.scss */
+    .l-one-third-nested.last {
+      margin-right: 0; }
+
+  /* line 24, ../scss/mq_600.scss */
+  .main {
+    float: left;
+    width: 65.625%;
+    margin-right: 2.08333%;
+    background-color: red; }
+    /* line 40, ../scss/component_taigagrid.scss */
+    .main.last {
+      margin-right: 0; }
+
+  /* line 27, ../scss/mq_600.scss */
+  .sidebar {
+    float: left;
+    width: 32.29167%;
+    margin-right: 2.08333%;
+    background-color: red;
+    margin-right: 0; }
+    /* line 40, ../scss/component_taigagrid.scss */
+    .sidebar.last {
+      margin-right: 0; }
+
+  /* line 34, ../scss/mq_600.scss */
+  .l-first {
+    clear: left; } }
 /* Modernizr =================================================== */
 /* audio */
 /* applicationcache */

@@ -5,7 +5,8 @@
 
 .btn [class*=icon] { color: $darkgrey; }
 [class*=icon] { color: $lightgrey; }
-i.icon-facebook-sign { color: $facebookblue; }
+i.icon-facebook, i.icon-facebook-sign { color: $facebook; }
+i.icon-twitter, i.icon-twitter-sign { color: $twitter; }
 
 // WELL ====================================================
 

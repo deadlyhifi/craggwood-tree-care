@@ -13,6 +13,10 @@
 @viewport {
 	width: device-width; }
 
+* {
+	@include box-sizing;
+}
+
 html {
 	background: $bodycolor;
 	font-size: 62.5%;
