@@ -1,120 +1,43 @@
-// ==========================================================
+//  Based on Taiga Grid 1.0
+//  Copyright 2012 by Studio Wolf
+//  Licensed under the MIT license
+//  http://taigaboilerplate.com/
 
-/* 320 and Up */
-/* Modules upstart */
-/* Version: 1.0 */
-/* Author: Andy Clarke */
-/* URL: http://stuffandnonsense.co.uk/projects/320andup */
-// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+// =========== Settings/Variables
 
-// ==========================================================
+// Choose the amount of columns, 48 is standard
+$grid-columns: 48;
 
-.grid {
-	margin-bottom : $baseline;
-	border-bottom : 1px dashed lighten($basecolor, 60%);
+// Use '@include grid(12, 2)' to make a column.
+// The first unit (12) is the column width.
+// The second unit (2) is the margin on both sides.
+// The margin will be auto substracted from the column width.
+// So don't recalculate the column width if you change your margin.
+
+// To set different margins on both sides use '@include grid(12, 2, 3)'.
+// You can also use negative margins.
+
+$grid-column: 100% / $grid-columns;
+
+@mixin column($n: 1) { float: left; width: ($n * $grid-column); }
+@mixin prepend($n: 1) { margin-left: $grid-column * $n }
+@mixin append($n: 1) { margin-right: $grid-column * $n }
+
+// main grid
+@mixin grid($columns: 1, $grid-margin-left: 0, $grid-margin-right: $grid-margin-left) {
+	@include column($columns - ($grid-margin-left + $grid-margin-right));
+	@include prepend($grid-margin-left);
+	@include append($grid-margin-right);
 }
 
-.grid:last-child {
-	margin-bottom : 0;
-	border-bottom-width : 0;
+// nested grid
+@mixin gridnest($division: 1, $columns: 1, $grid-margin: 0) {
+	@include column(($columns - $grid-margin) + ($grid-margin / $division));
+	@include append($grid-margin);
+//	&:nth-child($col*n+$col) {margin-right: 0; } // need to get last one to drop the margin.
+
+	&.last { margin-right: 0; }
 }
-
-// 480px
-@media only screen and (min-width: 480px) {
-/* Styles */
-}
-
-// 600px
-@media only screen and (min-width: 600px) {
-/* Styles */
-}
-
-// 768px
-@media only screen and (min-width: 768px) {
-
-	// .grids-two
-	.grids-two .grid {
-		width : 43.03%;
-		margin-bottom : 0;
-		border-bottom-width : 0;
-	}
-
-	.grids-two .grid-1 {
-		float : left;
-	}
-
-	.grids-two .grid-2 {
-		float : right;
-	}
-
-	// grids-three
-	.grids-three .grid-a {
-		float : left;
-		width : 31.64%;
-		margin-right : 2.53%;
-	}
-
-	// grids-four
-	.grids-four .grid-a {
-		float : left;
-		width : 31.64%;
-		margin-right : 2.53%;
-	}
-
-}
-
-// 992px
-@media only screen and (min-width: 992px) {
-
-	// grids-three
-	.grids-three .grid {
-		float : left;
-		width : 31.64%;
-		margin : 0 2.53% 0 0;
-		border-bottom-width : 0;
-	}
-
-	.grids-three .grid-3 {
-		float : right;
-		margin-right : 0;
-	}
-
-	.grids-three .grid .grid-a {
-		float : none;
-		width : 100%;
-		margin-right : 0;
-		margin-bottom : $baseline / 2;
-	}
-
-	// grids-four
-	.grids-four .grid {
-		float : left;
-		width : 20.25%;
-		margin : 0 6.32% 0 0;
-		border-bottom-width : 0;
-	}
-
-	.grids-four .grid-4 {
-		float : right;
-		margin-right : 0;
-	}
-
-	.grids-four .grid .grid-a {
-		float : none;
-		width : 100%;
-		margin-right : 0;
-	}
-
-}
-
-// 1382px
-@media only screen and (min-width: 1382px) {
-/* Styles */
-}
-
-// 2x
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
-/* Styles */
+@mixin gridlast {
+	margin-right: 0;
 }

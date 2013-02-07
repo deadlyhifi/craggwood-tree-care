@@ -2713,9 +2713,8 @@ nav ul.navbar {
   .l-one-third-nested {
     float: left;
     width: 31.94444%;
-    margin-right: 2.08333%;
-    background-color: red; }
-    /* line 40, ../scss/component_taigagrid.scss */
+    margin-right: 2.08333%; }
+    /* line 39, ../scss/component_grids.scss */
     .l-one-third-nested.last {
       margin-right: 0; }
 
@@ -2723,9 +2722,8 @@ nav ul.navbar {
   .main {
     float: left;
     width: 65.625%;
-    margin-right: 2.08333%;
-    background-color: red; }
-    /* line 40, ../scss/component_taigagrid.scss */
+    margin-right: 2.08333%; }
+    /* line 39, ../scss/component_grids.scss */
     .main.last {
       margin-right: 0; }
 
@@ -2734,9 +2732,8 @@ nav ul.navbar {
     float: left;
     width: 32.29167%;
     margin-right: 2.08333%;
-    background-color: red;
     margin-right: 0; }
-    /* line 40, ../scss/component_taigagrid.scss */
+    /* line 39, ../scss/component_grids.scss */
     .sidebar.last {
       margin-right: 0; }
 
