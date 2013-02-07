@@ -16,20 +16,20 @@ Tom de Bruin
     clear: both; }
 
 /* Use this mixin to reset your grid by example for your mobile grid */
-/* line 65, ../scss/component_taigagrid.scss */
+/* line 66, ../scss/component_taigagrid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 74, ../scss/component_taigagrid.scss */
+/* line 75, ../scss/component_taigagrid.scss */
 .l-full {
   float: left;
   width: 95.83333%;
   margin-left: 2.08333%;
   margin-right: 2.08333%; }
   @media only screen and (1280px: 520px) {
-    /* line 74, ../scss/component_taigagrid.scss */
+    /* line 75, ../scss/component_taigagrid.scss */
     .l-full {
       clear: both;
       float: none;
@@ -37,14 +37,14 @@ Tom de Bruin
       margin-right: 0;
       width: auto; } }
 
-/* line 78, ../scss/component_taigagrid.scss */
+/* line 79, ../scss/component_taigagrid.scss */
 .l-two-third {
   float: left;
   width: 62.5%;
   margin-left: 2.08333%;
   margin-right: 2.08333%; }
   @media only screen and (1280px: 520px) {
-    /* line 78, ../scss/component_taigagrid.scss */
+    /* line 79, ../scss/component_taigagrid.scss */
     .l-two-third {
       clear: both;
       float: none;
@@ -52,14 +52,14 @@ Tom de Bruin
       margin-right: 0;
       width: auto; } }
 
-/* line 82, ../scss/component_taigagrid.scss */
+/* line 83, ../scss/component_taigagrid.scss */
 .l-half {
   float: left;
   width: 45.83333%;
   margin-left: 2.08333%;
   margin-right: 2.08333%; }
   @media only screen and (1280px: 520px) {
-    /* line 82, ../scss/component_taigagrid.scss */
+    /* line 83, ../scss/component_taigagrid.scss */
     .l-half {
       clear: both;
       float: none;
@@ -67,14 +67,14 @@ Tom de Bruin
       margin-right: 0;
       width: auto; } }
 
-/* line 86, ../scss/component_taigagrid.scss */
+/* line 87, ../scss/component_taigagrid.scss */
 .l-one-third {
   float: left;
   width: 29.16667%;
   margin-left: 2.08333%;
   margin-right: 2.08333%; }
   @media only screen and (1280px: 520px) {
-    /* line 86, ../scss/component_taigagrid.scss */
+    /* line 87, ../scss/component_taigagrid.scss */
     .l-one-third {
       clear: both;
       float: none;
@@ -82,16 +82,16 @@ Tom de Bruin
       margin-right: 0;
       width: auto; } }
 
-/* line 92, ../scss/component_taigagrid.scss */
+/* line 93, ../scss/component_taigagrid.scss */
 .l-one-third-nested {
   float: left;
-  width: 31.38021%;
+  width: 31.94444%;
   margin-right: 2.08333%; }
-  /* line 48, ../scss/component_taigagrid.scss */
+  /* line 49, ../scss/component_taigagrid.scss */
   .l-one-third-nested.last {
     margin-right: 0; }
   @media only screen and (1280px: 520px) {
-    /* line 92, ../scss/component_taigagrid.scss */
+    /* line 93, ../scss/component_taigagrid.scss */
     .l-one-third-nested {
       clear: both;
       float: none;
@@ -99,16 +99,16 @@ Tom de Bruin
       margin-right: 0;
       width: auto; } }
 
-/* line 99, ../scss/component_taigagrid.scss */
+/* line 100, ../scss/component_taigagrid.scss */
 .main {
   float: left;
-  width: 64.64844%;
+  width: 65.625%;
   margin-right: 2.08333%; }
-  /* line 48, ../scss/component_taigagrid.scss */
+  /* line 49, ../scss/component_taigagrid.scss */
   .main.last {
     margin-right: 0; }
   @media only screen and (1280px: 767px) {
-    /* line 99, ../scss/component_taigagrid.scss */
+    /* line 100, ../scss/component_taigagrid.scss */
     .main {
       clear: both;
       float: none;
@@ -116,17 +116,17 @@ Tom de Bruin
       margin-right: 0;
       width: auto; } }
 
-/* line 103, ../scss/component_taigagrid.scss */
+/* line 104, ../scss/component_taigagrid.scss */
 .sidebar {
   float: left;
-  width: 31.38021%;
+  width: 32.29167%;
   margin-right: 2.08333%;
   margin-right: 0; }
-  /* line 48, ../scss/component_taigagrid.scss */
+  /* line 49, ../scss/component_taigagrid.scss */
   .sidebar.last {
     margin-right: 0; }
   @media only screen and (1280px: 767px) {
-    /* line 103, ../scss/component_taigagrid.scss */
+    /* line 104, ../scss/component_taigagrid.scss */
     .sidebar {
       clear: both;
       float: none;
@@ -134,7 +134,7 @@ Tom de Bruin
       margin-right: 0;
       width: auto; } }
 
-/* line 111, ../scss/component_taigagrid.scss */
+/* line 112, ../scss/component_taigagrid.scss */
 .l-first {
   clear: left; }
 
