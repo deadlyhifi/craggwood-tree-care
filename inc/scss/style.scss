@@ -13,7 +13,7 @@ Tom de Bruin
 
 // 1. Base - smacss.com/book/type-base 	==============================
 
-//@import "base_reset";
+@import "base_reset";
 //@import "base_site";
 //@import "base_typography";
 
@@ -21,7 +21,7 @@ Tom de Bruin
 //@import "base_textures";
 //@import "base_forms";
 //@import "base_tables";
-//@import "base_font-awesome";
+@import "base_font-awesome";
 //@import "base_elements";
 
 // 2. SMACCS 			==============================
