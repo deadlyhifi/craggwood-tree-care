@@ -58,7 +58,8 @@ nav ul.navbar {
 
 			&.selected,
 			&:hover {
-				@include vertical();
+//				@include vertical();
+				@include linear-gradient($white, $lightergrey);
 			}
 		}
 	}

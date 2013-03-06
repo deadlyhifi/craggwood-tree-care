@@ -190,21 +190,6 @@
 	padding: .2em 0;
 }
 
-// Contain floats
-@mixin clearfix {
-	*zoom: 1;
-
-	&:before,
-	&:after {
-		display: table;
-		content: "";
-	}
-	&:after {
-		clear: both;
-	}
-}
-.clearfix { @include clearfix; }
-
 // For image replacement
 @mixin hide-text() {
 	text-indent: 100%;

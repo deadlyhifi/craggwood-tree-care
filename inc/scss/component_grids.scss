@@ -23,21 +23,55 @@ $grid-column: 100% / $grid-columns;
 @mixin prepend($n: 1) { margin-left: $grid-column * $n }
 @mixin append($n: 1) { margin-right: $grid-column * $n }
 
-// main grid
-@mixin grid($columns: 1, $grid-margin-left: 0, $grid-margin-right: $grid-margin-left) {
-	@include column($columns - ($grid-margin-left + $grid-margin-right));
-	@include prepend($grid-margin-left);
-	@include append($grid-margin-right);
-}
 
-// nested grid
+// grid
 @mixin gridnest($division: 1, $columns: 1, $grid-margin: 0) {
 	@include column(($columns - $grid-margin) + ($grid-margin / $division));
 	@include append($grid-margin);
-//	&:nth-child($col*n+$col) {margin-right: 0; } // need to get last one to drop the margin.
 
-	&.last { margin-right: 0; }
+	&:nth-of-type(#{$division}n) { margin-right: 0; } // drop the margin on final one.
+
+	border: 1px solid red;
+	background-color: $lightergrey;
 }
 @mixin gridlast {
 	margin-right: 0;
 }
+
+// GRID DECLARATIONS  ==============================
+
+// Quarter grids
+	@media only screen and (min-width: 480px) and (max-width: 699px) {
+
+		.g-quarter {
+			@include gridnest(2, 24, 1);
+		}
+	}
+	@media only screen and (min-width: 700px) {
+
+		// nested
+		.g-quarter {
+			@include gridnest(4, 12, 1);
+		}
+	}
+
+
+// other grids
+	@media only screen and (min-width: 600px) {
+
+		// g-two-third-one + g-two-third-two
+		.g-two-third-one {
+			@include gridnest(2, 32, 1);
+		}
+		.g-two-third-two {
+			@include gridnest(2, 16, 1);
+		}
+
+		//
+		.g-half {
+			@include gridnest(2, 24, 1);
+		}
+		.g-third {
+			@include gridnest(3, 16, 1);
+		}
+	}
