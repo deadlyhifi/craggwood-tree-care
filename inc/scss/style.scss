@@ -6,29 +6,30 @@ Tom de Bruin
 ============================================================ */
 @import "bourbon";
 
-@import "component_variables";
-@import "component_mixins";
-@import "component_grids";
+
+//@import "component_variables";
+//@import "component_mixins";
+//@import "component_grids";
 
 // 1. Base - smacss.com/book/type-base 	==============================
 
-@import "base_reset";
-@import "base_site";
-@import "base_typography";
+//@import "base_reset";
+//@import "base_site";
+//@import "base_typography";
 
 // alert, buttons, wells, badges, labels
-@import "base_textures";
-@import "base_forms";
-@import "base_tables";
-@import "base_font-awesome";
-@import "base_elements";
+//@import "base_textures";
+//@import "base_forms";
+//@import "base_tables";
+//@import "base_font-awesome";
+//@import "base_elements";
 
 // 2. SMACCS 			==============================
 
-@import "smaccs_layout";
-@import "smaccs_module";
-@import "smaccs_state"; // used in JS states - run after the page has loaded.
-@import "smaccs_theme"; // rarey used - only if there are multiple themes within a project.
+//@import "smaccs_layout";
+//@import "smaccs_module";
+//@import "smaccs_state"; // used in JS states - run after the page has loaded.
+//@import "smaccs_theme"; // rarey used - only if there are multiple themes within a project.
 
 
 // 2. Media Queries 			==============================
@@ -69,4 +70,4 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	@import "mq_2x";
 }
 
-@import "_modernizr";
+//@import "_modernizr";
