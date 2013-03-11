@@ -18,6 +18,61 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
 article, aside, figure, footer, header, hgroup, nav, section {
   display: block; }
 
+@-webkit-viewport {
+  width: device-width; }
+
+@-moz-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@viewport {
+  width: device-width; }
+
+/* line 16, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 20, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
+html {
+  background: white;
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: #f3f5f6;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 29, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  color: black; }
+
+/* line 41, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -ms-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease; }
+  /* line 47, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
+  .collapse.in {
+    height: auto; }
+
 /*
  *  Font Awesome 3.0.1
  *  the iconic font designed for use with Twitter Bootstrap
