@@ -6,10 +6,8 @@ Tom de Bruin
 ============================================================ */
 @import "bourbon";
 
-
 @import "component_variables";
 @import "component_mixins";
-//@import "component_grids";
 
 // 1. Base - smacss.com/book/type-base 	==============================
 
@@ -18,11 +16,9 @@ Tom de Bruin
 @import "base_typography";
 @import "base_tables";
 
-
-
 // alert, buttons, wells, badges, labels
 @import "base_textures";
-//@import "base_forms";
+@import "base_forms";
 //@import "base_elements";
 
 // 2. SMACCS 			==============================
@@ -33,42 +29,28 @@ Tom de Bruin
 //@import "smaccs_theme"; // rarey used - only if there are multiple themes within a project.
 
 
-// 2. Media Queries 			==============================
-@media print {
-	@import "mq_print";
-}
+// Media Queries 			==============================
+@media print { @import "mq_print"; }
 
 // 480px
-@media only screen and (min-width: 480px) and (max-width: 600px) {
-	@import "mq_480";
-}
+@media only screen and (min-width: 480px) and (max-width: 600px) { @import "mq_480"; }
 
 // 600px
-@media only screen and (min-width: 600px) {
-	@import "mq_600";
-}
+@media only screen and (min-width: 600px) { @import "mq_600"; }
 
 // 768px
-@media only screen and (min-width: 768px) {
-	@import "mq_768";
-}
+@media only screen and (min-width: 768px) { @import "mq_768"; }
 
 // 992px
-@media only screen and (min-width: 992px) {
-	@import "mq_992";
-}
+@media only screen and (min-width: 992px) { @import "mq_992"; }
 
 // 1382px
-@media only screen and (min-width: 1382px) {
-	@import "mq_1382";
-}
+@media only screen and (min-width: 1382px) { @import "mq_1382"; }
 
 // 2x
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
-	@import "mq_2x";
-}
+only screen and (min-device-pixel-ratio: 1.5) { @import "mq_2x"; }
 
 //@import "_modernizr";

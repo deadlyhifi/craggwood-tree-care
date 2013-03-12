@@ -1,6 +1,7 @@
 // Variables
+@import "bourbon";
 
-// BASE 					==============================
+// BASE 				==============================
 
 // greyscale
 $black 				: rgb(0,0,0);
@@ -15,17 +16,17 @@ $textcolor: black;
 
 // TYPOGRAPHY 			==============================
 
-$basefont: "Helvetica Neue", Helvetica, Arial, sans-serif; //Arial, "Helvetica Neue", Helvetica, sans-serif;
+$basefont: $helvetica; /* $helvetica; $georgia; $lucida-grande; $monospace; $verdana; */;
 $basefontsize: 16;
 $baselineheight: 1.5em;
 $baseheadingfont: inherit;
 $baseheadingfontweight: bold;
 $baseheadingfontcolor: inherit;
 
-$altfont: Cambria, Georgia, Times, "Times New Roman";
+$altfont: $georgia;
 $altlineheight: 1.35em;
 
-$codefont: Monaco, Courier New, monospace;
+$codefont: $monospace;
 
 // WIDTH/ MARGINS 	 ==============================
 
