@@ -198,9 +198,9 @@ sup {
 }
 
 sup {
-	top: -.5em;
+	bottom: -($baselineheight - 0.5);
 }
 
 sub {
-	bottom: -.25em;
+	bottom: -$baselineheight;
 }

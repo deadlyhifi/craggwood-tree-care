@@ -1577,11 +1577,11 @@ sup {
 
 /* line 200, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_typography.scss */
 sup {
-  top: -.5em; }
+  bottom: -1em; }
 
 /* line 204, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_typography.scss */
 sub {
-  bottom: -.25em; }
+  bottom: -1.5em; }
 
 /* line 3, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
 table {
