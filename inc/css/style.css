@@ -4,7 +4,7 @@ Startgate
 Tom de Bruin
 
 ============================================================ */
-/* line 3, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_reset.scss */
+/* line 2, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
   vertical-align: baseline;
   background: transparent; }
 
-/* line 6, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_reset.scss */
+/* line 5, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
 article, aside, figure, footer, header, hgroup, nav, section {
   display: block; }
 
@@ -33,13 +33,13 @@ article, aside, figure, footer, header, hgroup, nav, section {
 @viewport {
   width: device-width; }
 
-/* line 16, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
+/* line 22, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 20, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
+/* line 26, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
 html {
   background: white;
   font-size: 62.5%;
@@ -47,7 +47,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-/* line 29, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
+/* line 35, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
 body {
   margin: 0;
   padding: 0;
@@ -59,7 +59,7 @@ body {
   line-height: 1.5em;
   color: black; }
 
-/* line 41, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
+/* line 47, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
 .collapse {
   position: relative;
   height: 0;
@@ -69,7 +69,7 @@ body {
   -ms-transition: height 0.35s ease;
   -o-transition: height 0.35s ease;
   transition: height 0.35s ease; }
-  /* line 47, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
+  /* line 53, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
   .collapse.in {
     height: auto; }
 
