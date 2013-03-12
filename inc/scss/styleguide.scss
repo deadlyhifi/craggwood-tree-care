@@ -5,16 +5,18 @@
  * Items that can be not linked in the final CSS file.
  */
 .stylesheet {
-//	max-width: 960px;
-//	margin: 20px auto;
+	max-width: $max-width;
+	margin: $gutterwidth auto;
 }
 
 // can we get this working again?
+/*
 .gridbutton {
 	position: fixed;
 	top: $gutterwidth;
 	left: $gutterwidth;
 }
+*/
 
 // swatches
 .swatch {

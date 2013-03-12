@@ -36,22 +36,14 @@
 </header>
 
 <nav role="navigation">
-	<div class="inner">
-		<button type="button" data-toggle="collapse" data-target=".nav-collapse">
-			<i class="icon-reorder"></i>
-		</button>
-
-		<div class="nav-collapse collapse">
-			<ul class="nav">
-				<li><a class=""href="/styleguide/">Index</a></li>
-				<li><a class=""href="texture.html">Texture</a></li>
-				<li><a class=""href="tables.html">Tables</a></li>
-				<li><a class="selected"href="typography.html">Typography</a></li>
-				<li><a class=""href="forms.html">Forms</a></li>
-				<li><a class=""href="javascript.html">Javascript</a></li>
-			</ul>
-		</div>
-	</div>
+	<ul class="nav">
+		<li><a class=""href="/styleguide/">Index</a></li>
+		<li><a class=""href="texture.html">Texture</a></li>
+		<li><a class=""href="tables.html">Tables</a></li>
+		<li><a class="selected"href="typography.html">Typography</a></li>
+		<li><a class=""href="forms.html">Forms</a></li>
+		<li><a class=""href="javascript.html">Javascript</a></li>
+	</ul>
 </nav>
 
 	<div class="content clearfix">
@@ -75,13 +67,20 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 			<h2 class="h3">Blockquote</h2>
+
+			<p><code>&lt;blockquote&gt;&lt;p&gt;Hello world&lt;/p&gt;&lt;/blockquote&gt;</code></p>
 			<blockquote>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</blockquote>
 
+			<h2 class="h3">Quotation</h2>
+
+			<p><code>&lt;p&gt;Hello &lt;q cite=&quot;http://example.com&quot;&gt;World&lt;/q&gt;.&lt;/p&gt;</code></p>
+			<p>Everytime Kenny is killed, Stan will announce <q cite="http://en.wikipedia.org/wiki/Kenny_McCormick#Cultural_impact">Oh my God, you/they killed Kenny</q>.</p>
+
 			<h2 class="h3">Text level elements</h2>
 
-			<table class="table table-bordered table-striped">
+			<table class="table table-bordered">
 				<thead>
 					<tr>
 						<th>Element</th>
@@ -119,7 +118,22 @@
 						<td><code>&lt;address&gt;</code></td>
 						<td><address>Content contact information</address></td>
 					</tr>
-
+					<tr>
+						<td><code>&lt;dfn&gt;</code></td>
+						<td><dfn>Definition term</dfn></td>
+					</tr>
+					<tr>
+						<td><code>&lt;samp&gt;</code></td>
+						<td><samp>Sample output from a computer program</samp></td>
+					</tr>
+					<tr>
+						<td><code>&lt;kbd&gt;</code></td>
+						<td><kbd>Keyboard input</kbd></td>
+					</tr>
+					<tr>
+						<td><code>&lt;var&gt;</code></td>
+						<td><var>Variable</var></td>
+					</tr>
 				</tbody>
 			</table>
 
@@ -152,6 +166,15 @@
 			</dl>
 
 			<h2 class="h3">Horizontal definition list</h2>
+			<code>
+			&lt;dl class=&quot;dl-horizontal&quot;&gt;<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;Definition term&lt;/dt&gt;<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Definition description&lt;/dd&gt;<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;Definition term&lt;/dt&gt;<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Definition description&lt;/dd&gt;<br/>
+			&lt;/dl&gt;
+			</code>
+
 			<dl class="dl-horizontal">
 				<dt>Definition term</dt>
 				<dd>Definition description</dd>

@@ -14,10 +14,15 @@ h6 {
 	text-rendering: optimizelegibility;
 }
 
-h1 small,
-h2 small {
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
 	font-weight: normal;
-	color: $lightgrey;
+	font-size: em(12);
+	color: $grey;
 }
 
 h1,
@@ -125,14 +130,12 @@ dt {
 }
 
 .dl-horizontal {
-
 	dt {
 		float: left;
 		clear: left;
 		width: 20.25%;
 		text-align: right;
 	}
-
 	dd {
 		margin-left: 22.78%;
 	}
@@ -176,7 +179,7 @@ samp {
 	background-color: $darkgrey;
 	color: $white;
 	padding: 0.2em 0.5em;
-	@include rounded;
+	border-radius: 5px;
 	border: 1px solid $lightgrey;
 }
 

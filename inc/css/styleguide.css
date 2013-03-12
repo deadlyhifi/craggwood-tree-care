@@ -1,131 +1,137 @@
 /*
  * Items that can be not linked in the final CSS file.
  */
-/* line 13, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
-.gridbutton {
-  position: fixed;
-  top: 20px;
-  left: 20px; }
+/* line 7, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+.stylesheet {
+  max-width: 960px;
+  margin: 20px auto; }
 
-/* line 20, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/*
+.gridbutton {
+	position: fixed;
+	top: $gutterwidth;
+	left: $gutterwidth;
+}
+*/
+/* line 22, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch {
   margin: 0 0 1.5em 0;
   padding: 0; }
 
-/* line 24, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 26, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-row {
   display: block;
   margin: 0;
   padding: 0;
   width: 100%; }
 
-/* line 30, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 32, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-row-one {
   background-color: black; }
 
-/* line 33, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 35, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-row-two {
   background-color: white; }
 
-/* line 36, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 38, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-row span {
   display: block;
   float: left;
   width: 25%;
   height: 40px; }
 
-/* line 43, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 45, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-base span:nth-child(1) {
   background-color: rgba(45, 53, 62, 0.9); }
 
-/* line 46, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 48, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-base span:nth-child(2) {
   background-color: rgba(45, 53, 62, 0.8); }
 
-/* line 49, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 51, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-base span:nth-child(3) {
   background-color: rgba(45, 53, 62, 0.7); }
 
-/* line 52, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 54, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-base span:nth-child(4) {
   background-color: rgba(45, 53, 62, 0.6); }
 
-/* line 56, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 58, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-alert span:nth-child(1) {
   background-color: rgba(252, 248, 227, 0.9); }
 
-/* line 59, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 61, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-alert span:nth-child(2) {
   background-color: rgba(252, 248, 227, 0.8); }
 
-/* line 62, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 64, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-alert span:nth-child(3) {
   background-color: rgba(252, 248, 227, 0.7); }
 
-/* line 65, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 67, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-alert span:nth-child(4) {
   background-color: rgba(252, 248, 227, 0.6); }
 
-/* line 69, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 71, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-error span:nth-child(1) {
   background-color: rgba(218, 79, 73, 0.9); }
 
-/* line 72, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 74, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-error span:nth-child(2) {
   background-color: rgba(218, 79, 73, 0.8); }
 
-/* line 75, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 77, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-error span:nth-child(3) {
   background-color: rgba(218, 79, 73, 0.7); }
 
-/* line 78, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 80, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-error span:nth-child(4) {
   background-color: rgba(218, 79, 73, 0.6); }
 
-/* line 82, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 84, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-info span:nth-child(1) {
   background-color: rgba(217, 237, 247, 0.9); }
 
-/* line 85, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 87, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-info span:nth-child(2) {
   background-color: rgba(217, 237, 247, 0.8); }
 
-/* line 88, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 90, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-info span:nth-child(3) {
   background-color: rgba(217, 237, 247, 0.7); }
 
-/* line 91, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 93, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-info span:nth-child(4) {
   background-color: rgba(217, 237, 247, 0.6); }
 
-/* line 95, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 97, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-success span:nth-child(1) {
   background-color: rgba(91, 183, 91, 0.9); }
 
-/* line 98, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 100, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-success span:nth-child(2) {
   background-color: rgba(91, 183, 91, 0.8); }
 
-/* line 101, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 103, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-success span:nth-child(3) {
   background-color: rgba(91, 183, 91, 0.7); }
 
-/* line 104, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 106, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-success span:nth-child(4) {
   background-color: rgba(91, 183, 91, 0.6); }
 
-/* line 108, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 110, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-warning span:nth-child(1) {
   background-color: rgba(250, 167, 50, 0.9); }
 
-/* line 111, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 113, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-warning span:nth-child(2) {
   background-color: rgba(250, 167, 50, 0.8); }
 
-/* line 114, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 116, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-warning span:nth-child(3) {
   background-color: rgba(250, 167, 50, 0.7); }
 
-/* line 117, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 119, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .swatch-warning span:nth-child(4) {
   background-color: rgba(250, 167, 50, 0.6); }
