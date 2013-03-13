@@ -87,7 +87,7 @@ small {
 ul,
 ol {
 	margin: 0 0 $baselineheight 0;
-	padding: 0 0 0 $gutterwidth;
+	padding: 0 0 0 $gutter;
 }
 
 li ul,
@@ -96,11 +96,13 @@ li ol {
 	@include font-size(16);
 }
 
+
+
 // blockquote
 
 blockquote  {
-	margin: 0 0 $baselineheight $gutterwidth;
-	padding-left: $gutterwidth;
+	margin: 0 0 $baselineheight $gutter;
+	padding-left: $gutter;
 	border-left: 2px solid $bordercolor;
 	font-family: $altfont;
 	font-style: normal;
@@ -117,6 +119,26 @@ q:after {
 }
 
 cite { font-style: normal; }
+
+// lists
+
+.list-bordered {
+	list-style-type: none;
+	margin: 0 0 $baselineheight 0;
+	padding: 0;
+
+	li {
+		margin-bottom: $baselineheight / 4;
+		padding-bottom: $baselineheight / 4;
+		border-bottom: 1px solid $bordercolor;
+	}
+
+	li:last-child {
+		margin-bottom: 0;
+//		padding-bottom: 0;
+//		border-bottom-width: 0;
+	}
+}
 
 // definition lists
 

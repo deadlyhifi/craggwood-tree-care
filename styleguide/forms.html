@@ -47,88 +47,89 @@
 	</ul>
 </nav>
 
-	<div class="content clearfix">
+	<section>
+		<h1>Forms</h1>
+		<p>For more form styles: <a href="http://twitter.github.com/bootstrap/base-css.html#forms">Bootstrap forms</a>,
+		<a href="https://github.com/twitter/bootstrap/blob/master/less/forms.less">Bootstrap forms LESS on Github</a></p>
+	</section>
 
-			<h1>Forms</h1>
+	<section>
 
-			<p>For more form styles: <a href="http://twitter.github.com/bootstrap/base-css.html#forms">Bootstrap forms</a>,
-			<a href="https://github.com/twitter/bootstrap/blob/master/less/forms.less">Bootstrap forms LESS on Github</a></p>
+		<h2>Standard form</h2>
 
-			<h2>Standard form</h2>
+		<form class="well">
+			<span class="help-block">Example block-level help text here.</span>
+			<p><label>Label</label>
+			<input type="text" placeholder="Placeholder">
+			<span class="help-inline">Associated help text!</span></p>
+			<p><label class="checkbox"><input type="checkbox"> Checkbox option</label></p>
+		</form>
 
-			<form class="well">
-				<span class="help-block">Example block-level help text here.</span>
-				<p><label>Label</label>
-				<input type="text" placeholder="Placeholder">
-				<span class="help-inline">Associated help text!</span></p>
-				<p><label class="checkbox"><input type="checkbox"> Checkbox option</label></p>
-			</form>
+		<h2>Search form</h2>
 
-			<h2>Search form</h2>
+		<form class="well">
+			<p><label>Label</label>
+			<input type="search" class="search-query"></p>
+		</form>
 
-			<form class="well">
-				<p><label>Label</label>
-				<input type="search" class="search-query"></p>
-			</form>
+		<h3 class="h4">Inline form</h3>
 
-			<h3 class="h4">Inline form</h3>
+		<form class="well form-inline">
+			<input type="text" class="input-small">
+			<input type="password" class="input-small">
+			<label class="checkbox"> <input type="checkbox">Checkbox option</label>
+		</form>
 
-			<form class="well form-inline">
-				<input type="text" class="input-small">
-				<input type="password" class="input-small">
-				<label class="checkbox"> <input type="checkbox">Checkbox option</label>
-			</form>
+		<h2>Form elements</h2>
 
-			<h2>Form elements</h2>
+		<form>
+			<p><label for="text">type="text"</label>
+			<input type="text" id="text" placeholder="Placeholder"></p>
 
-			<form>
-				<p><label for="text">type="text"</label>
-				<input type="text" id="text" placeholder="Placeholder"></p>
+			<p><label for="email">type="email"</label><br>
+			<input type="email" id="email"></p>
 
-				<p><label for="email">type="email"</label><br>
-				<input type="email" id="email"></p>
+			<p><label for="url">type="url</label><br>
+			<input type="url" id="url"></p>
 
-				<p><label for="url">type="url</label><br>
-				<input type="url" id="url"></p>
+			<p><label for="number">type="number"</label><br>
+			<input type="number" id="number"></p>
 
-				<p><label for="number">type="number"</label><br>
-				<input type="number" id="number"></p>
+			<p><label for="tel">type="tel"</label><br>
+			<input type="tel" id="tel"></p>
 
-				<p><label for="tel">type="tel"</label><br>
-				<input type="tel" id="tel"></p>
+			<p><label for="select-1">Select group</label><br>
+				<select id="select-1">
+					<option>1</option>
+					<option>2</option>
+				</select>
 
-				<p><label for="select-1">Select group</label><br>
-					<select id="select-1">
-						<option>1</option>
-						<option>2</option>
-					</select>
+				<select id="">
+					<option>January</option>
+					<option>February</option>
+				</select>
 
-					<select id="">
-						<option>January</option>
-						<option>February</option>
-					</select>
+				<select id="">
+					<option>2012</option>
+					<option>2013</option>
+				</select>
+			</p>
 
-					<select id="">
-						<option>2012</option>
-						<option>2013</option>
-					</select>
-				</p>
+			<ul>
+				<li><label class="checkbox"><input type="checkbox"> Checkbox option</label></li>
+				<li><label class="checkbox"><input type="checkbox"> Checkbox option</label></li>
+			</ul>
 
-				<ul>
-					<li><label class="checkbox"><input type="checkbox"> Checkbox option</label></li>
-					<li><label class="checkbox"><input type="checkbox"> Checkbox option</label></li>
-				</ul>
+			<ul>
+				<li><label class="radio"><input type="radio" name="radio" value="1"> Radio option 1</label></li>
+				<li><label class="radio"><input type="radio" name="radio" value="2"> Radio option 2</label></li>
+			</ul>
 
-				<ul>
-					<li><label class="radio"><input type="radio" name="radio" value="1"> Radio option 1</label></li>
-					<li><label class="radio"><input type="radio" name="radio" value="2"> Radio option 2</label></li>
-				</ul>
+			<p><label for="textarea">Textarea</label><br>
+			<textarea id="textarea"> </textarea></p>
+		</form>
 
-				<p><label for="textarea">Textarea</label><br>
-				<textarea id="textarea"> </textarea></p>
-			</form>
-
-	</div><!-- / content -->
+	</section>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="inc/js/jquery-1.8.2.min.js"><\/script>')</script>

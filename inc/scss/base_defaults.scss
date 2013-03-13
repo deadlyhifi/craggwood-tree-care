@@ -43,6 +43,84 @@ body {
 	color: $textcolor;
 }
 
+// Elements
+
+a {
+	@include transition(color .3s ease-in-out);
+
+	color: $linkcolor;
+
+	&:visited {
+		color: $linkcolorvisited;
+	}
+
+	&:hover {
+		text-decoration: underline;
+		color: $linkcolorhover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+		color: $linkcolorfocus;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+::-moz-selection {
+	background-color: lighten($basecolor, 65%);
+	color: $basecolor;
+	text-shadow: none; }
+
+::selection {
+	background-color: lighten($basecolor, 65%);
+	color: $basecolor;
+	text-shadow: none; }
+
+// FIGURES & IMAGES =============================================================================
+
+hr {
+	display: block;
+	margin: 1em 0;
+	padding: 0;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid $bordercolor;
+	border-bottom: 1px solid $white;
+}
+
+// img
+img {
+	max-width: 100%;
+	border-width: 0;
+	vertical-align: middle;
+	-ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+	overflow: hidden; }
+
+// figure
+figure {
+	margin-bottom: $baselineheight;
+
+	img {
+		margin-bottom: $baselineheight / 4;
+	}
+
+	figcaption {
+		display: block;
+		font-weight: normal;
+		@include font-size(14);
+		color: $grey;
+	}
+}
+
+// javascript
+
 //! collapse
 .collapse {
 	position: relative;

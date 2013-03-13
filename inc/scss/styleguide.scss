@@ -1,27 +1,33 @@
+@import "bourbon";
+@import "neat/_neat";
 @import "component_variables";
 @import "component_mixins";
 
-/*
- * Items that can be not linked in the final CSS file.
- */
-.stylesheet {
-	max-width: $max-width;
-	margin: $gutterwidth auto;
-}
 
 // can we get this working again?
 /*
 .gridbutton {
 	position: fixed;
-	top: $gutterwidth;
-	left: $gutterwidth;
+	top: $gutter;
+	left: $gutter;
 }
 */
+
+header {
+	background-color: $lightergrey;
+	margin-bottom: $gutter;
+
+	h1 {
+		margin-top: $baselineheight / 2;
+	}
+}
 
 // swatches
 .swatch {
 	margin: 0 0 $baselineheight 0;
-	padding: 0; }
+	padding: 0;
+	@include clearfix;
+}
 
 .swatch-row {
 	display: block;
@@ -118,3 +124,25 @@
 
 .swatch-warning span:nth-child(4) {
 	@include background-alpha($warningcolor, .6); }
+
+// grids - neat
+.inner,
+nav,
+section { @include outer-container; }
+
+article {
+	@include span-columns(8);
+	background-color: red;
+
+	@include media($mobile) {
+	  @include span-columns(6);
+	}
+}
+aside {
+	@include span-columns(4);
+	background-color: hotpink;
+
+	@include media($mobile) {
+	  @include span-columns(6);
+	}
+}

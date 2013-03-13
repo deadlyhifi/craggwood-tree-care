@@ -30,9 +30,19 @@ $codefont: $monospace;
 
 // WIDTH/ MARGINS 	 ==============================
 
-$max-width			: 960px; //1440px;
-$baseline			: $baselineheight;
-$gutterwidth		: 20px;
+$baseline: $baselineheight;
+
+//@import "neat/neat-helpers"; // or "neat/neat-helpers" when not in Rails
+
+// Change the grid settings
+//$column: 90px;
+//$gutter: 30px;
+//$grid-columns: 12;
+//$max-width: em(1088);
+
+// Define your breakpoints
+$mobile: new-breakpoint(max-width 480px 6);
+$tablet: new-breakpoint(max-width 768px 8);
 
 // COLOUR 				==============================
 
