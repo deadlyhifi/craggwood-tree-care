@@ -153,12 +153,10 @@
 
 /* Buttons =================================================== */
 
-a[class*=btn] { text-decoration: none; }
-
 [class*=btn] {
 	display: inline-block;
 	*display: inline;
-	/* IE7 inline-block hack */
+	// IE7 inline-block hack
 	*zoom: 1;
 	padding: 6px 11px 6px;
 	margin-bottom: 0;
@@ -169,71 +167,24 @@ a[class*=btn] { text-decoration: none; }
 	color: $buttoncolor;
 	text-align: center;
 	vertical-align: middle;
-	background-color: $buttonbackground;
-	@include linear-gradient(50%, $white, $lightergrey);
+	@include linear-gradient(50%, $white, $lightergrey, $fallback: $lightergrey);
 	border: $buttonborderwidth $buttonborderstyle $buttonbordercolor;
 	border-bottom-color: $buttonbottombordercolor;
 	border-radius: 4px;
 	cursor: pointer;
 	*margin-left: .3em;
+	@include transition (border 1s ease);
 
-	&:visited,
 	&:hover {
 		color: $buttoncolor;
 		text-decoration: none;
+		background: $lightergrey;
+		border-color: darken($buttonbordercolor, 10%);
+		border-bottom-color: darken($buttonbottombordercolor, 10%);
+		@include linear-gradient(50%, darken($white, 6%), lighten($lightergrey, 6%));
 	}
 
 	&:first-child { *margin-left: 0; }
-}
-
-input[type="submit"][class*=btn]:hover {
-	border-color: $buttonbordercolor; }
-
-.btn-block {
-	display: block;
-	width: 100%;
-}
-
-// disabled
-.btn-disabled {
-	opacity: .5;
-	cursor: default;
-}
-
-// error
-.btn-error {
-	@include linear-gradient(50%, $errorcolor, darken($errorcolor, 10%));
-	border-color: darken($errorcolor, 15%);
-	border-bottom-color: darken($errorcolor, 20%);
-	color: $white;
-
-	&:visited,
-	&:hover {
-		color: $white; }
-}
-
-// info
-.btn-info {
-	@include linear-gradient(50%, $infocolor, darken($infocolor, 10%));
-	border-color: darken($infocolor, 15%);
-	border-bottom-color: darken($infocolor, 20%);
-	color: darken($infocolor, 50%);
-
-	&:visited,
-	&:hover {
-		color: darken($infocolor, 50%); }
-}
-
-// inverse
-.btn-inverse {
-	@include linear-gradient(50%, $inverscolor, darken($inverscolor, 10%));
-	border-color: darken($inverscolor, 15%);
-	border-bottom-color: darken($inverscolor, 20%);
-	color: $white;
-
-	&:visited,
-	&:hover {
-		color: $white; }
 }
 
 // primary
@@ -243,9 +194,23 @@ input[type="submit"][class*=btn]:hover {
 	border-bottom-color: darken($basecolor, 20%);
 	color: $white;
 
-	&:visited,
 	&:hover {
-		color: $white; }
+		color: $white;
+		@include linear-gradient(50%, lighten($basecolor, 2%), lighten($basecolor, 3%));
+	}
+}
+
+// info
+.btn-info {
+	@include linear-gradient(50%, $infocolor, darken($infocolor, 10%));
+	border-color: darken($infocolor, 15%);
+	border-bottom-color: darken($infocolor, 20%);
+	color: darken($infocolor, 50%);
+
+	&:hover {
+		color: darken($infocolor, 50%);
+		@include linear-gradient(50%, darken($infocolor, 6%), darken($infocolor, 3%));
+	}
 }
 
 // success
@@ -253,6 +218,10 @@ input[type="submit"][class*=btn]:hover {
 	@include linear-gradient(50%, $successcolor, darken($successcolor, 10%));
 	border-color: darken($successcolor, 15%);
 	border-bottom-color: darken($successcolor, 20%);
+
+	&:hover {
+		@include linear-gradient(50%, darken($successcolor, 5%), $successcolor);
+	}
 }
 
 // warning
@@ -260,32 +229,61 @@ input[type="submit"][class*=btn]:hover {
 	@include linear-gradient(50%, $warningcolor, darken($warningcolor, 10%));
 	border-color: darken($warningcolor, 15%);
 	border-bottom-color: darken($warningcolor, 20%);
+
+	&:hover {
+		@include linear-gradient(50%, darken($warningcolor, 10%), lighten($warningcolor, 3%));
+	}
+}
+
+// error
+.btn-error {
+	@include linear-gradient(50%, $errorcolor, darken($errorcolor, 10%));
+	border-color: darken($errorcolor, 15%);
+	border-bottom-color: darken($errorcolor, 20%);
+	color: $white;
+
+	&:hover {
+		color: $white;
+		@include linear-gradient(50%, darken($errorcolor, 10%), $errorcolor);
+	}
+}
+
+// disabled
+.btn-disabled {
+	opacity: .6;
+	cursor: default;
+
+	&:hover { @include linear-gradient(50%, $white, $lightergrey); }
 }
 
 // sizes
+.btn-mini {
+	padding: 3px 5px;
+	border-radius: 2px;
+	@include font-size(9);
+}
+.btn-small {
+	padding: 6px 10px;
+	border-radius: 3px;
+	@include font-size(11);
+}
+/*
+.btn-large {
+	*padding-top: 7px;
+	*padding-bottom: 7px;
+} */
+.btn-large {
+	padding: 11px 22px;
+	@include font-size(14);
+}
 .btn-xlarge {
 	padding: 11px 22px;
 	@include font-size(21);
 }
 
-//?
-.btn-large {
-	*padding-top: 7px;
-	*padding-bottom: 7px;
-}
-.btn-large {
-	padding: 11px 22px;
-	@include font-size(14);
-}
-
-.btn-small {
-	padding: 6px 10px;
-	@include font-size(11);
-}
-
-.btn-mini {
-	padding: 3px 5px;
-	@include font-size(9);
+.btn-block {
+	display: block;
+	width: 100%;
 }
 
 // button groups

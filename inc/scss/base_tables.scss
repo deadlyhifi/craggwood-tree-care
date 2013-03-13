@@ -42,6 +42,7 @@ table {
 		tbody tr:nth-child(odd):hover th {
 			background-color: $tablehover;
 		}
+
 		tbody tr:nth-child(odd) td,
 		tbody tr:nth-child(odd) th {
 			background-color: $tablestripe;
@@ -53,9 +54,10 @@ table {
 		@include transition(background-color .1s 0 linear);
 	}
 
+	// table hover
 	tbody tr:hover td,
 	tbody tr:hover th {
-		background-color: $tablehover;
+//		background-color: $tablehover;
 	}
 }
 

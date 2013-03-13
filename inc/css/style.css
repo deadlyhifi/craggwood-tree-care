@@ -1621,11 +1621,11 @@ table {
   table.table-striped tbody tr:nth-child(odd):hover td,
   table.table-striped tbody tr:nth-child(odd):hover th {
     background-color: #e4e8ec; }
-  /* line 46, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
+  /* line 47, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
   table.table-striped tbody tr:nth-child(odd) td,
   table.table-striped tbody tr:nth-child(odd) th {
     background-color: #f3f5f6; }
-  /* line 52, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
+  /* line 53, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
   table tbody tr td,
   table tbody tr th {
     -webkit-transition: background-color 0.1s 0 linear;
@@ -1633,27 +1633,23 @@ table {
     -ms-transition: background-color 0.1s 0 linear;
     -o-transition: background-color 0.1s 0 linear;
     transition: background-color 0.1s 0 linear; }
-  /* line 57, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
-  table tbody tr:hover td,
-  table tbody tr:hover th {
-    background-color: #e4e8ec; }
 
-/* line 66, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
+/* line 68, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
 .table-condensed th,
 .table-condensed td {
   padding: 4px 5px; }
 
-/* line 73, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
+/* line 75, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
 .table-bordered {
   border: 1px solid #8c9bab;
   border-left: 0;
   border-collapse: separate;
   *border-collapse: collapsed; }
-  /* line 80, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
+  /* line 82, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
   .table-bordered th,
   .table-bordered td {
     border-left: 1px solid #8c9bab; }
-  /* line 86, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
+  /* line 88, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_tables.scss */
   .table-bordered thead:first-child tr:first-child th,
   .table-bordered tbody:first-child tr:first-child th,
   .table-bordered tbody:first-child tr:first-child td {
@@ -1810,14 +1806,9 @@ table {
 
 /* Buttons =================================================== */
 /* line 156, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-a[class*=btn] {
-  text-decoration: none; }
-
-/* line 158, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
 [class*=btn] {
   display: inline-block;
   *display: inline;
-  /* IE7 inline-block hack */
   *zoom: 1;
   padding: 6px 11px 6px;
   margin-bottom: 0;
@@ -1830,7 +1821,6 @@ a[class*=btn] {
   text-align: center;
   vertical-align: middle;
   background-color: #e6e6e6;
-  background-color: white;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e6e6e6));
   background-image: -webkit-linear-gradient(50%, white, #e6e6e6);
   background-image: -moz-linear-gradient(50%, white, #e6e6e6);
@@ -1841,78 +1831,31 @@ a[class*=btn] {
   border-bottom-color: #b3b3b3;
   border-radius: 4px;
   cursor: pointer;
-  *margin-left: .3em; }
-  /* line 181, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-  [class*=btn]:visited, [class*=btn]:hover {
+  *margin-left: .3em;
+  -webkit-transition: border 1s ease;
+  -moz-transition: border 1s ease;
+  -ms-transition: border 1s ease;
+  -o-transition: border 1s ease;
+  transition: border 1s ease; }
+  /* line 178, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+  [class*=btn]:hover {
     color: #404040;
-    text-decoration: none; }
-  /* line 186, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+    text-decoration: none;
+    background: #e6e6e6;
+    border-color: #b3b3b3;
+    border-bottom-color: #999999;
+    background-color: #f0f0f0;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(100%, whitesmoke));
+    background-image: -webkit-linear-gradient(50%, #f0f0f0, whitesmoke);
+    background-image: -moz-linear-gradient(50%, #f0f0f0, whitesmoke);
+    background-image: -ms-linear-gradient(50%, #f0f0f0, whitesmoke);
+    background-image: -o-linear-gradient(50%, #f0f0f0, whitesmoke);
+    background-image: linear-gradient(50%, #f0f0f0, whitesmoke); }
+  /* line 187, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
   [class*=btn]:first-child {
     *margin-left: 0; }
 
-/* line 189, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-input[type="submit"][class*=btn]:hover {
-  border-color: #cccccc; }
-
-/* line 192, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-.btn-block {
-  display: block;
-  width: 100%; }
-
-/* line 198, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-.btn-disabled {
-  opacity: .5;
-  cursor: default; }
-
-/* line 204, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-.btn-error {
-  background-color: #da4f49;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #da4f49), color-stop(100%, #c72f29));
-  background-image: -webkit-linear-gradient(50%, #da4f49, #c72f29);
-  background-image: -moz-linear-gradient(50%, #da4f49, #c72f29);
-  background-image: -ms-linear-gradient(50%, #da4f49, #c72f29);
-  background-image: -o-linear-gradient(50%, #da4f49, #c72f29);
-  background-image: linear-gradient(50%, #da4f49, #c72f29);
-  border-color: #b22a24;
-  border-bottom-color: #9d2520;
-  color: white; }
-  /* line 211, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-  .btn-error:visited, .btn-error:hover {
-    color: white; }
-
-/* line 216, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-.btn-info {
-  background-color: #d9edf7;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9edf7), color-stop(100%, #afd9ee));
-  background-image: -webkit-linear-gradient(50%, #d9edf7, #afd9ee);
-  background-image: -moz-linear-gradient(50%, #d9edf7, #afd9ee);
-  background-image: -ms-linear-gradient(50%, #d9edf7, #afd9ee);
-  background-image: -o-linear-gradient(50%, #d9edf7, #afd9ee);
-  background-image: linear-gradient(50%, #d9edf7, #afd9ee);
-  border-color: #9acfea;
-  border-bottom-color: #85c5e5;
-  color: #247fad; }
-  /* line 223, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-  .btn-info:visited, .btn-info:hover {
-    color: #247fad; }
-
-/* line 228, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-.btn-inverse {
-  background-color: #414141;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #414141), color-stop(100%, #272727));
-  background-image: -webkit-linear-gradient(50%, #414141, #272727);
-  background-image: -moz-linear-gradient(50%, #414141, #272727);
-  background-image: -ms-linear-gradient(50%, #414141, #272727);
-  background-image: -o-linear-gradient(50%, #414141, #272727);
-  background-image: linear-gradient(50%, #414141, #272727);
-  border-color: #1b1b1b;
-  border-bottom-color: #0e0e0e;
-  color: white; }
-  /* line 235, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-  .btn-inverse:visited, .btn-inverse:hover {
-    color: white; }
-
-/* line 240, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+/* line 191, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
 .btn-primary {
   background-color: #2d353e;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2d353e), color-stop(100%, #181c20));
@@ -1924,11 +1867,41 @@ input[type="submit"][class*=btn]:hover {
   border-color: #0d0f12;
   border-bottom-color: #020203;
   color: white; }
-  /* line 247, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-  .btn-primary:visited, .btn-primary:hover {
-    color: white; }
+  /* line 197, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+  .btn-primary:hover {
+    color: white;
+    background-color: #313a44;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #313a44), color-stop(100%, #333d47));
+    background-image: -webkit-linear-gradient(50%, #313a44, #333d47);
+    background-image: -moz-linear-gradient(50%, #313a44, #333d47);
+    background-image: -ms-linear-gradient(50%, #313a44, #333d47);
+    background-image: -o-linear-gradient(50%, #313a44, #333d47);
+    background-image: linear-gradient(50%, #313a44, #333d47); }
 
-/* line 252, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+/* line 204, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+.btn-info {
+  background-color: #d9edf7;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9edf7), color-stop(100%, #afd9ee));
+  background-image: -webkit-linear-gradient(50%, #d9edf7, #afd9ee);
+  background-image: -moz-linear-gradient(50%, #d9edf7, #afd9ee);
+  background-image: -ms-linear-gradient(50%, #d9edf7, #afd9ee);
+  background-image: -o-linear-gradient(50%, #d9edf7, #afd9ee);
+  background-image: linear-gradient(50%, #d9edf7, #afd9ee);
+  border-color: #9acfea;
+  border-bottom-color: #85c5e5;
+  color: #247fad; }
+  /* line 210, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+  .btn-info:hover {
+    color: #247fad;
+    background-color: #c0e1f2;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c0e1f2), color-stop(100%, #cce7f4));
+    background-image: -webkit-linear-gradient(50%, #c0e1f2, #cce7f4);
+    background-image: -moz-linear-gradient(50%, #c0e1f2, #cce7f4);
+    background-image: -ms-linear-gradient(50%, #c0e1f2, #cce7f4);
+    background-image: -o-linear-gradient(50%, #c0e1f2, #cce7f4);
+    background-image: linear-gradient(50%, #c0e1f2, #cce7f4); }
+
+/* line 217, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
 .btn-success {
   background-color: #5bb75b;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5bb75b), color-stop(100%, #449b44));
@@ -1939,8 +1912,17 @@ input[type="submit"][class*=btn]:hover {
   background-image: linear-gradient(50%, #5bb75b, #449b44);
   border-color: #3c893c;
   border-bottom-color: #347834; }
+  /* line 222, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+  .btn-success:hover {
+    background-color: #4cad4c;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4cad4c), color-stop(100%, #5bb75b));
+    background-image: -webkit-linear-gradient(50%, #4cad4c, #5bb75b);
+    background-image: -moz-linear-gradient(50%, #4cad4c, #5bb75b);
+    background-image: -ms-linear-gradient(50%, #4cad4c, #5bb75b);
+    background-image: -o-linear-gradient(50%, #4cad4c, #5bb75b);
+    background-image: linear-gradient(50%, #4cad4c, #5bb75b); }
 
-/* line 259, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+/* line 228, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
 .btn-warning {
   background-color: #faa732;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #faa732), color-stop(100%, #f39106));
@@ -1951,37 +1933,90 @@ input[type="submit"][class*=btn]:hover {
   background-image: linear-gradient(50%, #faa732, #f39106);
   border-color: #da8205;
   border-bottom-color: #c17305; }
+  /* line 233, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+  .btn-warning:hover {
+    background-color: #f39106;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f39106), color-stop(100%, #faad41));
+    background-image: -webkit-linear-gradient(50%, #f39106, #faad41);
+    background-image: -moz-linear-gradient(50%, #f39106, #faad41);
+    background-image: -ms-linear-gradient(50%, #f39106, #faad41);
+    background-image: -o-linear-gradient(50%, #f39106, #faad41);
+    background-image: linear-gradient(50%, #f39106, #faad41); }
 
-/* line 266, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-.btn-xlarge {
-  padding: 11px 22px;
-  font-size: 21px;
-  font-size: 2.1rem; }
+/* line 239, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+.btn-error {
+  background-color: #da4f49;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #da4f49), color-stop(100%, #c72f29));
+  background-image: -webkit-linear-gradient(50%, #da4f49, #c72f29);
+  background-image: -moz-linear-gradient(50%, #da4f49, #c72f29);
+  background-image: -ms-linear-gradient(50%, #da4f49, #c72f29);
+  background-image: -o-linear-gradient(50%, #da4f49, #c72f29);
+  background-image: linear-gradient(50%, #da4f49, #c72f29);
+  border-color: #b22a24;
+  border-bottom-color: #9d2520;
+  color: white; }
+  /* line 245, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+  .btn-error:hover {
+    color: white;
+    background-color: #c72f29;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c72f29), color-stop(100%, #da4f49));
+    background-image: -webkit-linear-gradient(50%, #c72f29, #da4f49);
+    background-image: -moz-linear-gradient(50%, #c72f29, #da4f49);
+    background-image: -ms-linear-gradient(50%, #c72f29, #da4f49);
+    background-image: -o-linear-gradient(50%, #c72f29, #da4f49);
+    background-image: linear-gradient(50%, #c72f29, #da4f49); }
 
-/* line 272, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+/* line 252, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+.btn-disabled {
+  opacity: .6;
+  cursor: default; }
+  /* line 256, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+  .btn-disabled:hover {
+    background-color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e6e6e6));
+    background-image: -webkit-linear-gradient(50%, white, #e6e6e6);
+    background-image: -moz-linear-gradient(50%, white, #e6e6e6);
+    background-image: -ms-linear-gradient(50%, white, #e6e6e6);
+    background-image: -o-linear-gradient(50%, white, #e6e6e6);
+    background-image: linear-gradient(50%, white, #e6e6e6); }
+
+/* line 260, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+.btn-mini {
+  padding: 3px 5px;
+  border-radius: 2px;
+  font-size: 9px;
+  font-size: 0.9rem; }
+
+/* line 265, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+.btn-small {
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-size: 1.1rem; }
+
+/*
 .btn-large {
-  *padding-top: 7px;
-  *padding-bottom: 7px; }
-
-/* line 276, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+	*padding-top: 7px;
+	*padding-bottom: 7px;
+} */
+/* line 275, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
 .btn-large {
   padding: 11px 22px;
   font-size: 14px;
   font-size: 1.4rem; }
 
-/* line 281, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-.btn-small {
-  padding: 6px 10px;
-  font-size: 11px;
-  font-size: 1.1rem; }
+/* line 279, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+.btn-xlarge {
+  padding: 11px 22px;
+  font-size: 21px;
+  font-size: 2.1rem; }
 
-/* line 286, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
-.btn-mini {
-  padding: 3px 5px;
-  font-size: 9px;
-  font-size: 0.9rem; }
+/* line 284, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+.btn-block {
+  display: block;
+  width: 100%; }
 
-/* line 292, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+/* line 290, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
 .button-group {
   position: relative;
   *zoom: 1;
@@ -1996,29 +2031,29 @@ input[type="submit"][class*=btn]:hover {
   .button-group:after {
     clear: both; }
 
-/* line 300, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+/* line 298, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
 .button-group [class*=btn] {
   position: relative;
   float: left;
   margin-left: -3px;
   border-radius: 0; }
 
-/* line 307, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+/* line 305, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
 .button-group [class*=btn]:first-child {
   margin-left: 0;
   border-radius: 5px 0 0 5px; }
 
-/* line 312, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+/* line 310, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
 .button-group [class*=btn]:last-child {
   border-radius: 0 5px 5px 0; }
 
-/* line 316, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+/* line 314, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
 .button-toolbar {
   clear: both;
   margin-top: 0.75em;
   margin-bottom: 0.75em; }
 
-/* line 322, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
+/* line 320, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_textures.scss */
 .button-toolbar .button-group {
   display: inline-block;
   *display: inline;
