@@ -1,0 +1,180 @@
+<!doctype html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>startgate</title>
+
+	<meta name="description" content="">
+	<meta name="author" content="Tom de Bruin">
+
+	<meta name="viewport" content="width=device-width">
+
+	<!-- For all browsers -->
+	<link rel="stylesheet" href="../inc/css/style.css">
+	<link rel="stylesheet" href="../inc/css/styleguide.css">
+
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="inc/js/selectivizr-min.js"></script>
+	<![endif]-->
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<meta http-equiv="cleartype" content="on">
+</head>
+<body class="stylesheet">
+
+							
+	<header role="banner" class="clearfix">
+	<div class="inner">
+		<h1><i class="icon-coffee"></i> startgate styleguide</h1>
+	</div>
+</header>
+
+<nav role="navigation">
+	<ul class="nav">
+		<li><a class=""href="/styleguide/">Index</a></li>
+		<li><a class=""href="texture.html">Texture</a></li>
+		<li><a class=""href="tables.html">Tables</a></li>
+		<li><a class=""href="typography.html">Typography</a></li>
+		<li><a class=""href="forms.html">Forms</a></li>
+		<li><a class="selected"href="buttons.html">Buttons</a></li>
+		<li><a class=""href="javascript.html">Javascript</a></li>
+	</ul>
+</nav>
+
+	<section>
+		<h1>Buttons</h1>
+		<p>Apply to <code>button</code>, <code>a</code>, <code>input</code>.</p>
+	</section>
+
+	<section>
+		<h2>Single Buttons</h2>
+
+		<table class="table-bordered">
+			<tbody>
+				<tr>
+					<td>Standard button</td>
+					<td><code>class=&quot;btn&quot;</code></td>
+					<td><button class="btn">Default</button></td>
+				</tr>
+				<tr>
+					<td>Disabled standard button</td>
+					<td><code>class=&quot;btn-disabled&quot;</code></td>
+					<td><button class="btn-disabled">Disabled</button></td>
+				</tr>
+				<tr>
+					<td>Standard button (mini)</td>
+					<td><code>class=&quot;btn-mini&quot;</code></td>
+					<td><button class="btn-mini">Default</button></td>
+				</tr>
+				<tr>
+					<td>Standard button (small)</td>
+					<td><code>class=&quot;btn-small&quot;</code></td>
+					<td><button class="btn-small">Default</button></td>
+				</tr>
+				<tr>
+					<td>Standard button (large)</td>
+					<td><code>class=&quot;btn-large&quot;</code></td>
+					<td><button class="btn-large">Default</button></td>
+				</tr>
+				<tr>
+					<td>Standard button (xlarge)</td>
+					<td><code>class=&quot;btn-xlarge&quot;</code></td>
+					<td><button class="btn-xlarge">Default</button></td>
+				</tr>
+				<tr>
+					<td>Extra visual weight of a primary action</td>
+					<td><code>class=&quot;btn-primary&quot;</code></td>
+					<td><button class="btn-primary">Primary</button></td>
+				</tr>
+				<tr>
+					<td>An alternate to default styles</td>
+					<td><code>class=&quot;btn-info&quot;</code></td>
+					<td><button class="btn-info">Info</button></td>
+				</tr>
+				<tr>
+					<td>A positive action</td>
+					<td><code>class=&quot;btn-success&quot;</code></td>
+					<td><button class="btn-success">Success</button></td>
+				</tr>
+				<tr>
+					<td>Caution should be taken</td>
+					<td><code>class=&quot;btn-warning&quot;</code></td>
+					<td><button class="btn-warning">Warning</button></td>
+				</tr>
+				<tr>
+					<td>Caution should be taken</td>
+					<td><code>class=&quot;btn-error&quot;</code></td>
+					<td><button class="btn-error">Error</button></td>
+				</tr>
+				<tr>
+					<td>Block</td>
+					<td><code>class=&quot;btn-block&quot;</code></td>
+					<td><button class="btn-block">Block Button</button></td>
+				</tr>
+				<tr>
+					<td>Input Type Submit</td>
+					<td><code>&lt;input type=&quot;submit&quot; class=&quot;btn&quot; value=&quot;Submit&quot;/&gt;</code></td>
+					<td><input type="submit" class="btn" value="Submit"></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</section>
+
+	<section>
+		<h2>Button Groups</h2>
+
+		<p><code>class="button-group"</code></p>
+
+		<div class="button-group">
+			<button class="btn">First</button>
+			<button class="btn">Second</button>
+			<button class="btn">Third</button>
+			<button class="btn">Fourth</button>
+		</div>
+
+		<p><code>class="button-toolbar" &gt; class="button-group"</code></p>
+
+		<div class="button-toolbar">
+			<div class="button-group">
+				<button class="btn">First</button>
+				<button class="btn">Second</button>
+				<button class="btn">Third</button>
+				<button class="btn">Fourth</button>
+			</div>
+			<div class="button-group">
+				<button class="btn">Fifth</button>
+				<button class="btn">Sixth</button>
+				<button class="btn">Seventh</button>
+				<button class="btn">Eighth</button>
+			</div>
+		</div>
+
+	</section>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="inc/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<script src="../inc/js/plugins-ck.js"></script>
+	<script src="../inc/js/script-ck.js"></script>
+
+	<script>
+/*
+		jQuery(document).ready(function($) {
+
+			$('.gridbutton').click(function() {
+				$('body').toggleClass('showgrid');
+				var txt = $('body').hasClass('showgrid') ? 'Hide Grid' : 'Show Grid';
+				$(this).text(txt);
+			});
+		});
+*/
+	</script>
+</body>
+</html>
