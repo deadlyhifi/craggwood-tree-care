@@ -129,7 +129,17 @@ header {
 .inner,
 nav,
 section,
-.grid { @include outer-container; }
+.grid {
+	@include outer-container;
+
+}
+
+// margin on mobile.
+section {
+	@include media($desktop) {
+		margin: 0 $baseline / 2;
+	}
+}
 
 article {
 	@include span-columns(8);
@@ -148,7 +158,7 @@ aside {
 	}
 }
 
-// columns
+// 50%
 .col-fifty {
 	@include span-columns(6);
 
@@ -165,11 +175,13 @@ aside {
 	}
 }
 
+// 25%
 .col-twentyfive {
 	@include span-columns(3);
 
 	@include media($tablet) {
 		@include span-columns(4);
+//		@include span-columns(4);
 	}
 	@include media($mobile) {
 		@include span-columns(3);
