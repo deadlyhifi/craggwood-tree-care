@@ -243,8 +243,21 @@ aside {
       /* line 54, /Users/deadlyhifi/Sites/github/startgate/inc/scss/neat/grid/_span-columns.scss */
       .col-fifty:last-child {
         margin-right: 0; } }
+  /* line 169, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+  .col-fifty.sub {
+    background-color: blue; }
+    @media screen and (max-width: 768px) {
+      /* line 169, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+      .col-fifty.sub {
+        display: block;
+        float: left;
+        margin-right: 3.57866%;
+        width: 100%; }
+        /* line 54, /Users/deadlyhifi/Sites/github/startgate/inc/scss/neat/grid/_span-columns.scss */
+        .col-fifty.sub:last-child {
+          margin-right: 0; } }
 
-/* line 170, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 177, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .col-thirtythree {
   display: block;
   float: left;
@@ -254,7 +267,7 @@ aside {
   .col-thirtythree:last-child {
     margin-right: 0; }
   @media screen and (max-width: 480px) {
-    /* line 170, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+    /* line 177, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
     .col-thirtythree {
       display: block;
       float: left;
@@ -264,7 +277,7 @@ aside {
       .col-thirtythree:last-child {
         margin-right: 0; } }
 
-/* line 179, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 186, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .col-twentyfive {
   display: block;
   float: left;
@@ -274,7 +287,7 @@ aside {
   .col-twentyfive:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
-    /* line 179, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+    /* line 186, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
     .col-twentyfive {
       display: block;
       float: left;
@@ -284,7 +297,7 @@ aside {
       .col-twentyfive:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 480px) {
-    /* line 179, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+    /* line 186, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
     .col-twentyfive {
       display: block;
       float: left;

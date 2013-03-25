@@ -165,6 +165,13 @@ aside {
 	@include media($mobile) {
 		@include span-columns(6);
 	}
+
+	&.sub {
+		background-color: blue;
+		@include media($tablet) {
+			@include span-columns(8);
+		}
+	}
 }
 
 .col-thirtythree {
