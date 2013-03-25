@@ -128,7 +128,8 @@ header {
 // grids - neat
 .inner,
 nav,
-section { @include outer-container; }
+section,
+.grid { @include outer-container; }
 
 article {
 	@include span-columns(8);
@@ -143,6 +144,35 @@ aside {
 	background-color: hotpink;
 
 	@include media($mobile) {
-	  @include span-columns(6);
+		@include span-columns(6);
+	}
+}
+
+// columns
+.col-fifty {
+	@include span-columns(6);
+
+	@include media($mobile) {
+		@include span-columns(6);
+	}
+}
+
+.col-thirtythree {
+	@include span-columns(4);
+
+	@include media($mobile) {
+		@include span-columns(6);
+	}
+}
+
+.col-twentyfive {
+	@include span-columns(3);
+
+	@include media($tablet) {
+		@include span-columns(4);
+	}
+	@include media($mobile) {
+		@include span-columns(3);
+		// second one needs a last class.
 	}
 }
