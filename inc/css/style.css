@@ -91,13 +91,13 @@ a {
 
 /* line 73, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
 ::-moz-selection {
-  background-color: #d6dbe1;
+  background-color: hotpink;
   color: #2d353e;
   text-shadow: none; }
 
 /* line 78, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_defaults.scss */
 ::selection {
-  background-color: #d6dbe1;
+  background-color: hotpink;
   color: #2d353e;
   text-shadow: none; }
 

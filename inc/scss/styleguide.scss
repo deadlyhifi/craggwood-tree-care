@@ -143,7 +143,7 @@ section {
 
 article {
 	@include span-columns(8);
-	background-color: red;
+	border: 1px solid $lightergrey;
 
 	@include media($mobile) {
 	  @include span-columns(6);
@@ -151,7 +151,7 @@ article {
 }
 aside {
 	@include span-columns(4);
-	background-color: hotpink;
+	border: 1px solid $lightergrey;
 
 	@include media($mobile) {
 		@include span-columns(6);
@@ -160,6 +160,8 @@ aside {
 
 // 50%
 .col-fifty {
+	border: 1px solid $lightergrey;
+
 	@include span-columns(6);
 
 	@include media($mobile) {
@@ -167,14 +169,18 @@ aside {
 	}
 
 	&.sub {
-		background-color: blue;
+		@include span-columns(3 of 6);
+
 		@include media($tablet) {
-			@include span-columns(8);
+			@include span-columns(6 of 6);
 		}
 	}
 }
 
+// 33%
 .col-thirtythree {
+	border: 1px solid $lightergrey;
+
 	@include span-columns(4);
 
 	@include media($mobile) {
@@ -184,14 +190,15 @@ aside {
 
 // 25%
 .col-twentyfive {
+	border: 1px solid $lightergrey;
+
 	@include span-columns(3);
 
 	@include media($tablet) {
 		@include span-columns(4);
-//		@include span-columns(4);
-	}
+		@include omega(2n+1);
+}
 	@include media($mobile) {
-		@include span-columns(3);
-		// second one needs a last class.
+		@include span-columns(6);
 	}
 }
