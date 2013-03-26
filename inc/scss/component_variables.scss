@@ -1,7 +1,7 @@
 // Variables
 @import "bourbon";
 
-// BASE 				==============================
+// BASE 			==============================
 
 // greyscale
 $black 				: rgb(0,0,0);
@@ -14,7 +14,7 @@ $white 				: rgb(255,255,255);
 $bodycolor: $white;
 $textcolor: black;
 
-// TYPOGRAPHY 			==============================
+// TYPOGRAPHY 		==============================
 
 $basefont: $helvetica; /* $helvetica; $georgia; $lucida-grande; $monospace; $verdana; */;
 $basefontsize: 16;
@@ -28,7 +28,7 @@ $altlineheight: 1.35em;
 
 $codefont: $monospace;
 
-// WIDTH/ MARGINS 	 ==============================
+// WIDTH/ MARGINS 	==============================
 
 $baseline: $baselineheight;
 
@@ -41,11 +41,11 @@ $baseline: $baselineheight;
 //$max-width: em(1088);
 
 // Define the breakpoints
-$mobile: new-breakpoint(max-width 480px 6);
-$tablet: new-breakpoint(max-width 768px 8);
-$desktop: new-breakpoint(max-width $max-width 12);
+$mobile				: new-breakpoint(max-width 480px 6);
+$tablet				: new-breakpoint(max-width 768px 8);
+$desktop			: new-breakpoint(max-width $max-width 12);
 
-// COLOUR 				==============================
+// COLOUR 			==============================
 
 $basecolor 			: rgb(45,53,62);
 $compcolor 			: adjust-hue($basecolor, 180);
@@ -65,7 +65,7 @@ $inverscolor 		: rgb(65,65,65);
 $successcolor 		: rgb(91,183,91);
 $warningcolor 		: rgb(250,167,50);
 
-// TEXTURE 				==============================
+// TEXTURE 			==============================
 
 // alert
 $alertbordercolor	: darken($alertcolor, 20%);
