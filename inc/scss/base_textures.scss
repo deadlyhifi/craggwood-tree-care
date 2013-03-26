@@ -322,3 +322,41 @@
 	*display: inline;
 	*zoom: 1;
 }
+
+// Stacked nav
+ul.nav-stacked {
+	list-style: none;
+	padding: 0;
+
+	li {
+		margin: 0;
+		display: block;
+
+		a {
+			display: block;
+			padding: 8px 12px;
+			border-width: 0 1px 1px 1px;
+			border-style: solid;
+			border-color: $white;
+			text-decoration: none;
+			background-color: $lightergrey;
+
+			&:hover {
+				background-color: $lightgrey;
+			}
+
+			&.selected {
+				background-color: $linkcolor;
+				color: $white;
+			}
+		}
+
+		&:first-child a {
+			border-top-width: 1px;
+			border-radius: 4px 4px 0 0;
+		}
+		&:last-child a {
+			border-radius: 0 0 4px 4px;
+		}
+	}
+}
