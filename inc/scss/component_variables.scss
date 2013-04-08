@@ -41,10 +41,15 @@ $baseline: $baselineheight;
 //$max-width: em(1088);
 
 // Define the breakpoints
-$mobile				: new-breakpoint(max-width 480px 6);
-$tablet				: new-breakpoint(max-width 768px 8);
-$laptop				: new-breakpoint(max-width 960px 12);
-$desktop			: new-breakpoint(max-width $max-width 12);
+$mobile				: 480px;
+$tablet				: 768px;
+$laptop				: 960px;
+$desktop			: $max-width;
+
+$grid-mobile		: new-breakpoint(max-width $mobile 6);
+$grid-tablet		: new-breakpoint(max-width $tablet 8);
+$grid-laptop		: new-breakpoint(max-width $laptop 12);
+$grid-desktop		: new-breakpoint(max-width $desktop 12);
 
 // COLOUR 			==============================
 

@@ -2500,18 +2500,26 @@ select:focus {
   margin-left: 0;
   margin-right: 3px; }
 
-@media screen and (max-width: 68em) {
-  /* =========================================== */
-  /* =========================================== */ }
-@media screen and (max-width: 960px) {
-  /* =========================================== */
-  /* =========================================== */ }
-@media screen and (max-width: 768px) {
-  /* =========================================== */
-  /* =========================================== */ }
-@media screen and (max-width: 480px) {
-  /* =========================================== */
-  /* =========================================== */ }
+/* line 1, /Users/deadlyhifi/Sites/github/startgate/inc/scss/smaccs_layout.scss */
+body {
+  background-color: red; }
+
+@media only screen and (min-width: 480px) {
+  /* line 1, /Users/deadlyhifi/Sites/github/startgate/inc/scss/smaccs_layout_break1.scss */
+  body {
+    background-color: orange; } }
+@media only screen and (min-width: 768px) {
+  /* line 1, /Users/deadlyhifi/Sites/github/startgate/inc/scss/smaccs_layout_break2.scss */
+  body {
+    background-color: lightyellow; } }
+@media only screen and (min-width: 960px) {
+  /* line 1, /Users/deadlyhifi/Sites/github/startgate/inc/scss/smaccs_layout_break3.scss */
+  body {
+    background-color: lightgreen; } }
+@media only screen and (min-width: 68em) {
+  /* line 1, /Users/deadlyhifi/Sites/github/startgate/inc/scss/smaccs_layout_break4.scss */
+  body {
+    background-color: lightblue; } }
 @media print {
   /* line 3, /Users/deadlyhifi/Sites/github/startgate/inc/scss/mq_print.scss */
   * {

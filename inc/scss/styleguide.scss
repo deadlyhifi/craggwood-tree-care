@@ -133,38 +133,38 @@ header {
 
 
 	.mobile 	{ display: none; background-color: pink; }
-	.tablet 	{ display: none; background-color: lightblue; }
-	.laptop		{ display: none; background-color: yellow; }
-	.desktop	{ display: none; background-color: lightgreen; }
-	.full		{ display: block; background-color: hotpink; }
+	.break1 	{ display: none; background-color: lightblue; }
+	.break2		{ display: none; background-color: yellow; }
+	.break3		{ display: none; background-color: fuchsia; }
+	.break4		{ display: block; background-color: hotpink; }
 
-	@include media($desktop) {
+	@include media($grid-desktop) {
 		.mobile 	{ display: none; }
-		.tablet 	{ display: none; }
-		.laptop		{ display: none; }
-		.desktop	{ display: block; }
-		.full		{ display: none; }
+		.break1 	{ display: none; }
+		.break2		{ display: none; }
+		.break3		{ display: block; }
+		.break4		{ display: none; }
 	}
-	@include media($laptop) {
+	@include media($grid-laptop) {
 		.mobile 	{ display: none; }
-		.tablet 	{ display: none; }
-		.laptop		{ display: block; }
-		.desktop	{ display: none; }
-		.full		{ display: none; }
+		.break1 	{ display: none; }
+		.break2		{ display: block; }
+		.break3		{ display: none; }
+		.break4		{ display: none; }
 	}
-	@include media($tablet) {
+	@include media($grid-tablet) {
 		.mobile 	{ display: none; }
-		.tablet 	{ display: block; }
-		.laptop		{ display: none; }
-		.desktop	{ display: none; }
-		.full		{ display: none; }
+		.break1 	{ display: block; }
+		.break2		{ display: none; }
+		.break3		{ display: none; }
+		.break4		{ display: none; }
 	}
-	@include media($mobile) {
+	@include media($grid-mobile) {
 		.mobile 	{ display: block; }
-		.tablet 	{ display: none; }
-		.laptop		{ display: none; }
-		.desktop	{ display: none; }
-		.full		{ display: none; }
+		.break1 	{ display: none; }
+		.break2		{ display: none; }
+		.break3		{ display: none; }
+		.break4		{ display: none; }
 	}
 }
 
@@ -177,7 +177,7 @@ section,
 }
 
 section {
-	@include media($desktop) {
+	@include media($grid-desktop) {
 		margin: 0 $baseline / 4;
 	}
 }
@@ -186,7 +186,7 @@ article {
 	@include span-columns(8);
 	border: 1px solid $lightergrey;
 
-	@include media($mobile) {
+	@include media($grid-mobile) {
 	  @include span-columns(6);
 	}
 }
@@ -194,7 +194,7 @@ aside {
 	@include span-columns(4);
 	border: 1px solid $lightergrey;
 
-	@include media($mobile) {
+	@include media($grid-mobile) {
 		@include span-columns(6);
 	}
 }
@@ -205,14 +205,14 @@ aside {
 
 	@include span-columns(6);
 
-	@include media($mobile) {
+	@include media($grid-mobile) {
 		@include span-columns(6);
 	}
 
 	&.sub {
 		@include span-columns(3 of 6);
 
-		@include media($tablet) {
+		@include media($grid-tablet) {
 			@include span-columns(6 of 6);
 		}
 	}
@@ -224,7 +224,7 @@ aside {
 
 	@include span-columns(4);
 
-	@include media($mobile) {
+	@include media($grid-mobile) {
 		@include span-columns(6);
 	}
 }
@@ -235,11 +235,11 @@ aside {
 
 	@include span-columns(3);
 
-	@include media($tablet) {
+	@include media($grid-tablet) {
 		@include span-columns(4);
 		@include omega(2n+1);
 }
-	@include media($mobile) {
+	@include media($grid-mobile) {
 		@include span-columns(6);
 	}
 }
