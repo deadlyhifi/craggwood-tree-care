@@ -23,29 +23,19 @@ Tom de Bruin
 
 // 2. SMACCS 			==============================
 
-//@import "smaccs_layout";
 //@import "smaccs_module";
 //@import "smaccs_state"; // used in JS states - run after the page has loaded.
 //@import "smaccs_theme"; // rarey used - only if there are multiple themes within a project.
 
+@import "smaccs_layout";
+@import "smaccs_layout_desktop";
+@import "smaccs_layout_laptop";
+@import "smaccs_layout_tablet";
+@import "smaccs_layout_mobile";
+
 
 // Media Queries 			==============================
 @media print { @import "mq_print"; }
-
-// 480px
-@media only screen and (min-width: 480px) and (max-width: 600px) { @import "mq_480"; }
-
-// 600px
-@media only screen and (min-width: 600px) { @import "mq_600"; }
-
-// 768px
-@media only screen and (min-width: 768px) { @import "mq_768"; }
-
-// 992px
-@media only screen and (min-width: 992px) { @import "mq_992"; }
-
-// 1382px
-@media only screen and (min-width: 1382px) { @import "mq_1382"; }
 
 // 2x
 @media

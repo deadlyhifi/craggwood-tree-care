@@ -125,6 +125,49 @@ header {
 .swatch-warning span:nth-child(4) {
 	@include background-alpha($warningcolor, .6); }
 
+// HOW DO
+.how-do {
+	@include outer-container;
+	margin-bottom: $baseline;
+	div { @include pad($baseline / 4); }
+
+
+	.mobile 	{ display: none; background-color: pink; }
+	.tablet 	{ display: none; background-color: lightblue; }
+	.laptop		{ display: none; background-color: yellow; }
+	.desktop	{ display: none; background-color: lightgreen; }
+	.full		{ display: block; background-color: hotpink; }
+
+	@include media($desktop) {
+		.mobile 	{ display: none; }
+		.tablet 	{ display: none; }
+		.laptop		{ display: none; }
+		.desktop	{ display: block; }
+		.full		{ display: none; }
+	}
+	@include media($laptop) {
+		.mobile 	{ display: none; }
+		.tablet 	{ display: none; }
+		.laptop		{ display: block; }
+		.desktop	{ display: none; }
+		.full		{ display: none; }
+	}
+	@include media($tablet) {
+		.mobile 	{ display: none; }
+		.tablet 	{ display: block; }
+		.laptop		{ display: none; }
+		.desktop	{ display: none; }
+		.full		{ display: none; }
+	}
+	@include media($mobile) {
+		.mobile 	{ display: block; }
+		.tablet 	{ display: none; }
+		.laptop		{ display: none; }
+		.desktop	{ display: none; }
+		.full		{ display: none; }
+	}
+}
+
 // grids - neat
 .inner,
 nav,
@@ -133,10 +176,9 @@ section,
 	@include outer-container;
 }
 
-// margin on mobile.
 section {
 	@include media($desktop) {
-		margin: 0 $baseline / 2;
+		margin: 0 $baseline / 4;
 	}
 }
 
