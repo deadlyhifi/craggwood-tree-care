@@ -88,6 +88,10 @@ select {
 	&:hover {
 		border-color: $inputhover;
 	}
+
+	@include placeholder {
+		color: $lightgrey;
+	}
 }
 
 .input-mini {

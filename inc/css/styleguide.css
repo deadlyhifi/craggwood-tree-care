@@ -178,11 +178,11 @@ section,
     clear: both; }
 
 @media screen and (max-width: 68em) {
-  /* line 138, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+  /* line 137, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
   section {
     margin: 0 0.75em; } }
 
-/* line 144, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 143, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 article {
   display: block;
   float: left;
@@ -193,7 +193,7 @@ article {
   article:last-child {
     margin-right: 0; }
   @media screen and (max-width: 480px) {
-    /* line 144, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+    /* line 143, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
     article {
       display: block;
       float: left;
@@ -203,7 +203,7 @@ article {
       article:last-child {
         margin-right: 0; } }
 
-/* line 152, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 151, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 aside {
   display: block;
   float: left;
@@ -214,7 +214,7 @@ aside {
   aside:last-child {
     margin-right: 0; }
   @media screen and (max-width: 480px) {
-    /* line 152, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+    /* line 151, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
     aside {
       display: block;
       float: left;
@@ -224,7 +224,7 @@ aside {
       aside:last-child {
         margin-right: 0; } }
 
-/* line 162, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 161, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .col-fifty {
   border: 1px solid #e6e6e6;
   display: block;
@@ -235,7 +235,7 @@ aside {
   .col-fifty:last-child {
     margin-right: 0; }
   @media screen and (max-width: 480px) {
-    /* line 162, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+    /* line 161, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
     .col-fifty {
       display: block;
       float: left;
@@ -244,7 +244,7 @@ aside {
       /* line 54, /Users/deadlyhifi/Sites/github/startgate/inc/scss/neat/grid/_span-columns.scss */
       .col-fifty:last-child {
         margin-right: 0; } }
-  /* line 171, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+  /* line 170, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
   .col-fifty.sub {
     display: block;
     float: left;
@@ -254,7 +254,7 @@ aside {
     .col-fifty.sub:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px) {
-      /* line 171, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+      /* line 170, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
       .col-fifty.sub {
         display: block;
         float: left;
@@ -264,7 +264,7 @@ aside {
         .col-fifty.sub:last-child {
           margin-right: 0; } }
 
-/* line 181, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 180, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .col-thirtythree {
   border: 1px solid #e6e6e6;
   display: block;
@@ -275,7 +275,7 @@ aside {
   .col-thirtythree:last-child {
     margin-right: 0; }
   @media screen and (max-width: 480px) {
-    /* line 181, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+    /* line 180, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
     .col-thirtythree {
       display: block;
       float: left;
@@ -285,7 +285,7 @@ aside {
       .col-thirtythree:last-child {
         margin-right: 0; } }
 
-/* line 192, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+/* line 191, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
 .col-twentyfive {
   border: 1px solid #e6e6e6;
   display: block;
@@ -296,7 +296,7 @@ aside {
   .col-twentyfive:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
-    /* line 192, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+    /* line 191, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
     .col-twentyfive {
       display: block;
       float: left;
@@ -309,7 +309,7 @@ aside {
       .col-twentyfive:nth-child(3n) {
         margin-right: 0; } }
   @media screen and (max-width: 480px) {
-    /* line 192, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
+    /* line 191, /Users/deadlyhifi/Sites/github/startgate/inc/scss/styleguide.scss */
     .col-twentyfive {
       display: block;
       float: left;
