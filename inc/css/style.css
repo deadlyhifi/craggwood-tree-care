@@ -2272,27 +2272,33 @@ select {
   input::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder,
   select::-webkit-input-placeholder {
-    color: #bfbfbf; }
+    color: #bfbfbf;
+    font-size: 14px;
+    font-size: 1.4rem; }
   /* line 13, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/css3/_placeholder.scss */
   input:-moz-placeholder,
   textarea:-moz-placeholder,
   select:-moz-placeholder {
-    color: #bfbfbf; }
+    color: #bfbfbf;
+    font-size: 14px;
+    font-size: 1.4rem; }
   /* line 13, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/css3/_placeholder.scss */
   input:-ms-input-placeholder,
   textarea:-ms-input-placeholder,
   select:-ms-input-placeholder {
-    color: #bfbfbf; }
+    color: #bfbfbf;
+    font-size: 14px;
+    font-size: 1.4rem; }
 
-/* line 97, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 98, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .input-mini {
   width: 60px; }
 
-/* line 100, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 101, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .input-small {
   width: 90px; }
 
-/* line 105, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 106, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 input[type="image"],
 input[type="checkbox"],
 input[type="radio"] {
@@ -2306,7 +2312,7 @@ input[type="radio"] {
   border-radius: 0;
   border: 0 \9; }
 
-/* line 118, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 119, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -2316,12 +2322,12 @@ input[type="radio"] {
   *width: 13px;
   *height: 13px; }
 
-/* line 125, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 126, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 input[type="image"] {
   border: 0;
   box-shadow: none; }
 
-/* line 130, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 131, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 input[type="file"] {
   width: auto;
   padding: initial;
@@ -2331,7 +2337,7 @@ input[type="file"] {
   background-color: initial;
   box-shadow: none; }
 
-/* line 142, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 143, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -2340,48 +2346,49 @@ input[type="submit"] {
   cursor: pointer;
   *overflow: visible; }
 
-/* line 150, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 151, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 select,
 input[type="file"] {
   height: 28px;
   *margin-top: 4px;
   line-height: 28px; }
 
-/* line 156, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 157, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 select {
   width: auto;
   background-color: white;
   font-size: 13px;
   font-size: 1.3rem; }
 
-/* line 163, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 164, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 select[multiple],
 select[size] {
   height: auto; }
 
-/* line 166, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 167, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 textarea {
   height: auto;
   overflow: auto;
   vertical-align: top; }
 
-/* line 173, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 174, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 input[type="hidden"] {
   display: none; }
 
-/* line 177, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 178, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .radio,
 .checkbox {
   padding-left: 18px;
   font-weight: normal; }
 
-/* line 183, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 184, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
   float: left;
-  margin-left: -18px; }
+  margin-left: -18px;
+  margin-top: 5px; }
 
-/* line 189, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 191, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .radio.inline,
 .checkbox.inline {
   display: inline-block;
@@ -2389,12 +2396,12 @@ input[type="hidden"] {
   margin-bottom: 0;
   vertical-align: middle; }
 
-/* line 197, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 199, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .radio.inline + .radio.inline,
 .checkbox.inline + .checkbox.inline {
   margin-left: 10px; }
 
-/* line 207, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 209, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 input[disabled],
 select[disabled],
 textarea[disabled],
@@ -2404,58 +2411,48 @@ textarea[readonly] {
   opacity: .5;
   cursor: not-allowed; }
 
-/* line 214, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 216, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 input:focus,
 textarea:focus {
   border-color: #2d353e, 40%;
   outline: 0;
   outline: thin dotted \9; }
 
-/* line 223, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 225, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus,
 select:focus {
   box-shadow: none; }
 
-/* line 226, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
-::-webkit-input-placeholder {
-  font-size: 14px;
-  font-size: 1.4rem; }
-
-/* line 229, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
-input:-moz-placeholder {
-  font-size: 14px;
-  font-size: 1.4rem; }
-
-/* line 234, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 230, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .help-block,
 .help-inline {
   color: gray; }
 
-/* line 237, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 233, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .help-block {
   display: block;
   margin-bottom: 0.75em; }
 
-/* line 242, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 238, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .help-inline {
   display: inline-block;
   vertical-align: middle;
   padding-left: 5px; }
 
-/* line 251, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 247, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .form-inline input,
 .form-inline textarea,
 .form-inline select {
   display: inline-block;
   margin-bottom: 0; }
 
-/* line 256, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 252, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .form-inline label {
   display: inline-block; }
 
-/* line 261, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 257, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .form-inline .radio,
 .form-inline .checkbox,
 .form-inline .radio {
@@ -2463,32 +2460,32 @@ input:-moz-placeholder {
   margin-bottom: 0;
   vertical-align: middle; }
 
-/* line 268, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 264, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .form-inline .radio input[type="radio"],
 .form-inline .checkbox input[type="checkbox"] {
   float: left;
   margin-left: 0;
   margin-right: 3px; }
 
-/* line 277, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 273, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .form-search input,
 .form-search textarea,
 .form-search select {
   display: inline-block;
   margin-bottom: 0; }
 
-/* line 282, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 278, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .form-search .search-query {
   padding-left: 14px;
   padding-right: 14px;
   margin-bottom: 0;
   border-radius: 14px; }
 
-/* line 289, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 285, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .form-search label {
   display: inline-block; }
 
-/* line 294, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 290, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .form-search .radio,
 .form-search .checkbox,
 .form-inline .radio {
@@ -2496,7 +2493,7 @@ input:-moz-placeholder {
   margin-bottom: 0;
   vertical-align: middle; }
 
-/* line 301, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
+/* line 297, /Users/deadlyhifi/Sites/github/startgate/inc/scss/base_forms.scss */
 .form-search .radio input[type="radio"],
 .form-search .checkbox input[type="checkbox"] {
   float: left;

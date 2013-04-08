@@ -83,7 +83,7 @@ select {
 	background-color: $inputbackground;
 	border: $inputborderwidth $inputborderstyle $inputborder;
 	color: $textcolor;
-	border-radius: 4px;;
+	border-radius: 4px;
 
 	&:hover {
 		border-color: $inputhover;
@@ -91,6 +91,7 @@ select {
 
 	@include placeholder {
 		color: $lightgrey;
+		@include font-size(14);
 	}
 }
 
@@ -183,6 +184,7 @@ input[type="hidden"] {
 .checkbox input[type="checkbox"] {
 	float: left;
 	margin-left: -18px;
+	margin-top: 5px;
 }
 
 .radio.inline,
@@ -222,12 +224,6 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus,
 select:focus {
 	@include box-shadow(none); }
-
-::-webkit-input-placeholder {
-	@include font-size(14); }
-
-input:-moz-placeholder {
-	@include font-size(14); }
 
 // help text
 .help-block,
