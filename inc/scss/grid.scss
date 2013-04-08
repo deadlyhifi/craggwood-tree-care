@@ -1,1 +1,36 @@
 // put all your grid breakpoints in here. No style.
+// http://neat.bourbon.io/examples/
+// Bourbon NEAT uses a desktop down approach
+
+/*
+e.g.
+.inner,
+nav,
+section,
+.grid {
+	@include outer-container;
+}
+
+section {
+	@include media($grid-desktop) {
+		margin: 0 $baseline / 4;
+	}
+}
+
+article {
+	@include span-columns(8);
+	border: 1px solid $lightergrey;
+
+	@include media($grid-mobile) {
+	  @include span-columns(6);
+	}
+}
+aside {
+	@include span-columns(4);
+
+	@include media($grid-mobile) {
+		@include span-columns(6);
+	}
+}
+
+*/

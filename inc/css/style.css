@@ -2500,6 +2500,38 @@ select:focus {
   margin-left: 0;
   margin-right: 3px; }
 
+/*
+e.g.
+.inner,
+nav,
+section,
+.grid {
+	@include outer-container;
+}
+
+section {
+	@include media($grid-desktop) {
+		margin: 0 $baseline / 4;
+	}
+}
+
+article {
+	@include span-columns(8);
+	border: 1px solid $lightergrey;
+
+	@include media($grid-mobile) {
+	  @include span-columns(6);
+	}
+}
+aside {
+	@include span-columns(4);
+
+	@include media($grid-mobile) {
+		@include span-columns(6);
+	}
+}
+
+*/
 /* line 1, /Users/deadlyhifi/Sites/github/startgate/inc/scss/smaccs_layout.scss */
 body {
   background-color: red; }
