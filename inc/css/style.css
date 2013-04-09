@@ -2531,24 +2531,24 @@ aside {
 
 */
 /* line 1, /Users/deadlyhifi/Sites/github/startgate/inc/scss/smaccs_layout.scss */
-body {
-  background-color: red; }
+html {
+  background-color: lightpink; }
 
 @media only screen and (min-width: 480px) {
   /* line 1, /Users/deadlyhifi/Sites/github/startgate/inc/scss/smaccs_layout_break1.scss */
-  body {
+  html {
     background-color: orange; } }
 @media only screen and (min-width: 768px) {
   /* line 1, /Users/deadlyhifi/Sites/github/startgate/inc/scss/smaccs_layout_break2.scss */
-  body {
+  html {
     background-color: lightyellow; } }
 @media only screen and (min-width: 960px) {
   /* line 1, /Users/deadlyhifi/Sites/github/startgate/inc/scss/smaccs_layout_break3.scss */
-  body {
+  html {
     background-color: lightgreen; } }
 @media only screen and (min-width: 68em) {
   /* line 1, /Users/deadlyhifi/Sites/github/startgate/inc/scss/smaccs_layout_break4.scss */
-  body {
+  html {
     background-color: lightblue; } }
 @media print {
   /* line 3, /Users/deadlyhifi/Sites/github/startgate/inc/scss/mq_print.scss */

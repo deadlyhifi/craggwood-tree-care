@@ -129,8 +129,8 @@ header {
 	div { @include pad($baseline / 4); }
 
 
-	.mobile 	{ display: none; background-color: pink; }
-	.break1 	{ display: none; background-color: lightblue; }
+	.mobile 	{ display: none; background-color: lightblue; }
+	.break1 	{ display: none; background-color: pink; }
 	.break2		{ display: none; background-color: yellow; }
 	.break3		{ display: none; background-color: fuchsia; }
 	.break4		{ display: block; background-color: hotpink; }
