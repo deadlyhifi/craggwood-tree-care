@@ -1,6 +1,6 @@
 // Reset
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%;
-vertical-align: baseline; background: transparent; }
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video { margin: 0; padding: 0; outline: 0; border: 0; background: transparent;
+vertical-align: baseline; font-size: 100%; }
 
 article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 
@@ -33,14 +33,14 @@ html {
 }
 
 body {
+	@include font-size();
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	background-color: transparent;
-	font-family: $basefont;
-	@include font-size();
-	line-height: $baselineheight;
 	color: $textcolor;
+	font-family: $basefont;
+	line-height: $baselineheight;
 }
 
 // Elements
@@ -55,8 +55,8 @@ a {
 	}
 
 	&:hover {
-		text-decoration: underline;
 		color: $linkcolorhover;
+		text-decoration: underline;
 	}
 
 	&:focus {
@@ -71,14 +71,16 @@ a {
 }
 
 ::-moz-selection {
-	background-color: hotpink; //lighten($basecolor, 65%);
+	background-color: hotpink;
 	color: $basecolor;
-	text-shadow: none; }
+	text-shadow: none; //lighten($basecolor, 65%);
+}
 
 ::selection {
-	background-color: hotpink; //lighten($basecolor, 65%);
+	background-color: hotpink;
 	color: $basecolor;
-	text-shadow: none; }
+	text-shadow: none; //lighten($basecolor, 65%);
+}
 
 // FIGURES & IMAGES =============================================================================
 
@@ -112,10 +114,10 @@ figure {
 	}
 
 	figcaption {
-		display: block;
-		font-weight: normal;
 		@include font-size(14);
+		display: block;
 		color: $grey;
+		font-weight: normal;
 	}
 }
 
@@ -123,10 +125,10 @@ figure {
 
 //! collapse
 .collapse {
-	position: relative;
-	height: 0;
-	overflow: hidden;
 	@include transition(height 0.35s ease);
+	position: relative;
+	overflow: hidden;
+	height: 0;
 
 	&.in { height: auto; }
 }

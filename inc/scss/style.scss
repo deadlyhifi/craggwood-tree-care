@@ -23,17 +23,16 @@ Tom de Bruin
 
 // 2. SMACCS 			==============================
 
-//@import "smaccs_module";
-//@import "smaccs_state"; // used in JS states - run after the page has loaded.
-//@import "smaccs_theme"; // rarey used - only if there are multiple themes within a project.
-
-
 @import "grid";
 @import "smaccs_layout";
 @media only screen and (min-width: $mobile)	{ @import "smaccs_layout_break1"; }
 @media only screen and (min-width: $tablet)	{ @import "smaccs_layout_break2"; }
 @media only screen and (min-width: $laptop)	{ @import "smaccs_layout_break3"; }
 @media only screen and (min-width: $desktop){ @import "smaccs_layout_break4"; }
+
+//@import "smaccs_module";
+//@import "smaccs_state"; // used in JS states - run after the page has loaded.
+//@import "smaccs_theme"; // rarey used - only if there are multiple themes within a project.
 
 // Media Queries 			==============================
 @media print { @import "mq_print"; }
