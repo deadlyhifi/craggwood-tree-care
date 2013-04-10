@@ -1,3 +1,23 @@
-html {
-	background-color: lightyellow;
+header[role="banner"] {
+
+	hgroup {
+		text-align: left;
+	}
+	.phone {
+		text-align: left;
+	}
+	nav {
+	}
+}
+
+.wrapper {
+
+	.content {
+	}
+
+	.supplement {
+		border-width: 0 1px;
+		border-color: $bordercolor;
+		border-style: solid;
+	}
 }

@@ -34,3 +34,68 @@ aside {
 }
 
 */
+
+.inner,
+footer[role="contentinfo"],
+section,
+.wrapper {
+	@include outer-container;
+}
+
+header[role="banner"] {
+	hgroup {
+		@include span-columns(8);
+
+		@include media($grid-tablet) {
+			@include span-columns(8);
+		}
+
+	}
+	.sundry {
+		@include span-columns(4);
+
+		@include media($grid-tablet) {
+			@include span-columns(8);
+		}
+
+		li {
+			@include span-columns(1.333 of 4);
+		}
+
+	}
+}
+
+// add padding on narrow screens.
+header[role="banner"] .inner,
+section.promote,
+footer[role="contentinfo"] {
+	@include media($grid-desktop) {
+		padding: 0 $baseline / 4;
+	}
+}
+
+// main columns
+.wrapper {
+	@include media($grid-desktop) {
+		padding: 0 $baseline / 4;
+	}
+
+	.content {
+		@include span-columns(8);
+
+		@include media($grid-tablet) {
+			@include span-columns(8);
+		}
+	}
+
+	.supplement {
+		@include span-columns(4);
+		@include pad();
+
+
+		@include media($grid-tablet) {
+			@include span-columns(8);
+			@include pad(0);
+		}
+	}
+}

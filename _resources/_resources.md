@@ -1,1 +1,0 @@
-Load social buttons on demand. Facebook, twitter etc. weigh a lot! - https://github.com/dbushell/Socialite/
