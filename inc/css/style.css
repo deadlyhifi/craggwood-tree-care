@@ -50,7 +50,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
 html {
   background: white;
   font-size: 62.5%;
-  -webkit-tap-highlight-color: #f3f5f6;
+  -webkit-tap-highlight-color: white;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -91,15 +91,15 @@ a {
 
 /* line 73, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_defaults.scss */
 ::-moz-selection {
-  background-color: hotpink;
-  color: #2d353e;
-  text-shadow: none; }
+  background-color: #96a535;
+  color: white;
+  text-shadow: white; }
 
 /* line 79, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_defaults.scss */
 ::selection {
-  background-color: hotpink;
-  color: #2d353e;
-  text-shadow: none; }
+  background-color: #96a535;
+  color: white;
+  text-shadow: white; }
 
 /* line 87, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_defaults.scss */
 hr {
@@ -108,7 +108,7 @@ hr {
   padding: 0;
   height: 1px;
   border: 0;
-  border-top: 1px solid #c7ced6;
+  border-top: 1px solid #c4d16f;
   border-bottom: 1px solid white; }
 
 /* line 98, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_defaults.scss */
@@ -1557,7 +1557,7 @@ li ol {
 blockquote {
   margin: 0 0 1.5em 1.618em;
   padding-left: 1.618em;
-  border-left: 2px solid #c7ced6;
+  border-left: 2px solid #c4d16f;
   font-style: normal;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
 
@@ -1586,7 +1586,7 @@ cite {
   .list-bordered li {
     margin-bottom: 0.375em;
     padding-bottom: 0.375em;
-    border-bottom: 1px solid #c7ced6; }
+    border-bottom: 1px solid #c4d16f; }
   /* line 136, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_typography.scss */
   .list-bordered li:last-child {
     margin-bottom: 0; }
@@ -1612,7 +1612,7 @@ dt {
 
 /* line 168, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_typography.scss */
 abbr[title] {
-  border-bottom: 1px dotted #c7ced6;
+  border-bottom: 1px dotted #c4d16f;
   cursor: help; }
 
 /* line 173, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_typography.scss */
@@ -1625,13 +1625,13 @@ dfn {
 
 /* line 181, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_typography.scss */
 ins {
-  background-color: #f3f5f6;
+  background-color: white;
   color: black;
   text-decoration: none; }
 
 /* line 187, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_typography.scss */
 mark {
-  background-color: #f3f5f6;
+  background-color: white;
   color: black;
   font-weight: bold;
   font-style: italic; }
@@ -1688,7 +1688,7 @@ table {
     font-size: 14px;
     font-size: 1.4rem;
     padding: 8px;
-    border-top: 1px solid #8c9bab;
+    border-top: 1px solid #e4eabc;
     vertical-align: top;
     text-align: left;
     line-height: 1.5em; }
@@ -1706,15 +1706,15 @@ table {
     border-top: 0; }
   /* line 36, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_tables.scss */
   table tbody + tbody {
-    border-top: 2px solid #8c9bab; }
+    border-top: 2px solid #e4eabc; }
   /* line 42, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_tables.scss */
   table.table-striped tbody tr:nth-child(odd):hover td,
   table.table-striped tbody tr:nth-child(odd):hover th {
-    background-color: #e4e8ec; }
+    background-color: white; }
   /* line 47, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_tables.scss */
   table.table-striped tbody tr:nth-child(odd) td,
   table.table-striped tbody tr:nth-child(odd) th {
-    background-color: #f3f5f6; }
+    background-color: white; }
   /* line 53, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_tables.scss */
   table tbody tr td,
   table tbody tr th {
@@ -1731,14 +1731,14 @@ table {
 
 /* line 75, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_tables.scss */
 .table-bordered {
-  border: 1px solid #8c9bab;
+  border: 1px solid #e4eabc;
   border-collapse: separate;
   border-left: 0;
   *border-collapse: collapsed; }
   /* line 82, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_tables.scss */
   .table-bordered th,
   .table-bordered td {
-    border-left: 1px solid #8c9bab; }
+    border-left: 1px solid #e4eabc; }
   /* line 88, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_tables.scss */
   .table-bordered thead:first-child tr:first-child th,
   .table-bordered tbody:first-child tr:first-child th,
@@ -1947,25 +1947,25 @@ table {
 
 /* line 191, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_textures.scss */
 .btn-primary {
-  background-color: #2d353e;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2d353e), color-stop(100%, #181c20));
-  background-image: -webkit-linear-gradient(50%, #2d353e, #181c20);
-  background-image: -moz-linear-gradient(50%, #2d353e, #181c20);
-  background-image: -ms-linear-gradient(50%, #2d353e, #181c20);
-  background-image: -o-linear-gradient(50%, #2d353e, #181c20);
-  background-image: linear-gradient(50%, #2d353e, #181c20);
-  border-color: #0d0f12;
-  border-bottom-color: #020203;
+  background-color: #96a535;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #96a535), color-stop(100%, #737e29));
+  background-image: -webkit-linear-gradient(50%, #96a535, #737e29);
+  background-image: -moz-linear-gradient(50%, #96a535, #737e29);
+  background-image: -ms-linear-gradient(50%, #96a535, #737e29);
+  background-image: -o-linear-gradient(50%, #96a535, #737e29);
+  background-image: linear-gradient(50%, #96a535, #737e29);
+  border-color: #616b22;
+  border-bottom-color: #50581c;
   color: white; }
   /* line 197, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_textures.scss */
   .btn-primary:hover {
-    background-color: #313a44;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #313a44), color-stop(100%, #333d47));
-    background-image: -webkit-linear-gradient(50%, #313a44, #333d47);
-    background-image: -moz-linear-gradient(50%, #313a44, #333d47);
-    background-image: -ms-linear-gradient(50%, #313a44, #333d47);
-    background-image: -o-linear-gradient(50%, #313a44, #333d47);
-    background-image: linear-gradient(50%, #313a44, #333d47);
+    background-color: #9dad37;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9dad37), color-stop(100%, #a1b139));
+    background-image: -webkit-linear-gradient(50%, #9dad37, #a1b139);
+    background-image: -moz-linear-gradient(50%, #9dad37, #a1b139);
+    background-image: -ms-linear-gradient(50%, #9dad37, #a1b139);
+    background-image: -o-linear-gradient(50%, #9dad37, #a1b139);
+    background-image: linear-gradient(50%, #9dad37, #a1b139);
     color: white; }
 
 /* line 204, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_textures.scss */
@@ -2194,7 +2194,7 @@ form {
     padding: 0;
     width: 100%;
     border: 0;
-    border-bottom: 1px solid #8c9bab;
+    border-bottom: 1px solid #e4eabc;
     color: black;
     white-space: normal;
     *margin-left: -7px; }
@@ -2257,7 +2257,7 @@ select {
   margin-bottom: 0.375em;
   padding: 4px;
   width: 100%;
-  border: 1px solid #8c9bab;
+  border: 1px solid #e4eabc;
   border-radius: 4px;
   background-color: white;
   color: black; }
@@ -2265,7 +2265,7 @@ select {
   input:hover,
   textarea:hover,
   select:hover {
-    border-color: #586879; }
+    border-color: #c4d16f; }
   /* line 8, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/css3/_placeholder.scss */
   input::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder,
@@ -2414,7 +2414,7 @@ input:focus,
 textarea:focus {
   outline: 0;
   outline: thin dotted \9;
-  border-color: #2d353e, 40%; }
+  border-color: #96a535, 40%; }
 
 /* line 225, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/base_forms.scss */
 input[type="file"]:focus,
@@ -2530,10 +2530,8 @@ aside {
 }
 
 */
-/* line 41, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
+/* line 39, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
 .inner,
-footer[role="contentinfo"],
-section,
 .wrapper {
   *zoom: 1;
   max-width: 68em;
@@ -2541,22 +2539,21 @@ section,
   margin-right: auto; }
   /* line 18, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
   .inner:before, .inner:after,
-  footer[role="contentinfo"]:before,
-  footer[role="contentinfo"]:after,
-  section:before,
-  section:after,
   .wrapper:before,
   .wrapper:after {
     content: " ";
     display: table; }
   /* line 23, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
   .inner:after,
-  footer[role="contentinfo"]:after,
-  section:after,
   .wrapper:after {
     clear: both; }
 
-/* line 46, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
+@media screen and (max-width: 68em) {
+  /* line 44, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
+  .inner {
+    padding: 0 0.375em; } }
+
+/* line 51, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
 header[role="banner"] hgroup {
   display: block;
   float: left;
@@ -2566,7 +2563,7 @@ header[role="banner"] hgroup {
   header[role="banner"] hgroup:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
-    /* line 46, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
+    /* line 51, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
     header[role="banner"] hgroup {
       display: block;
       float: left;
@@ -2575,7 +2572,7 @@ header[role="banner"] hgroup {
       /* line 54, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/neat/grid/_span-columns.scss */
       header[role="banner"] hgroup:last-child {
         margin-right: 0; } }
-/* line 54, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
+/* line 59, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
 header[role="banner"] .sundry {
   display: block;
   float: left;
@@ -2585,7 +2582,7 @@ header[role="banner"] .sundry {
   header[role="banner"] .sundry:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
-    /* line 54, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
+    /* line 59, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
     header[role="banner"] .sundry {
       display: block;
       float: left;
@@ -2594,7 +2591,7 @@ header[role="banner"] .sundry {
       /* line 54, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/neat/grid/_span-columns.scss */
       header[role="banner"] .sundry:last-child {
         margin-right: 0; } }
-  /* line 61, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
+  /* line 66, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
   header[role="banner"] .sundry li {
     display: block;
     float: left;
@@ -2604,94 +2601,139 @@ header[role="banner"] .sundry {
     header[role="banner"] .sundry li:last-child {
       margin-right: 0; }
 
-@media screen and (max-width: 68em) {
-  /* line 71, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
-  header[role="banner"] .inner,
-  section.promote,
-  footer[role="contentinfo"] {
-    padding: 0 0.375em; } }
-
-@media screen and (max-width: 68em) {
+/* line 75, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
+.wrapper section {
+  *zoom: 1;
+  display: block; }
+  /* line 18, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .wrapper section:before, .wrapper section:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .wrapper section:after {
+    clear: both; }
   /* line 78, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
-  .wrapper {
-    padding: 0 0.375em; } }
-/* line 83, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
-.wrapper .content {
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 65.88078%; }
-  /* line 54, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/neat/grid/_span-columns.scss */
-  .wrapper .content:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 768px) {
-    /* line 83, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
-    .wrapper .content {
-      display: block;
-      float: left;
-      margin-right: 3.57866%;
-      width: 100%; }
-      /* line 54, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/neat/grid/_span-columns.scss */
-      .wrapper .content:last-child {
-        margin-right: 0; } }
-/* line 91, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
-.wrapper .supplement {
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 31.76157%;
-  padding: 2.35765%; }
-  /* line 54, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/neat/grid/_span-columns.scss */
-  .wrapper .supplement:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 768px) {
-    /* line 91, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
-    .wrapper .supplement {
-      display: block;
-      float: left;
-      margin-right: 3.57866%;
-      width: 100%;
-      padding: 0; }
-      /* line 54, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/neat/grid/_span-columns.scss */
-      .wrapper .supplement:last-child {
-        margin-right: 0; } }
+  .wrapper section .maincol {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    /* line 54, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/neat/grid/_span-columns.scss */
+    .wrapper section .maincol:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 68em) {
+      /* line 78, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
+      .wrapper section .maincol {
+        padding: 0 0.375em; } }
+    @media screen and (max-width: 768px) {
+      /* line 78, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
+      .wrapper section .maincol {
+        display: block;
+        float: left;
+        margin-right: 3.57866%;
+        width: 100%; }
+        /* line 54, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/neat/grid/_span-columns.scss */
+        .wrapper section .maincol:last-child {
+          margin-right: 0; } }
+  /* line 88, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
+  .wrapper section aside {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    /* line 54, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/neat/grid/_span-columns.scss */
+    .wrapper section aside:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      /* line 88, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/grid.scss */
+      .wrapper section aside {
+        display: block;
+        float: left;
+        margin-right: 3.57866%;
+        width: 100%; }
+        /* line 54, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/neat/grid/_span-columns.scss */
+        .wrapper section aside:last-child {
+          margin-right: 0; } }
 
 /* line 1, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
 header[role="banner"] {
   padding: 1.5em 0 0 0;
-  background-color: lightblue; }
+  background-color: #96a535; }
   /* line 6, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
   header[role="banner"] hgroup {
     text-align: center; }
   /* line 9, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
   header[role="banner"] .phone {
-    text-align: center; }
-  /* line 13, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
+    text-align: center;
+    font-weight: bold; }
+    /* line 12, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
+    header[role="banner"] .phone p {
+      font-size: 18px;
+      font-size: 1.8rem; }
+  /* line 17, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
   header[role="banner"] nav ul {
     list-style: none;
     padding: 0; }
-    /* line 17, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
+    /* line 21, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
     header[role="banner"] nav ul li {
       float: left;
-      border: 1px solid gray;
+      border: 1px solid #c4d16f;
       text-align: center; }
-      /* line 22, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
+      /* line 26, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
       header[role="banner"] nav ul li a {
         display: block;
         padding: 10px;
         text-decoration: none; }
 
-/* line 32, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
+/* line 36, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
 section.promote {
-  padding: 0.75em; }
-  /* line 35, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
-  section.promote h3 {
-    margin-bottom: 0; }
+  margin-bottom: 1.5em; }
+  /* line 39, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
+  section.promote .maincol {
+    padding-top: 1.5em; }
+    /* line 41, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
+    section.promote .maincol h3 {
+      margin-bottom: 0; }
+    /* line 44, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
+    section.promote .maincol p {
+      padding-left: 0.75em; }
+  /* line 49, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
+  section.promote aside.imgblock {
+    border-width: 0 0 0 1px;
+    border-color: #c4d16f;
+    border-style: solid; }
+    /* line 54, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
+    section.promote aside.imgblock img {
+      width: 100%; }
 
-/* line 44, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
-.wrapper .content p {
+/* line 64, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
+.main .maincol p {
   padding-left: 0.75em; }
+/* line 69, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
+.main aside.services {
+  padding: 0.75em;
+  border-width: 1px 0 0 0;
+  border-color: #c4d16f;
+  border-style: solid; }
 
+/* line 77, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout.scss */
+footer[role="contentinfo"] {
+  border-top: 1px solid #c4d16f;
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  background-color: #f3f6e3;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f6e3), color-stop(100%, #c4d16f));
+  background-image: -webkit-linear-gradient(top, #f3f6e3, #c4d16f);
+  background-image: -moz-linear-gradient(top, #f3f6e3, #c4d16f);
+  background-image: -ms-linear-gradient(top, #f3f6e3, #c4d16f);
+  background-image: -o-linear-gradient(top, #f3f6e3, #c4d16f);
+  background-image: linear-gradient(top, #f3f6e3, #c4d16f);
+  text-shadow: 1px 1px 1px white; }
+
+@media only screen and (min-width: 480px) {
+  /* line 1, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout_break1.scss */
+  section.promote {
+    margin-bottom: 0; } }
 @media only screen and (min-width: 768px) {
   /* line 3, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout_break2.scss */
   header[role="banner"] hgroup {
@@ -2700,11 +2742,9 @@ section.promote {
   header[role="banner"] .phone {
     text-align: left; }
 
-  /* line 18, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout_break2.scss */
-  .wrapper .supplement {
-    border-width: 0 1px;
-    border-color: #c7ced6;
-    border-style: solid; } }
+  /* line 34, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/smaccs_layout_break2.scss */
+  .main aside.services {
+    border-width: 0 0 0 1px; } }
 @media print {
   /* line 3, /Users/deadlyhifi/Sites/client/craggwoodtreecare.co.uk/public/inc/scss/mq_print.scss */
   * {

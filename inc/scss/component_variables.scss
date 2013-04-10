@@ -53,9 +53,9 @@ $grid-desktop		: new-breakpoint(max-width $desktop 12);
 
 // COLOUR 			==============================
 
-$basecolor 			: rgb(45,53,62);
+$basecolor 			: #96a535; //rgb(45,53,62);
 $compcolor 			: adjust-hue($basecolor, 180);
-$bordercolor		: lighten($basecolor, 60%);
+$bordercolor		: lighten($basecolor, 20%);
 
 // Links
 $linkcolor	 		: rgb(40, 140, 189);

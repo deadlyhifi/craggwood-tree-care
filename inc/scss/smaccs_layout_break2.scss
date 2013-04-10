@@ -10,14 +10,28 @@ header[role="banner"] {
 	}
 }
 
-.wrapper {
+section.promote {
 
-	.content {
+	.maincol {
+		h3 {
+		}
+		p {
+		}
 	}
 
-	.supplement {
-		border-width: 0 1px;
-		border-color: $bordercolor;
-		border-style: solid;
+	aside.imgblock {
+		img {
+		}
+	}
+}
+
+// main columns
+.main {
+
+	.maincol {
+	}
+
+	aside.services {
+		border-width: 0 0 0 1px;
 	}
 }

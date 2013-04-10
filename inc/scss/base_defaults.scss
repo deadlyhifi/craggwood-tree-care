@@ -71,15 +71,15 @@ a {
 }
 
 ::-moz-selection {
-	background-color: hotpink;
-	color: $basecolor;
-	text-shadow: none; //lighten($basecolor, 65%);
+	background-color: $basecolor;
+	color: $white;
+	text-shadow: lighten($basecolor, 65%);
 }
 
 ::selection {
-	background-color: hotpink;
-	color: $basecolor;
-	text-shadow: none; //lighten($basecolor, 65%);
+	background-color: $basecolor;
+	color: $white;
+	text-shadow: lighten($basecolor, 65%);
 }
 
 // FIGURES & IMAGES =============================================================================
