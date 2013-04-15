@@ -2,26 +2,29 @@ header[role="banner"] {
 
 	hgroup {
 		text-align: left;
-	}
-	.phone {
-		text-align: left;
+		h1 {
+			span {
+			}
+		}
+		.phone {
+			p {
+			}
+		}
 	}
 	nav {
 	}
 }
 
+.fouramfriday {
+	margin-top: 130px;
+}
+
 section.promote {
-
-	.maincol {
-		h3 {
-		}
-		p {
-		}
+	h2 {
+		@include font-size(30);
 	}
-
-	aside.imgblock {
-		img {
-		}
+	.inner {
+		padding: $baseline $baseline *2;
 	}
 }
 
@@ -32,6 +35,7 @@ section.promote {
 	}
 
 	aside.services {
-		border-width: 0 0 0 1px;
+		border: 0;
+		padding-top: 0;
 	}
 }
