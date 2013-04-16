@@ -1,0 +1,6 @@
+# set expires on images and css
+# Specific files: <FilesMatch "^(example.js|sample.css)$">
+<FilesMatch "\.(js|css)$">
+  ExpiresActive on
+  ExpiresDefault "access plus 1 month"
+</FilesMatch>

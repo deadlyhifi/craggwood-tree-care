@@ -6,7 +6,8 @@ header[role="banner"] {
 
 	hgroup {
 		text-align: center;
-		h1 {
+		h1.title {
+			@include font-size(25);
 			margin-bottom: $baseline /4;
 
 			span {
