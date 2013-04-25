@@ -2,8 +2,7 @@
 // http://neat.bourbon.io/examples/
 // Bourbon NEAT uses a desktop down approach
 
-.inner,
-.wrapper {
+.inner {
 	@include outer-container;
 }
 
@@ -30,14 +29,15 @@ header[role="banner"] {
 			@include span-columns(8);
 		}
 
-		li {
+		ul li {
 			@include span-columns(1.333 of 4);
 		}
 
 	}
 }
 
-section.main {
+// home
+#home section.main {
 	@include outer-container;
 
 	.maincol {
@@ -51,7 +51,6 @@ section.main {
 		}
 
 		section.gallery {
-			@include row();
 
 			figure {
 				@include span-columns(4 of 8);
@@ -75,6 +74,40 @@ section.main {
 
 		@include media($grid-tablet) {
 			@include span-columns(8);
+		}
+	}
+}
+
+// gallery
+#gallery section.gallery {
+	@include outer-container;
+
+	@include media($grid-desktop) {
+		padding: 0 $baseline / 4;
+	}
+
+	.h {
+		@include row();
+
+		figure {
+			@include span-columns(6);
+			@include omega(2n);
+
+			@include media($grid-mobile) {
+				@include span-columns(6);
+			}
+		}
+	}
+	.v {
+		@include row();
+
+		figure {
+			@include span-columns(4);
+			@include omega(3n);
+
+			@include media($grid-mobile) {
+				@include span-columns(6);
+			}
 		}
 	}
 }

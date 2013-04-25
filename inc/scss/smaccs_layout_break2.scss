@@ -15,10 +15,6 @@ header[role="banner"] {
 	}
 }
 
-.fouramfriday {
-	margin-top: 130px;
-}
-
 section.promote {
 	h2 {
 		@include font-size(30);
@@ -29,7 +25,7 @@ section.promote {
 }
 
 // main columns
-.main {
+#home .main {
 
 	.maincol {
 	}
