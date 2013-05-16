@@ -1,33 +1,41 @@
-html {
-	background: #6aa9ee url('../img/craggwood-banner.jpg') no-repeat top center;
+.craggwood {
+	background: transparent url('../img/craggwood-banner.jpg') no-repeat bottom center;
 background-size: cover;
 }
 
 header[role="banner"] {
 	padding: $baseline /2 0;
-//	background: #303a28 url(../img/cwtc-banner.jpg) no-repeat left top;
+	background-color: transparentize($basecolor, 0.4);
 
-	hgroup {
+	.hgroup {
 		text-align: center;
 		h1.title {
 			@include font-size(25);
 			margin-bottom: $baseline /4;
+			color: $white;
+			text-shadow: 1px 1px 1px $darkgrey;
 
 			span {
 				display: block;
 				font-style: italic;
+				color: $white;
+				text-shadow: 1px 1px 1px $darkgrey;
 			}
 		}
 
 		.phone {
 			font-weight: bold;
 			font-style: italic;
+			color: $white;
+
 			p {
 				@include font-size(18);
 				margin-bottom: 0;
+				text-shadow: 1px 1px 1px $darkgrey;
 			}
 		}
 	}
+
 	nav {
 		margin-top: $baseline;
 		ul {
@@ -38,12 +46,13 @@ header[role="banner"] {
 				float: left;
 				text-align: center;
 				border: 1px solid $bordercolor;
+				background-color: $compcolor;
 				border-radius: 4px;
-				box-shadow: inset 0 0 2px 1px $lightgrey;
+				box-shadow: inset 0 0 2px 1px $basecolor;
 				transition: all 0.2s linear;
 
 				&:hover {
-					box-shadow: inset 0 1px 4px 1px $lightgrey;
+					box-shadow: inset 0 1px 4px 1px $basecolor;
 					transition: all 0.2s linear;
 				}
 
@@ -52,10 +61,14 @@ header[role="banner"] {
 					padding: 10px;
 					text-decoration: none;
 					transition: all 0.2s linear;
+					color: $black;
 
 					&:hover {
 						@include transform(translateY(1px));
 						transition: all 0.2s linear;
+					}
+					&.selected {
+						font-weight: bold;
 					}
 				}
 			}
@@ -110,8 +123,11 @@ section.promote {
 		border: 1px solid $bordercolor;
 		border-width: 1px 0;
 		background-color: $compcolor;
+		background: $compcolor url(../img/sunburst.png) no-repeat bottom center;
+		background-size: cover;
 
 		h3 {
+			color: $black;
 			margin-top: $baseline /2;
 		}
 	}
@@ -125,12 +141,17 @@ section.promote {
 }
 
 footer[role="contentinfo"] {
-	border-top: 1px solid darken($lightergrey, 5%);
+	border-top: 1px solid $bordercolor;
 	margin-top: $baseline;
 	padding-top: $baseline;
 	color: $white;
-	background: $white url('../img/banner.jpg') no-repeat bottom center;
-	text-shadow: 1px 1px 1px $black;
+	text-shadow: 1px 1px 1px $darkgrey;
+	background: $compcolor url(../img/sunburst.png) no-repeat bottom center;
+	background-size: cover;
+
+	h2 {
+		color: $white;
+	}
 
 	a {
 		color: $white;
