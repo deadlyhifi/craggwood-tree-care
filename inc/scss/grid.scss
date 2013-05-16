@@ -89,8 +89,8 @@ header[role="banner"] {
 		@include row();
 
 		figure {
-			@include span-columns(6);
-			@include omega(2n);
+			@include span-columns(4);
+			@include omega(3n);
 
 			@include media($grid-mobile) {
 				@include span-columns(6);
