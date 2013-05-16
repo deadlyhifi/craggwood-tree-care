@@ -28,11 +28,9 @@ header[role="banner"] {
 		@include media($grid-tablet) {
 			@include span-columns(8);
 		}
-
-		ul li {
-			@include span-columns(1.333 of 4);
+		li {
+			@include span-columns(1.333333333 of 4);
 		}
-
 	}
 }
 
@@ -51,6 +49,7 @@ header[role="banner"] {
 		}
 
 		section.gallery {
+			@include row();
 
 			figure {
 				@include span-columns(4 of 8);

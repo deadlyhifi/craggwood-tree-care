@@ -1,5 +1,11 @@
+html {
+	background: #6aa9ee url('../img/craggwood-banner.jpg') no-repeat top center;
+background-size: cover;
+}
+
 header[role="banner"] {
 	padding: $baseline /2 0;
+//	background: #303a28 url(../img/cwtc-banner.jpg) no-repeat left top;
 
 	hgroup {
 		text-align: center;
@@ -60,7 +66,7 @@ header[role="banner"] {
 section.promote {
 	margin-bottom: $baseline;
 	color: $white;
-	background: #6aa9ee url('../img/banner.jpg') no-repeat top center;
+//	background: #6aa9ee url('../img/banner.jpg') no-repeat top center;
 	text-shadow: 1px 1px 1px $black;
 
 	h2 {
@@ -94,10 +100,6 @@ section.promote {
 #home .main {
 
 	.maincol {
-		p {
-			padding-left: $baseline /2;
-		}
-
 		section.gallery {
 			figure { text-align: center; }
 		}
@@ -105,9 +107,13 @@ section.promote {
 
 	aside.services {
 		padding: $baseline /2;
-		border-top-width: 1px;
-		border-color: $bordercolor;
-		border-style: solid;
+		border: 1px solid $bordercolor;
+		border-width: 1px 0;
+		background-color: $compcolor;
+
+		h3 {
+			margin-top: $baseline /2;
+		}
 	}
 }
 
