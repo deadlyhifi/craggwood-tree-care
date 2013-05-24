@@ -124,8 +124,8 @@ header[role="banner"] {
 		@include span-columns(6);
 		@include omega(2n);
 
-		@include media($grid-tablet) {
-			@include span-columns(8);
+		@include media($grid-mobile) {
+			@include span-columns(6);
 
 			text-align: center;
 		}
