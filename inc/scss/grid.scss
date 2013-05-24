@@ -110,3 +110,25 @@ header[role="banner"] {
 		}
 	}
 }
+
+// contact
+#contact section.contact {
+	@include outer-container;
+
+	@include media($grid-desktop) {
+		padding: 0 $baseline / 4;
+	}
+
+	.oldskool,
+	.newskool {
+		@include span-columns(6);
+		@include omega(2n);
+
+		@include media($grid-tablet) {
+			@include span-columns(8);
+
+			text-align: center;
+		}
+	}
+
+}

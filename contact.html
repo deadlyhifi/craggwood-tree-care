@@ -17,10 +17,9 @@
 	<link rel="stylesheet" href="/public/inc/css/style.css?v2">
 
 	<!--[if lt IE 9]>
-		<script src="/public/inc/js/html5shiv.js" media="all"></script>
+		<script src="/public/inc/js/aye-eee/html5shiv.js" media="all"></script>
+		<script src="/public/inc/js/aye-eee/selectivizr-min.js" media="all"></script>
 	<![endif]-->
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 	<meta http-equiv="cleartype" content="on">
 </head>
@@ -47,19 +46,44 @@
 
 	<section class="promote">
 		<div class="inner">
-			<h2>Expert Tree Surgery and Tree Care Services.</h2>
-
-			<p>We are a team of professional tree surgeons based in Leeds, West Yorkshire. We cover both commercial and domestic work and have a wide range of clients from civil engineering firms to golf courses, small houses to estates.</p>
+			<h2>Contact us for a free quote.</h2>
 		</div>
 	</section>
 </div>
 
 	<section class="contact" role="main">
 
-<h1>To do</h1>
+		<div class="oldskool">
+			<h2>Phone:</h2>
+			<h3>0793 2027876</h3>
+
+			<h2>Email:<h2>
+			<p><a class="btn btn-large" href="mailto:james@craggwoodtreecare.co.uk">james@craggwoodtreecare.co.uk</a></p>
+		</div>
+
+		<div class="newskool">
+			<h2>Or fill in the form</h2>
+			<form name="contact" action="">
+				<fieldset>
+					<label for="name" id="name_label">Name</label>
+					<input type="text" name="name" id="name" size="30" value="" />
+					<label class="error" for="name" id="name_error">This field is required.</label>
+
+					<label for="contact" id="contact_label">Your email or phone number</label>
+					<input type="text" name="contact" id="contact" size="30" value="" />
+					<label class="error" for="contact" id="contact_error">This field is required.</label>
+
+					<label for="message" id="message_label">How can we help?</label>
+					<textarea name="message" id="message" rows="5"></textarea>
+					<label class="error" for="message" id="message_error">This field is required.</label>
+
+					<br />
+					<input type="submit" name="submit" class="btn" id="submit_btn" value="Send" />
+				</fieldset>
+			</form>
+		</div>
 
 	</section>
-
 
 	<footer role="contentinfo">
 		<div class="inner">
@@ -68,6 +92,11 @@
 			<p>Craggwood Treecare - 5 Keelham Drive, Rawdon, Leeds LS19 6SG</p>
 		</div>
 	</footer>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/public/inc/js/jquery-1.9.1.min.js"><\/script>')</script>
+
+	<script src="/public/inc/js/script-ck.js"></script>
 
 	<script>
 		var _gaq = _gaq || [];

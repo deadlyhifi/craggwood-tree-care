@@ -66,6 +66,8 @@ label {
 	font-weight: bold;
 	cursor: pointer;
 
+	&.error { color: red; }
+
 	input,
 	textarea,
 	select {
