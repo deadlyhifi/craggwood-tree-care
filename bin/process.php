@@ -9,18 +9,18 @@ if ((isset($_POST['message'])) && (strlen(trim($_POST['message'])) > 0)) {
 	$message = stripslashes(strip_tags($_POST['message']));
 } else {$message = 'No message entered';}
 
-$from = (strpos($contact, '@') ? $contact : 'no-reply@craggwoodtreecare.co.uk');
+//$from = (strpos($contact, '@') ? $contact : 'no-reply@craggwoodtreecare.co.uk');
 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $headers .= 'To: James Shilton <james@craggwoodtreecare.co.uk>' . "\r\n";
-$headers .= "From: $name <$from>" . "\r\n";
+$headers .= "From: Website Contact Form <no-reply@craggwoodtreecare.co.uk>" . "\r\n";
 $headers .= 'Bcc: tom@deadlyhifi.com' . "\r\n";
 
 $subject = 'Website Contact Form';
 
 $message = 'Name: ' . $name . '<br />'
-					.'Contact ' . $contact . '<br />'
+					.'Contact: ' . $contact . '<br />'
 					.'Message: <br /><br />' . $message;
 
 mail($to, $subject, $message, $headers);
