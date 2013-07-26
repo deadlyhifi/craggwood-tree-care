@@ -1,23 +1,8 @@
-AddDefaultCharset UTF-8
-
-# set expires on images and css
-# Specific files: <FilesMatch "^(example.js|sample.css)$">
-<FilesMatch "\.(js|css|jpg)$">
-  ExpiresActive on
-  ExpiresDefault "access plus 1 month"
-</FilesMatch>
-
-<filesMatch "\.(js|css)$">
-Header set Content-Encoding x-deflate
-# Header set Content-Encoding compress
-# Header set Content-Encoding x-gzip
-</filesMatch>
-
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^([^/]+)/$ $1.html
-RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^/]+)/$ $1.php
+RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.php
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

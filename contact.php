@@ -14,11 +14,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- For all browsers -->
-	<link rel="stylesheet" href="/public/inc/css/style.css">
+	<link rel="stylesheet" href="/inc/css/style.css">
 
 	<!--[if (lt IE 9) & (!IEMobile)]>
-		<script src="/public/inc/js/aye-eee/respond.min.js" media="all"></script>
-		<script src="/public/inc/js/aye-eee/selectivizr-min.js" media="all"></script>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" media="all"></script>
+		<script src="inc/js/aye-eee/respond.min.js" media="all"></script>
+		<script src="inc/js/aye-eee/selectivizr-min.js" media="all"></script>
 	<![endif]-->
 
 	<meta http-equiv="cleartype" content="on">
@@ -36,9 +37,9 @@
 			</div>
 			<nav role="navigation">
 				<ul>
-					<li><a class="btn" href="/public/">Home</a></li>
-					<li><a class="btn" href="/public/gallery/">Gallery</a></li>
-					<li><a class="btn selected" href="/public/contact/">Contact</a></li>
+					<li><a class="btn" href="/">Home</a></li>
+					<li><a class="btn" href="/gallery/">Gallery</a></li>
+					<li><a class="btn selected" href="/contact/">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -85,30 +86,11 @@
 
 	</section>
 
-	<footer role="contentinfo">
-		<div class="inner">
-			<h2>Call now for a free quote on 0793 2027876.</h2>
-			<p>Email: <a href="mailto:james@craggwoodtreecare.co.uk">james@craggwoodtreecare.co.uk</a> or use our <a href="/public/contact/">Contact Form</a>.</p>
-			<p>Craggwood Treecare - 5 Keelham Drive, Rawdon, Leeds LS19 6SG</p>
-		</div>
-	</footer>
+	<?php include('_footer.php'); ?>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="/public/inc/js/jquery-1.9.1.min.js"><\/script>')</script>
-
-	<script src="/public/inc/js/script-ck.js"></script>
-
-	<script>
-		var _gaq = _gaq || [];
-	 	_gaq.push(['_setAccount', 'UA-XXXX-XX']);
-	  	_gaq.push(['_trackPageview']);
-
-	  	(function() {
-	    		var ga = document.createElement('script'); ga.async = true;
-	    		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  	})();
-	</script>
+	<script>window.jQuery || document.write('<script src="../inc/js/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="../inc/js/script-ck.js"></script>
 
 </body>
 </html>

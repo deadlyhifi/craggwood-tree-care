@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
 		//alert (dataString);return false;
 		$.ajax({
 			type: "POST",
-			url: "/public/bin/process.php",
+			url: "/bin/process.php",
 			data: dataString,
 			success: function() {
 				$('.newskool').html("<div id='message'></div>");

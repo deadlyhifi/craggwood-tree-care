@@ -13,7 +13,7 @@ h6 {
 	font-family: $baseheadingfont;
 	text-rendering: optimizelegibility;
 }
-
+/*
 h1 span,
 h2 span,
 h3 span,
@@ -24,7 +24,7 @@ h6 span {
 	font-weight: normal;
 	font-size: em(12);
 }
-
+*/
 h1,
 .h1 {
 	@include font-size(32);

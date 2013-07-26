@@ -16,6 +16,7 @@ $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $headers .= 'To: James Shilton <james@craggwoodtreecare.co.uk>' . "\r\n";
 $headers .= "From: Website Contact Form <no-reply@craggwoodtreecare.co.uk>" . "\r\n";
 $headers .= 'Bcc: tom@deadlyhifi.com' . "\r\n";
+$headers .= (strpos($contact, '@') ? 'Reply-To: ' . $contact . "\r\n" : null);
 
 $subject = 'Website Contact Form';
 

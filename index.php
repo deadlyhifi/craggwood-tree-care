@@ -14,11 +14,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- For all browsers -->
-	<link rel="stylesheet" href="/public/inc/css/style.css">
+	<link rel="stylesheet" href="/inc/css/style.css">
 
 	<!--[if (lt IE 9) & (!IEMobile)]>
-		<script src="/public/inc/js/aye-eee/respond.min.js" media="all"></script>
-		<script src="/public/inc/js/aye-eee/selectivizr-min.js" media="all"></script>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" media="all"></script>
+		<script src="inc/js/aye-eee/respond.min.js" media="all"></script>
+		<script src="inc/js/aye-eee/selectivizr-min.js" media="all"></script>
 	<![endif]-->
 
 	<meta http-equiv="cleartype" content="on">
@@ -36,9 +37,9 @@
 			</div>
 			<nav role="navigation">
 				<ul>
-					<li><a class="btn selected" href="/public/">Home</a></li>
-					<li><a class="btn" href="/public/gallery/">Gallery</a></li>
-					<li><a class="btn" href="/public/contact/">Contact</a></li>
+					<li><a class="btn selected" href="/">Home</a></li>
+					<li><a class="btn" href="/gallery/">Gallery</a></li>
+					<li><a class="btn" href="/contact/">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -64,19 +65,19 @@
 
 			<section class="gallery">
 				<figure>
-					<a href="/gallery/"><img src="/public/inc/img/gallery/h_8.jpg"></a>
+					<a href="/gallery/"><img src="/inc/img/gallery/h_8.jpg"></a>
 					<figcaption>The familiar Craggwood truck you'll see out and about.</figcaption>
 				</figure>
 				<figure>
-					<a href="/gallery/"><img src="/public/inc/img/gallery/h_1.jpg"></a>
+					<a href="/gallery/"><img src="/inc/img/gallery/h_1.jpg"></a>
 					<figcaption>Tree surgeons tea break on one of the biggest trees we have felled to date (Wetherby, Leeds)</figcaption>
 				</figure>
 				<figure>
-					<a href="/gallery/"><img src="/public/inc/img/gallery/h_3.jpg"></a>
+					<a href="/gallery/"><img src="/inc/img/gallery/h_3.jpg"></a>
 					<figcaption>Removing the logs from site to be processed for firewood. (Menston, Leeds)</figcaption>
 				</figure>
 				<figure>
-					<a href="/gallery/"><img src="/public/inc/img/gallery/h_4.jpg"></a>
+					<a href="/gallery/"><img src="/inc/img/gallery/h_4.jpg"></a>
 					<figcaption>The Wood Chipper creating some great mulch. (Bramhope, Leeds)</figcaption>
 				</figure>
 			</section>
@@ -138,26 +139,7 @@
 
 	</section>
 
-
-	<footer role="contentinfo">
-		<div class="inner">
-			<h2>Call now for a free quote on 0793 2027876.</h2>
-			<p>Email: <a href="mailto:james@craggwoodtreecare.co.uk">james@craggwoodtreecare.co.uk</a> or use our <a href="/public/contact/">Contact Form</a>.</p>
-			<p>Craggwood Treecare - 5 Keelham Drive, Rawdon, Leeds LS19 6SG</p>
-		</div>
-	</footer>
-
-	<script>
-		var _gaq = _gaq || [];
-	 	_gaq.push(['_setAccount', 'UA-XXXX-XX']);
-	  	_gaq.push(['_trackPageview']);
-
-	  	(function() {
-	    		var ga = document.createElement('script'); ga.async = true;
-	    		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  	})();
-	</script>
+	<?php include('_footer.php'); ?>
 
 </body>
 </html>
