@@ -1,11 +1,25 @@
-# OS generated files #
-######################
 .DS_Store
-.DS_Store?
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
+# Thumbnails
 ._*
+
+# Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+error_log
+
+# Vagrant
+.vagrant
+
+# Composer stuff
+vendor/
+
+# Codekit
 .sass-cache
-Icon?
-ehthumbs.db
-Thumbs.db
+config.codekit
