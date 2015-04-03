@@ -5,6 +5,5 @@
 Name: 			Tom de Bruin
 Site:			http://deadlyhifi.com
 Twitter:		@deadlyhifi
-App.net:		@tdb
 Location:		Leeds, UK
 

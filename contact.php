@@ -38,8 +38,8 @@
 			<nav role="navigation">
 				<ul>
 					<li><a class="btn" href="/">Home</a></li>
-					<li><a class="btn" href="/gallery/">Gallery</a></li>
-					<li><a class="btn selected" href="/contact/">Contact</a></li>
+					<li><a class="btn" href="/gallery">Gallery</a></li>
+					<li><a class="btn selected" href="/contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
