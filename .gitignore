@@ -18,7 +18,7 @@ error_log
 .vagrant
 
 # Composer stuff
-vendor/
+vendor
 
 # Codekit
 .sass-cache
