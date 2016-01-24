@@ -6,7 +6,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-	<title>Leeds Tree Surgeons - Craggwood Tree Care</title>
+	<title>Contact – Leeds Tree Surgeons - Craggwood Tree Care</title>
 
 	<meta name="description" content="">
 	<meta name="author" content="Tom de Bruin">
