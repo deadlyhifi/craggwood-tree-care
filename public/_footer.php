@@ -2,7 +2,7 @@
 	<div class="inner" itemscope itemtype="http://schema.org/Organization">
 		<h2>Call now for a free quote on <span itemprop="telephone">0793 2027876</span>.</h2>
 		<p>Email: <a href="mailto:james@craggwoodtreecare.co.uk?subject=Craggwood Tree Care Contact">james@craggwoodtreecare.co.uk</a> or use our <a href="/contact">Contact Form</a>.</p>
-		<p><span itemprop="name">Craggwood Treecare</span> - <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">5 Keelham Drive</span>, Rawdon, <span itemprop="addressLocality">Leeds</span>, LS19 6SG</p>
+		<p><span itemprop="name">Craggwood Treecare</span> - <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">5 Keelham Drive</span>, Rawdon, <span itemprop="addressLocality">Leeds</span>, LS19 6SG.</p>
 	</div>
 
 	<div itemprop="location">
