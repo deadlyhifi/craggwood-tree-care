@@ -23,3 +23,5 @@ vendor
 # Codekit
 .sass-cache
 config.codekit
+
+tags
