@@ -1,9 +1,0 @@
-/* humanstxt.org */
-
-/* TEAM */
-
-Name: 			Tom de Bruin
-Site:			http://deadlyhifi.com
-Twitter:		@deadlyhifi
-Location:		Leeds, UK
-
