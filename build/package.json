@@ -17,9 +17,9 @@
   "homepage": "https://github.com/deadlyhifi/craggwood-tree-care#readme",
   "devDependencies": {
     "bourbon": "^4.3.4",
-    "copy-webpack-plugin": "^4.0.1",
+    "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^0.28.11",
-    "extract-text-webpack-plugin": "^3.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^0.11.2",
     "image-webpack-loader": "^3.6.0",
     "imagemin-webpack-plugin": "^1.6.1",
@@ -29,7 +29,7 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
-    "webpack": "^3.4.1",
+    "webpack": "^3.12.0",
     "webpack-cleanup-plugin": "^0.5.1"
   }
 }
