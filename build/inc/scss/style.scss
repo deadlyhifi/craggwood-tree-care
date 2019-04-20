@@ -13,6 +13,12 @@
 
 @import "grid";
 @import "smaccs_layout";
-@media only screen and (min-width: $mobile)	{ @import "smaccs_layout_break1"; }
-@media only screen and (min-width: $tablet)	{ @import "smaccs_layout_break2"; }
-@media only screen and (min-width: $laptop)	{ @import "smaccs_layout_break3"; }
+@media only screen and (min-width: $mobile) {
+  @import "smaccs_layout_break1";
+}
+@media only screen and (min-width: $tablet) {
+  @import "smaccs_layout_break2";
+}
+@media only screen and (min-width: $laptop) {
+  @import "smaccs_layout_break3";
+}

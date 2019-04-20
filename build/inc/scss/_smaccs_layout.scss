@@ -1,146 +1,146 @@
 .craggwood {
-	background: transparent url('../img/craggwood-banner.jpg') no-repeat bottom center;
-	background-size: cover;
+  background: transparent url("../img/craggwood-banner.jpg") no-repeat bottom
+    center;
+  background-size: cover;
 }
 
 header[role="banner"] {
-	padding: $baseline /2 0;
-	background-color: transparentize($basecolor, 0.4);
+  padding: $baseline / 2 0;
+  background-color: transparentize($basecolor, 0.4);
 
-	.hgroup {
-		text-align: center;
-		h1.title {
-			@include font-size(25);
-			margin-bottom: $baseline /4;
-			color: $white;
-			text-shadow: 1px 1px 1px $darkgrey;
+  .hgroup {
+    text-align: center;
+    h1.title {
+      @include font-size(25);
+      margin-bottom: $baseline / 4;
+      color: $white;
+      text-shadow: 1px 1px 1px $darkgrey;
 
-			span {
-				display: block;
-				font-style: italic;
-				color: $white;
-				text-shadow: 1px 1px 1px $darkgrey;
-			}
-		}
+      span {
+        display: block;
+        font-style: italic;
+        color: $white;
+        text-shadow: 1px 1px 1px $darkgrey;
+      }
+    }
 
-		.phone {
-			font-weight: bold;
-			font-style: italic;
-			color: $white;
+    .phone {
+      font-weight: bold;
+      font-style: italic;
+      color: $white;
 
-			p {
-				@include font-size(18);
-				margin-bottom: 0;
-				text-shadow: 1px 1px 1px $darkgrey;
-			}
-		}
-	}
+      p {
+        @include font-size(18);
+        margin-bottom: 0;
+        text-shadow: 1px 1px 1px $darkgrey;
+      }
+    }
+  }
 
-	nav {
-		margin-top: $baseline;
-		ul {
-			list-style: none;
-			padding: 0;
+  nav {
+    margin-top: $baseline;
+    ul {
+      list-style: none;
+      padding: 0;
 
-			li {
-				float: left;
-				a {
-					display: block;
-					padding: 10px;
-					text-decoration: none;
-					color: $black;
+      li {
+        float: left;
+        a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          color: $black;
 
-					&:hover {
-						@include transform(translateY(1px));
-					}
-					&.selected {
-						text-decoration: underline;
-					}
-				}
-
-			}
-		}
-	}
+          &:hover {
+            @include transform(translateY(1px));
+          }
+          &.selected {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }
 
 section.promote {
-	margin-bottom: $baseline;
-	color: $white;
-//	background: #6aa9ee url('../img/banner.jpg') no-repeat top center;
-	text-shadow: 1px 1px 1px $black;
+  margin-bottom: $baseline;
+  color: $white;
+  //	background: #6aa9ee url('../img/banner.jpg') no-repeat top center;
+  text-shadow: 1px 1px 1px $black;
 
-	h2 {
-		color: $white;
-		margin-bottom: $baseline /3;
+  h2 {
+    color: $white;
+    margin-bottom: $baseline / 3;
 
-		span {
-			color: $white;
-		}
-	}
-	p {
-		text-align: justify;
-		font-size: 1.2em;
+    span {
+      color: $white;
+    }
+  }
+  p {
+    text-align: justify;
+    font-size: 1.2em;
 
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
-	a {
-		color: $white;
-	}
+  a {
+    color: $white;
+  }
 
-	.inner {
-		padding: $baseline /2;
-	}
-
+  .inner {
+    padding: $baseline / 2;
+  }
 }
 
 // main columns
 #home .main {
+  .maincol {
+    section.gallery {
+      figure {
+        text-align: center;
+      }
+    }
+  }
 
-	.maincol {
-		section.gallery {
-			figure { text-align: center; }
-		}
-	}
+  aside.services {
+    padding: $baseline / 2;
+    border: 1px solid $bordercolor;
+    border-width: 1px 0;
+    background-color: $compcolor;
+    background: $compcolor url(../img/sunburst.png) no-repeat bottom center;
+    background-size: cover;
 
-	aside.services {
-		padding: $baseline /2;
-		border: 1px solid $bordercolor;
-		border-width: 1px 0;
-		background-color: $compcolor;
-		background: $compcolor url(../img/sunburst.png) no-repeat bottom center;
-		background-size: cover;
-
-		h3 {
-			color: $black;
-			margin-top: $baseline /2;
-		}
-	}
+    h3 {
+      color: $black;
+      margin-top: $baseline / 2;
+    }
+  }
 }
 
 // gallery
 #gallery section.gallery {
-
-	figure { text-align: center; }
-
+  figure {
+    text-align: center;
+  }
 }
 
 footer[role="contentinfo"] {
-	border-top: 1px solid $bordercolor;
-	margin-top: $baseline;
-	padding-top: $baseline;
-	color: $white;
-	text-shadow: 1px 1px 1px $darkgrey;
-	background: $compcolor url(../img/sunburst.png) no-repeat bottom center;
-	background-size: cover;
+  border-top: 1px solid $bordercolor;
+  margin-top: $baseline;
+  padding-top: $baseline;
+  color: $white;
+  text-shadow: 1px 1px 1px $darkgrey;
+  background: $compcolor url(../img/sunburst.png) no-repeat bottom center;
+  background-size: cover;
 
-	h2 {
-		color: $white;
-	}
+  h2 {
+    color: $white;
+  }
 
-	a {
-		color: $white;
-	}
+  a {
+    color: $white;
+  }
 }

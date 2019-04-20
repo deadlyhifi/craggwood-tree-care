@@ -1,132 +1,167 @@
 // Reset
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video { margin: 0; padding: 0; outline: 0; border: 0; background: transparent;
-vertical-align: baseline; font-size: 100%; }
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+code,
+del,
+em,
+img,
+ins,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  vertical-align: baseline;
+  font-size: 100%;
+}
 
-article, aside, figure, footer, header, hgroup, nav, section { display: block; }
-
-@-webkit-viewport {
-	width: device-width; }
-
-@-moz-viewport {
-	width: device-width; }
-
-@-ms-viewport {
-	width: device-width; }
-
-@-o-viewport {
-	width: device-width; }
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
 
 @viewport {
-	width: device-width; }
+  width: device-width;
+}
 
 * {
-	@include box-sizing(border-box);
+  @include box-sizing(border-box);
 }
 
 html {
-	background: $bodycolor;
-	font-size: 62.5%;
-//	-webkit-overflow-scrolling: touch; // disables scroll to top on ios devices.
-	-webkit-tap-highlight-color: lighten($basecolor, 75%);
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+  background: $bodycolor;
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: lighten($basecolor, 75%);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 body {
-	@include font-size();
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	background-color: transparent;
-	color: $textcolor;
-	font-family: $basefont;
-	line-height: $baselineheight;
+  @include font-size();
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+  color: $textcolor;
+  font-family: $basefont;
+  line-height: $baselineheight;
 }
 
 // Elements
 
 a {
-	@include transition(color .3s ease-in-out);
+  @include transition(color 0.3s ease-in-out);
 
-	color: $linkcolor;
+  color: $linkcolor;
 
-	&:visited {
-		color: $linkcolorvisited;
-	}
+  &:visited {
+    color: $linkcolorvisited;
+  }
 
-	&:hover {
-		color: $linkcolorhover;
-		text-decoration: underline;
-	}
+  &:hover {
+    color: $linkcolorhover;
+    text-decoration: underline;
+  }
 
-	&:focus {
-		outline: thin dotted;
-		color: $linkcolorfocus;
-	}
+  &:focus {
+    outline: thin dotted;
+    color: $linkcolorfocus;
+  }
 
-	&:hover,
-	&:active {
-		outline: 0;
-	}
+  &:hover,
+  &:active {
+    outline: 0;
+  }
 }
 
 ::-moz-selection {
-	background-color: $compcolor;
-	color: $white;
+  background-color: $compcolor;
+  color: $white;
 }
 
 ::selection {
-	background-color: $compcolor;
-	color: $white;
+  background-color: $compcolor;
+  color: $white;
 }
 
 // FIGURES & IMAGES =============================================================================
 
-hr {
-	display: block;
-	margin: 1em 0;
-	padding: 0;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid $bordercolor;
-	border-bottom: 1px solid $white;
-}
-
 // img
 img {
-	max-width: 100%;
-	border-width: 0;
-	vertical-align: middle;
-	-ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  border-width: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
 }
-
-svg:not(:root) {
-	overflow: hidden; }
 
 // figure
 figure {
-	margin-bottom: $baselineheight;
+  margin-bottom: $baselineheight;
 
-	img {
-		margin-bottom: $baselineheight / 4;
-	}
+  img {
+    margin-bottom: $baselineheight / 4;
+  }
 
-	figcaption {
-		@include font-size(14);
-		display: block;
-		color: $grey;
-		font-weight: normal;
-	}
-}
-
-// javascript
-
-//! collapse
-.collapse {
-	@include transition(height 0.35s ease);
-	position: relative;
-	overflow: hidden;
-	height: 0;
-
-	&.in { height: auto; }
+  figcaption {
+    @include font-size(14);
+    display: block;
+    color: $grey;
+    font-weight: normal;
+  }
 }

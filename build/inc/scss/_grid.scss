@@ -3,132 +3,130 @@
 // Bourbon NEAT uses a desktop down approach
 
 .inner {
-	@include outer-container;
+  @include outer-container;
 }
 
 // add padding on narrow screens.
 .inner {
-	@include media($grid-desktop) {
-		padding: 0 $baseline / 4;
-	}
+  @include media($grid-desktop) {
+    padding: 0 $baseline / 4;
+  }
 }
 
 header[role="banner"] {
-	.hgroup {
-		@include span-columns(8);
+  .hgroup {
+    @include span-columns(8);
 
-		@include media($grid-tablet) {
-			@include span-columns(8);
-		}
+    @include media($grid-tablet) {
+      @include span-columns(8);
+    }
+  }
+  nav {
+    @include span-columns(4);
 
-	}
-	nav {
-		@include span-columns(4);
-
-		@include media($grid-tablet) {
-			@include span-columns(8);
-		}
-		li {
-			@include span-columns(1.333333333 of 4);
-		}
-	}
+    @include media($grid-tablet) {
+      @include span-columns(8);
+    }
+    li {
+      @include span-columns(1.333333333 of 4);
+    }
+  }
 }
 
 // home
 #home section.main {
-	@include outer-container;
+  @include outer-container;
 
-	.maincol {
-		@include span-columns(8);
+  .maincol {
+    @include span-columns(8);
 
-		@include media($grid-desktop) {
-			padding: 0 $baseline / 4;
-		}
-		@include media($grid-tablet) {
-			@include span-columns(8);
-		}
+    @include media($grid-desktop) {
+      padding: 0 $baseline / 4;
+    }
+    @include media($grid-tablet) {
+      @include span-columns(8);
+    }
 
-		section.gallery {
-			@include row();
+    section.gallery {
+      @include row();
 
-			figure {
-				@include span-columns(4 of 8);
-				@include omega(2n);
-			}
-		}
-		.reasons {
-			@include row();
+      figure {
+        @include span-columns(4 of 8);
+        @include omega(2n);
+      }
+    }
+    .reasons {
+      @include row();
 
-			ul {
-				@include span-columns(4 of 8);
+      ul {
+        @include span-columns(4 of 8);
 
-				@include media($grid-mobile) {
-					@include span-columns(6 of 6);
-				}
-			}
-		}
-	}
-	aside {
-		@include span-columns(4);
+        @include media($grid-mobile) {
+          @include span-columns(6 of 6);
+        }
+      }
+    }
+  }
+  aside {
+    @include span-columns(4);
 
-		@include media($grid-tablet) {
-			@include span-columns(8);
-		}
-	}
+    @include media($grid-tablet) {
+      @include span-columns(8);
+    }
+  }
 }
 
 // gallery
 #gallery section.gallery {
-	@include outer-container;
+  @include outer-container;
 
-	@include media($grid-desktop) {
-		padding: 0 $baseline / 4;
-	}
+  @include media($grid-desktop) {
+    padding: 0 $baseline / 4;
+  }
 
-	.h {
-		@include row();
+  .h {
+    @include row();
 
-		figure {
-			@include span-columns(4);
-			@include omega(3n);
+    figure {
+      @include span-columns(4);
+      @include omega(3n);
 
-			@include media($grid-mobile) {
-				@include span-columns(6);
-			}
-		}
-	}
-	.v {
-		@include row();
+      @include media($grid-mobile) {
+        @include span-columns(6);
+      }
+    }
+  }
+  .v {
+    @include row();
 
-		figure {
-			@include span-columns(4);
-			@include omega(3n);
+    figure {
+      @include span-columns(4);
+      @include omega(3n);
 
-			@include media($grid-mobile) {
-				@include span-columns(6);
-			}
-		}
-	}
+      @include media($grid-mobile) {
+        @include span-columns(6);
+      }
+    }
+  }
 }
 
 // contact
 #contact section.contact {
-	@include outer-container;
+  @include outer-container;
 
-	@include media($grid-desktop) {
-		padding: 0 $baseline / 4;
-	}
+  @include media($grid-desktop) {
+    padding: 0 $baseline / 4;
+  }
 
-	.oldskool,
-	.newskool {
-		@include span-columns(6);
-		@include omega(2n);
+  .oldskool,
+  .newskool {
+    @include span-columns(6);
+    @include omega(2n);
 
-		@include media($grid-mobile) {
-			@include span-columns(6);
+    @include media($grid-mobile) {
+      @include span-columns(6);
 
-			text-align: center;
-		}
-	}
-
+      text-align: center;
+    }
+  }
 }

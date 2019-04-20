@@ -3,4 +3,4 @@
 To build stuff:
 
 `cd build`
-`webpack -p`
+`node_modules/.bin/webpack -p`

@@ -1,130 +1,43 @@
-// Texture
+[class*="btn"] {
+  // IE7 inline-block hack
+  *zoom: 1;
+  padding: 6px 11px 6px;
+  margin-bottom: 0;
+  font-family: $basefont;
+  @include font-size(12);
+  font-weight: bold;
+  line-height: $baselineheight;
+  color: $buttoncolor;
+  text-align: center;
+  vertical-align: middle;
+  @include linear-gradient(50%, $white, $lightergrey, $fallback: $lightergrey);
+  @include transition(border 1s ease);
+  display: inline-block;
+  border: $buttonborderwidth $buttonborderstyle $buttonbordercolor;
+  border-bottom-color: $buttonbottombordercolor;
+  border-radius: 4px;
+  cursor: pointer;
+  *display: inline;
+  *margin-left: 0.3em;
 
-/* Buttons =================================================== */
+  &:hover {
+    @include linear-gradient(
+      50%,
+      darken($white, 6%),
+      lighten($lightergrey, 6%)
+    );
+    border-color: darken($buttonbordercolor, 10%);
+    border-bottom-color: darken($buttonbottombordercolor, 10%);
+    background: $lightergrey;
+    color: $buttoncolor;
+    text-decoration: none;
+  }
 
-[class*=btn], {
-	// IE7 inline-block hack
-	*zoom: 1;
-	padding: 6px 11px 6px;
-	margin-bottom: 0;
-	font-family: $basefont;
-	@include font-size(12);
-	font-weight: bold;
-	line-height: $baselineheight;
-	color: $buttoncolor;
-	text-align: center;
-	vertical-align: middle;
-	@include linear-gradient(50%, $white, $lightergrey, $fallback: $lightergrey);
-	@include transition (border 1s ease);
-	display: inline-block;
-	border: $buttonborderwidth $buttonborderstyle $buttonbordercolor;
-	border-bottom-color: $buttonbottombordercolor;
-	border-radius: 4px;
-	cursor: pointer;
-	*display: inline;
-	*margin-left: .3em;
-
-	&:hover {
-		@include linear-gradient(50%, darken($white, 6%), lighten($lightergrey, 6%));
-		border-color: darken($buttonbordercolor, 10%);
-		border-bottom-color: darken($buttonbottombordercolor, 10%);
-		background: $lightergrey;
-		color: $buttoncolor;
-		text-decoration: none;
-	}
-
-	&:first-child { *margin-left: 0; }
-}
-a.btn { text-decoration: none; }
-
-// primary
-.btn-primary {
-	@include linear-gradient(50%, $basecolor, darken($basecolor, 10%));
-	border-color: darken($basecolor, 15%);
-	border-bottom-color: darken($basecolor, 20%);
-	color: $white;
-
-	&:hover {
-		@include linear-gradient(50%, lighten($basecolor, 2%), lighten($basecolor, 3%));
-		color: $white;
-	}
+  &:first-child {
+    *margin-left: 0;
+  }
 }
 
-// info
-.btn-info {
-	@include linear-gradient(50%, $infocolor, darken($infocolor, 10%));
-	border-color: darken($infocolor, 15%);
-	border-bottom-color: darken($infocolor, 20%);
-	color: darken($infocolor, 50%);
-
-	&:hover {
-		@include linear-gradient(50%, darken($infocolor, 6%), darken($infocolor, 3%));
-		color: darken($infocolor, 50%);
-	}
-}
-
-// success
-.btn-success {
-	@include linear-gradient(50%, $successcolor, darken($successcolor, 10%));
-	border-color: darken($successcolor, 15%);
-	border-bottom-color: darken($successcolor, 20%);
-
-	&:hover {
-		@include linear-gradient(50%, darken($successcolor, 5%), $successcolor);
-	}
-}
-
-// warning
-.btn-warning {
-	@include linear-gradient(50%, $warningcolor, darken($warningcolor, 10%));
-	border-color: darken($warningcolor, 15%);
-	border-bottom-color: darken($warningcolor, 20%);
-
-	&:hover {
-		@include linear-gradient(50%, darken($warningcolor, 10%), lighten($warningcolor, 3%));
-	}
-}
-
-// error
-.btn-error {
-	@include linear-gradient(50%, $errorcolor, darken($errorcolor, 10%));
-	border-color: darken($errorcolor, 15%);
-	border-bottom-color: darken($errorcolor, 20%);
-	color: $white;
-
-	&:hover {
-		@include linear-gradient(50%, darken($errorcolor, 10%), $errorcolor);
-		color: $white;
-	}
-}
-
-// disabled
-.btn-disabled {
-	opacity: .6;
-	cursor: default;
-
-	&:hover { @include linear-gradient(50%, $white, $lightergrey); }
-}
-
-// sizes
-.btn-mini {
-	@include font-size(9);
-	padding: 3px 5px;
-	border-radius: 2px;
-}
-.btn-small {
-	@include font-size(11);
-	padding: 6px 10px;
-	border-radius: 3px;
-}
-/* .btn-large {
-	*padding-top: 7px; */
-/* *padding-bottom: 7px; */
-.btn-large {
-	@include font-size(14);
-	padding: 11px 22px;
-}
-.btn-xlarge {
-	@include font-size(21);
-	padding: 11px 22px;
+a.btn {
+  text-decoration: none;
 }

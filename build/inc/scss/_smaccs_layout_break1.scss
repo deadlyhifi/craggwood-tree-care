@@ -1,16 +1,16 @@
 header[role="banner"] {
-	.hgroup {
-		h1.title {
-			@include font-size(32);
-		}
-	}
+  .hgroup {
+    h1.title {
+      @include font-size(32);
+    }
+  }
 }
 
 section.promote {
-	h2 {
-		@include font-size(25);
-	}
-	.inner {
-		padding: $baseline;
-	}
+  h2 {
+    @include font-size(25);
+  }
+  .inner {
+    padding: $baseline;
+  }
 }
