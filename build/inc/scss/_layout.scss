@@ -10,11 +10,22 @@ header[role="banner"] {
 
   .hgroup {
     text-align: center;
+
+    @media (min-width: $tablet) {
+      text-align: left;
+    }
+
     h1.title {
       @include font-size(25);
       margin-bottom: $baseline / 4;
       color: $white;
       text-shadow: 1px 1px 1px $darkgrey;
+
+      span {
+        @media (min-width: $laptop) {
+          display: inline;
+        }
+      }
 
       span {
         display: block;
@@ -33,6 +44,16 @@ header[role="banner"] {
         @include font-size(18);
         margin-bottom: 0;
         text-shadow: 1px 1px 1px $darkgrey;
+      }
+    }
+  }
+
+  @media (min-width: $mobile) {
+    header[role="banner"] {
+      .hgroup {
+        h1.title {
+          @include font-size(32);
+        }
       }
     }
   }
@@ -66,17 +87,25 @@ header[role="banner"] {
 section.promote {
   margin-bottom: $baseline;
   color: $white;
-  //	background: #6aa9ee url('../img/banner.jpg') no-repeat top center;
   text-shadow: 1px 1px 1px $black;
 
   h2 {
     color: $white;
     margin-bottom: $baseline / 3;
 
+    @media (min-width: $mobile) {
+      @include font-size(25);
+    }
+
+    @media (min-width: $tablet) {
+      @include font-size(30);
+    }
+
     span {
       color: $white;
     }
   }
+
   p {
     text-align: justify;
     font-size: 1.2em;
@@ -92,12 +121,28 @@ section.promote {
 
   .inner {
     padding: $baseline / 2;
+
+    @media (min-width: $mobile) {
+      padding: $baseline;
+    }
+
+    @media (min-width: $tablet) {
+      padding: $baseline $baseline * 2;
+    }
+
+    @media (min-width: $laptop) {
+      padding: $baseline * 1.5 $baseline * 4;
+    }
   }
 }
 
 // main columns
 #home .main {
   .maincol {
+    @media (min-width: $tablet) {
+      border-radius: 4px;
+    }
+
     section.gallery {
       figure {
         text-align: center;
@@ -112,6 +157,12 @@ section.promote {
     background-color: $compcolor;
     background: $compcolor url(../img/sunburst.png) no-repeat bottom center;
     background-size: cover;
+
+    @media (min-width: $tablet) {
+      border: 0;
+      padding-top: 0;
+      border-radius: 4px;
+    }
 
     h3 {
       color: $black;
