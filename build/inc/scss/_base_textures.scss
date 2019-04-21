@@ -7,14 +7,13 @@
   @include font-size(12);
   font-weight: bold;
   line-height: $baselineheight;
-  color: $buttoncolor;
+  color: $darkgrey;
   text-align: center;
   vertical-align: middle;
   @include linear-gradient(50%, $white, $lightergrey, $fallback: $lightergrey);
-  @include transition(border 1s ease);
+  @include transition(border 0.5s ease);
   display: inline-block;
-  border: $buttonborderwidth $buttonborderstyle $buttonbordercolor;
-  border-bottom-color: $buttonbottombordercolor;
+  border: 1px solid $lightgrey;
   border-radius: 4px;
   cursor: pointer;
   *display: inline;
@@ -26,10 +25,9 @@
       darken($white, 6%),
       lighten($lightergrey, 6%)
     );
-    border-color: darken($buttonbordercolor, 10%);
-    border-bottom-color: darken($buttonbottombordercolor, 10%);
+    border-color: $darkgrey;
     background: $lightergrey;
-    color: $buttoncolor;
+    color: $darkgrey;
     text-decoration: none;
   }
 

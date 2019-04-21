@@ -40,19 +40,12 @@ address {
   line-height: $baselineheight;
 }
 
-ul,
-ol {
+ul {
   margin: 0 0 $baselineheight 0;
   padding: 0 0 0 $gutter;
 }
 
-li ul {
-  @include font-size(16);
-  margin: 0;
-}
-
 // definition lists
-
 dl,
 dd {
   margin-bottom: $baselineheight;
