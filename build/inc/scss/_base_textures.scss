@@ -10,8 +10,8 @@
   color: $darkgrey;
   text-align: center;
   vertical-align: middle;
-  @include linear-gradient(50%, $white, $lightergrey, $fallback: $lightergrey);
-  @include transition(border 0.5s ease);
+  background: linear-gradient($white, $lightergrey);
+  transition: border 0.5s ease;
   display: inline-block;
   border: 1px solid $lightgrey;
   border-radius: 4px;
@@ -20,11 +20,7 @@
   *margin-left: 0.3em;
 
   &:hover {
-    @include linear-gradient(
-      50%,
-      darken($white, 6%),
-      lighten($lightergrey, 6%)
-    );
+    background: linear-gradient(darken($white, 6%), lighten($lightergrey, 6%));
     border-color: $darkgrey;
     background: $lightergrey;
     color: $darkgrey;

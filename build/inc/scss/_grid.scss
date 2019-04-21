@@ -4,26 +4,22 @@
 
 .inner {
   @include outer-container;
-}
-
-.inner {
   padding: 0 $baseline;
 }
 
 header[role="banner"] {
-  .hgroup {
-    @media (min-width: $tablet) {
-      @include span-columns(8);
+  .inner {
+    @media (min-width: $laptop) {
+      display: grid;
+      grid-gap: $baseline;
+      grid-template-columns: 1fr 2fr;
     }
   }
-  nav {
-    @media (min-width: $tablet) {
-      @include span-columns(4);
-    }
 
-    li {
-      @include span-columns(1.333333333 of 4);
-    }
+  nav ul {
+    display: grid;
+    grid-gap: $baseline;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -31,37 +27,26 @@ header[role="banner"] {
 #home section.main {
   @include outer-container;
 
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-gap: $baseline;
+    grid-template-columns: 2fr 1fr;
+  }
+
   .maincol {
     padding: 0 $baseline / 2;
 
-    @media (min-width: $tablet) {
-      @include span-columns(8);
-      padding-right: 0;
-    }
-
     section.gallery {
-      @include row();
-
-      figure {
-        @include span-columns(4 of 8);
-        @include omega(2n);
-      }
+      display: grid;
+      grid-gap: $baseline;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
-    .reasons {
-      @include row();
 
-      ul {
-        @include span-columns(6 of 6);
-
-        @media (min-width: $tablet) {
-          @include span-columns(4 of 8);
-        }
-      }
-    }
-  }
-  aside {
-    @media (min-width: $tablet) {
-      @include span-columns(4);
+    .reasons .grid {
+      display: grid;
+      grid-gap: $baseline;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      margin-bottom: $baselineheight;
     }
   }
 }
@@ -73,7 +58,7 @@ header[role="banner"] {
 
   .row {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: $baseline;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
@@ -83,14 +68,10 @@ header[role="banner"] {
   @include outer-container;
   padding: 0 $baseline / 2;
 
-  .oldskool,
-  .newskool {
-    text-align: center;
-
-    @media (min-width: $tablet) {
-      @include span-columns(6);
-      @include omega(2n);
-      text-align: left;
-    }
+  .grid {
+    display: grid;
+    grid-gap: $baseline;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    margin-bottom: $baselineheight;
   }
 }

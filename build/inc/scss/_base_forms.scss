@@ -34,7 +34,6 @@ textarea {
 input,
 button,
 textarea {
-  @include box-sizing(border-box);
   font-family: $basefont;
 }
 

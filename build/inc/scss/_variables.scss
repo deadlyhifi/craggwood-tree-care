@@ -1,3 +1,8 @@
+// Define the breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 960px;
+
 // greyscale
 $black: rgb(0, 0, 0);
 $darkgrey: lighten($black, 25%);
@@ -17,21 +22,16 @@ $bordercolor: lighten($basecolor, 20%);
 
 // TYPOGRAPHY ==============================
 
-$basefont: $helvetica; /* $helvetica; $georgia; $lucida-grande; $monospace; $verdana; */
+$basefont: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 $basefontsize: 16;
 $baselineheight: 1.5em;
-$baseheadingfont: $georgia;
+$baseheadingfont: "Georgia", "Cambria", "Times New Roman", "Times", serif;
 $baseheadingfontweight: bold;
 $baseheadingfontcolor: $compcolor;
 
 // WIDTH/ MARGINS 	==============================
 
 $baseline: $baselineheight;
-
-// Define the breakpoints
-$mobile: 480px;
-$tablet: 768px;
-$laptop: 960px;
 
 // Links
 $linkcolor: rgb(40, 140, 189);

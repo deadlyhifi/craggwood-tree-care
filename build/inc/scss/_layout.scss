@@ -11,7 +11,7 @@ header[role="banner"] {
   .hgroup {
     text-align: center;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $laptop) {
       text-align: left;
     }
 
@@ -73,7 +73,7 @@ header[role="banner"] {
           color: $black;
 
           &:hover {
-            @include transform(translateY(1px));
+            transform: translateY(1px);
           }
           &.selected {
             text-decoration: underline;
@@ -155,8 +155,7 @@ section.promote {
     border: 1px solid $bordercolor;
     border-width: 1px 0;
     background-color: $compcolor;
-    background: $compcolor url(../img/sunburst.png) no-repeat bottom center;
-    background-size: cover;
+    background: linear-gradient($compcolor, lighten($compcolor, 20%));
 
     @media (min-width: $tablet) {
       border: 0;
