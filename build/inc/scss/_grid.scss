@@ -6,27 +6,21 @@
   @include outer-container;
 }
 
-// add padding on narrow screens.
 .inner {
-  @include media($grid-desktop) {
-    padding: 0 $baseline / 4;
-  }
+  padding: 0 $baseline;
 }
 
 header[role="banner"] {
   .hgroup {
-    @include span-columns(8);
-
-    @include media($grid-tablet) {
+    @media (min-width: $tablet) {
       @include span-columns(8);
     }
   }
   nav {
-    @include span-columns(4);
-
-    @include media($grid-tablet) {
-      @include span-columns(8);
+    @media (min-width: $tablet) {
+      @include span-columns(4);
     }
+
     li {
       @include span-columns(1.333333333 of 4);
     }
@@ -38,13 +32,11 @@ header[role="banner"] {
   @include outer-container;
 
   .maincol {
-    @include span-columns(8);
+    padding: 0 $baseline / 2;
 
-    @include media($grid-desktop) {
-      padding: 0 $baseline / 4;
-    }
-    @include media($grid-tablet) {
+    @media (min-width: $tablet) {
       @include span-columns(8);
+      padding-right: 0;
     }
 
     section.gallery {
@@ -59,19 +51,17 @@ header[role="banner"] {
       @include row();
 
       ul {
-        @include span-columns(4 of 8);
+        @include span-columns(6 of 6);
 
-        @include media($grid-mobile) {
-          @include span-columns(6 of 6);
+        @media (min-width: $tablet) {
+          @include span-columns(4 of 8);
         }
       }
     }
   }
   aside {
-    @include span-columns(4);
-
-    @include media($grid-tablet) {
-      @include span-columns(8);
+    @media (min-width: $tablet) {
+      @include span-columns(4);
     }
   }
 }
@@ -79,54 +69,28 @@ header[role="banner"] {
 // gallery
 #gallery section.gallery {
   @include outer-container;
+  padding: 0 $baseline / 2;
 
-  @include media($grid-desktop) {
-    padding: 0 $baseline / 4;
-  }
-
-  .h {
-    @include row();
-
-    figure {
-      @include span-columns(4);
-      @include omega(3n);
-
-      @include media($grid-mobile) {
-        @include span-columns(6);
-      }
-    }
-  }
-  .v {
-    @include row();
-
-    figure {
-      @include span-columns(4);
-      @include omega(3n);
-
-      @include media($grid-mobile) {
-        @include span-columns(6);
-      }
-    }
+  .row {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
 
 // contact
 #contact section.contact {
   @include outer-container;
-
-  @include media($grid-desktop) {
-    padding: 0 $baseline / 4;
-  }
+  padding: 0 $baseline / 2;
 
   .oldskool,
   .newskool {
-    @include span-columns(6);
-    @include omega(2n);
+    text-align: center;
 
-    @include media($grid-mobile) {
+    @media (min-width: $tablet) {
       @include span-columns(6);
-
-      text-align: center;
+      @include omega(2n);
+      text-align: left;
     }
   }
 }

@@ -4,3 +4,6 @@ To build stuff:
 
 `cd build`
 `node_modules/.bin/webpack -p`
+
+While building:
+`node_modules/.bin/webpack --watch`

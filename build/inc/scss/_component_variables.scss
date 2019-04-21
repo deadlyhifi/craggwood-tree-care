@@ -38,11 +38,6 @@ $tablet: 768px;
 $laptop: 960px;
 $desktop: $max-width;
 
-$grid-mobile: new-breakpoint(max-width $mobile 6);
-$grid-tablet: new-breakpoint(max-width $tablet 8);
-$grid-laptop: new-breakpoint(max-width $laptop 12);
-$grid-desktop: new-breakpoint(max-width $desktop 12);
-
 // Links
 $linkcolor: rgb(40, 140, 189);
 $linkcolorhover: darken($linkcolor, 20);
